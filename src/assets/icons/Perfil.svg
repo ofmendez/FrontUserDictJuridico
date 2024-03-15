@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-68,-34)">
+        <g id="Atras" transform="matrix(1.06667,0,0,1.06667,68,34)">
+            <rect x="0" y="0" width="30" height="30" style="fill:none;"/>
+            <g transform="matrix(2.88747,0,0,2.88747,15,15.6251)">
+                <path d="M0,-0.433C0.957,-0.433 1.732,-1.208 1.732,-2.165C1.732,-3.121 0.957,-3.896 0,-3.896C-0.957,-3.896 -1.732,-3.121 -1.732,-2.165C-1.732,-1.208 -0.957,-0.433 0,-0.433M0,0.433C-1.435,0.433 -2.597,-0.73 -2.597,-2.165C-2.597,-3.6 -1.435,-4.762 0,-4.762C1.435,-4.762 2.597,-3.6 2.597,-2.165C2.597,-0.73 1.435,0.433 0,0.433M-3.463,4.329C-3.463,2.416 -1.913,0.866 0,0.866C1.913,0.866 3.463,2.416 3.463,4.329L2.597,4.329C2.597,2.894 1.434,1.731 0,1.731C-1.434,1.731 -2.597,2.894 -2.597,4.329L-3.463,4.329Z" style="fill:#17c64f;fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

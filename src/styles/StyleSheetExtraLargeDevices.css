@@ -1,0 +1,114 @@
+/*Horizontal Tablet Lenovo*/
+@media only screen and (min-width: 1200px) {
+    /* *{
+         background-color: #ffff0011;
+    }
+    */
+     :root {
+        /*Estilos*/
+         --MargenesContenido:30px;
+         --PaddingElementos:1%;
+         --PaddingInstrucciones:4%;
+         --PaddingUnaColumna:20px;
+        /*Menu Lateral*/
+         --MenuAncho: 22vw;
+         --MenuAnchoMaxWidth: 280px;
+         --MenuPadding:30px;
+        /*Configuración*/
+         --ConfiguracionAnchoContenedor: 500px;
+         --ConfiguracionPosicionBottom: 50%;
+         --ConfiguracionSeccionDerechaValorLeft: 50%;
+         --ConfiguracionSeccionDerechaValorRight: auto;
+         --ConfiguracionPaddingContenedor:30px;
+         --ConfiguracionAnchoBotonesTamañoLetra: 130px;
+         --ConfiguracionAnchoBotonesModo: 60px;
+
+        /*Búsquedas Recientes*/
+         --PaddingBusquedasRecientes:10px;
+        /*Sección Derecha*/
+         --SeccionesDerechaAncho: calc(100vw - var(--MenuAncho));
+         --SeccionesDerechaMenuAncho:22vw;
+        /*Sección Palabra del Día*/
+         --SeccionPalabraDelDiaAtajoDisplay: none;
+    }
+     #ContenedorMenuConfiguracion{
+         transform: translate(-50%,50%);
+    }
+     .MenuConfiguracion{
+         border-radius: var(--RadioEsquinas);
+    }
+     .ContenidoPagina{
+         display:flex;
+    }
+     .ColumnaIzquierda{
+         width:50%;
+         padding-right: calc(var(--MargenesContenido)/2);
+    }
+
+    .DiccionarioCompleto{
+        padding: calc(var(--PaddingElementos)*2);
+    }
+    
+     .ColumnaDerechaDesaparece, .ColumnaDerecha{
+         display: block;
+         width:50%;
+         padding-left: calc(var(--MargenesContenido)/2);
+    }
+}
+/* ------------------------- MAX MENU SIZE ------------------------- */
+ @media only screen and (min-width: 1250px) {
+     :root{
+         --SeccionesDerechaAncho: var(--SeccionDerechaTamanoAutomatico);
+    }
+}
+/* ------------------------- MAX CONTENT SIZE ------------------------- */
+ @media only screen and (min-width: 1920px) {
+     :root {
+        /*Estilos*/
+         --MargenesContenido:30px;
+         --PaddingElementos:1%;
+        /*Menu Lateral*/
+         --MenuAncho: 22vw;
+         --MenuAnchoMaxWidth: 280px;
+         --MenuPadding:30px;
+        /*Búsquedas Recientes*/
+         --PaddingBusquedasRecientes:10px;
+        /*Sección Derecha*/
+         --SeccionesDerechaAncho: calc(100vw - var(--MenuAncho));
+         --SeccionesDerechaMenuAncho:22vw;
+    }
+     body{
+         background: linear-gradient(90deg, var(--ColorAcento) 0%, var(--ColorAcento) 50%, var(--ColorFondos) 50%, var(--ColorFondos) 100%);
+    }
+     .ContenedorAplicativo{
+         background-color: var(--ColorFondos);
+         position:relative;
+         width:100%;
+         max-width: 1920px !important;
+         display: block;
+         margin: 0 auto;
+         min-height:100svh;
+    }
+     .MenuLateral{
+         position:absolute;
+         min-height: 100svh;
+         height: -moz-available;
+         height: -webkit-fill-available;
+         height: fill-available;
+    }
+     #ContenedorMenuConfiguracion{
+         position: absolute;
+    }
+     .OverlayMenu{
+         width:1920px;
+         position: absolute;
+         margin:0 auto;
+    }
+     .SeccionHeaderFija{
+         position:absolute;
+         width: calc(1920px - var(--MenuAnchoMaxWidth));
+    }
+     .ContenidoPagina{
+         width: calc(1920px - var(--MenuAnchoMaxWidth));
+    }
+}

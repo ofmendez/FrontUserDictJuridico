@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-68,0)">
+        <g id="Atras" transform="matrix(1.06667,0,0,1.06667,68,0)">
+            <rect x="0" y="0" width="30" height="30" style="fill:none;"/>
+            <g transform="matrix(3.63033,0,0,3.05897,-5949.32,-2897.14)">
+                <path d="M1644.4,948.092L1640.86,951.63C1640.79,951.705 1640.75,951.814 1640.75,951.929C1640.75,952.044 1640.79,952.154 1640.86,952.228L1644.55,955.911C1644.68,956.05 1644.89,956.029 1645.01,955.864C1645.13,955.699 1645.11,955.452 1644.97,955.313L1641.59,951.929C1641.59,951.929 1644.83,948.689 1644.83,948.689C1644.96,948.55 1644.98,948.304 1644.87,948.139C1644.75,947.974 1644.54,947.953 1644.4,948.092Z"/>
+            </g>
+        </g>
+    </g>
+</svg>

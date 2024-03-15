@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-136,-68)">
+        <g id="AgregarUsuario" transform="matrix(1.06667,0,0,1.06667,136,68)">
+            <rect x="0" y="0" width="30" height="30" style="fill:none;"/>
+            <g transform="matrix(2.69646,0,0,2.69646,20.6248,8.12539)">
+                <path d="M0,5.099L0,3.708L0.927,3.708L0.927,5.099L2.318,5.099L2.318,6.026L0.927,6.026L0.927,7.417L0,7.417L0,6.026L-1.391,6.026L-1.391,5.099L0,5.099ZM-2.781,2.318C-1.757,2.318 -0.927,1.488 -0.927,0.463C-0.927,-0.561 -1.757,-1.391 -2.781,-1.391C-3.806,-1.391 -4.636,-0.561 -4.636,0.463C-4.636,1.488 -3.806,2.318 -2.781,2.318M-2.781,3.245C-4.318,3.245 -5.563,2 -5.563,0.463C-5.563,-1.073 -4.318,-2.318 -2.781,-2.318C-1.245,-2.318 0,-1.073 0,0.463C0,2 -1.245,3.245 -2.781,3.245M-1.854,3.825L-1.854,4.794C-2.144,4.691 -2.456,4.635 -2.781,4.635C-4.318,4.635 -5.563,5.881 -5.563,7.417L-6.49,7.417C-6.49,5.369 -4.829,3.708 -2.781,3.708C-2.461,3.708 -2.151,3.749 -1.854,3.825" style="fill:rgb(23,198,79);fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

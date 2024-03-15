@@ -1,0 +1,81 @@
+@media only screen and (min-width: 992px) {
+    *{
+        background-color: transparent;
+   }
+    :root {
+       /*Estilos*/
+        --MargenesContenido:2.5%;
+        --PaddingElementos:1.5%;
+       /*Menu Lateral*/
+        --MenuAncho: 26vw;
+        --MenuSeparacionElementos: 5%;
+        --MenuPadding:3.2%;
+        --MenuLateralEsconderAnimacion: translateX(0);
+        --MenuOcultarHamburguesa: none;
+       /*Configuración*/
+        --ConfiguracionPaddingContenedor: 2.5% 6%;
+        --ConfiguracionBotonAtrasDisplay:none;
+        --ConfiguracionBotonCerrarDisplay:block;
+        --ConfiguracionAnchoBotonesTamañoLetra: 22vw;
+        --ConfiguracionAnchoBotonesModo: 8vw;
+        --ConfiguracionEspacioBajoTitulo: 3%;
+       /*Fuentes*/
+        --TamanoFuenteTitulosH1: 22px;
+        --TamanoFuenteTitulosH2: 22px;
+        --TamanoFuenteParrafos: 14px;
+       /*Iconos*/
+        --AlturaIconosConfiguracion: 18px;
+       /* Ocultar Elementos */
+        --OcultarElemento: none;
+       /*Buscador*/
+        --BuscadorPaddingLupa:2%;
+        --BuscadorDisplayBoton: block;
+        --BuscadorInputWidth: 80%;
+        --BuscadorSubmitWidth:20%;
+        --BuscadorSeparaciónSubmit: 2%;
+       /*Búsquedas Recientes*/
+        --PaddingBusquedasRecientes:1.5%;
+       /*Sección Derecha*/
+        --SeccionesDerechaAncho: calc(100vw - var(--MenuAncho));
+        --SeccionDerechaValorLeft: auto;
+        --SeccionDerechaValorRight: 0;
+        --SeccionesDerechaMenuAncho:25vw;
+   }
+   /* Animaciones Menú */
+    .slide-in {
+        transition: transform var(--MenuTiempoAnimacion) linear;
+        transform: translateX(0%);
+        filter: drop-shadow(2px 0px 12px #00000033);
+   }
+    .slide-out {
+        transition: transform var(--MenuTiempoAnimacion) linear;
+        transform: translateX(0);
+        filter: drop-shadow(0px 0px 0px #00000033);
+   }
+    .slide-up {
+        transition: transform var(--MenuTiempoAnimacion) linear;
+        transform: translateY(0%);
+   }
+    .slide-down {
+        transition: transform var(--MenuTiempoAnimacion) linear;
+        transform: translateY(115%);
+   }
+    .z-index-up {
+        z-index:99 !important;
+   }
+    .z-index-down {
+        z-index:0 !important;
+   }
+    .overlay-in{
+        visibility: visible !important;
+        opacity: 1;
+        transition: visibility 1s, opacity 0.5s, z-index 0.5s linear;
+        z-index: 98;
+   }
+    .overlay-out{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 1s, opacity 0.5s, z-index 0.5s linear;
+        z-index:-1 !important;
+   }
+}

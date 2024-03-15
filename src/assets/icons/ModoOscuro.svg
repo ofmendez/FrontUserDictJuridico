@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-34,0)">
+        <g id="ModoOscuro" transform="matrix(1.06667,0,0,1.06667,34,0)">
+            <rect x="0" y="0" width="30" height="30" style="fill:none;"/>
+            <g transform="matrix(2.40554,0,0,2.40058,16.2062,25.0788)">
+                <path d="M0,-8.397C-2.318,-8.074 -3.936,-5.933 -3.613,-3.614C-3.29,-1.296 -1.149,0.322 1.169,-0.001C1.392,-0.032 1.612,-0.081 1.827,-0.147C-0.793,-1.184 -2.076,-4.149 -1.038,-6.768C-0.799,-7.372 -0.447,-7.925 0,-8.397M0.581,0.905C-2.237,0.905 -4.522,-1.38 -4.522,-4.198C-4.522,-7.017 -2.237,-9.302 0.581,-9.302C0.806,-9.301 1.03,-9.286 1.253,-9.257C1.489,-9.225 1.655,-9.007 1.623,-8.77C1.606,-8.643 1.533,-8.531 1.426,-8.463C-0.548,-7.205 -1.128,-4.586 0.13,-2.613C0.802,-1.558 1.905,-0.854 3.145,-0.69C3.382,-0.658 3.548,-0.44 3.515,-0.203C3.498,-0.077 3.426,0.036 3.318,0.104C2.501,0.627 1.551,0.905 0.581,0.905" style="fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

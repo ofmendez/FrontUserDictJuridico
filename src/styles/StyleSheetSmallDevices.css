@@ -1,0 +1,26 @@
+/*Vertical Tablet Lenovo*/
+@media only screen and (min-width:600px) {
+ /*  *{
+    background-color: #0000ff22;
+   }*/
+
+   :root {
+      /*Estilos*/
+      --MargenesContenido:3.5%;
+      --PaddingElementos:2%;
+      --PaddingAtajos: 2%;
+      --PaddingInstrucciones:4%;
+     /*Menu Lateral*/
+     --MenuPadding:5%;
+      --MenuAncho: 44vw;
+      --MenuSeparacionLogoElementos:12%;
+      --MenuSeparacionElementos: 6%;
+     /*Fuentes*/
+      --TamanoFuenteParrafos: 14px;
+     /*Iconos*/
+      --AlturaIconosMenuLateral:25px;
+      /*Búsquedas Recientes*/
+    --PaddingBusquedasRecientes:2%;
+   }
+
+}

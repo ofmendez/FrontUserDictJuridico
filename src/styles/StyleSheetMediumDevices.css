@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) {
+   /* *{
+        background-color: #ffff0033; 
+   }*/
+    :root {
+       /*Estilos*/
+       --MargenesContenido:3%;
+        --PaddingElementos:2%;
+        --PaddingAtajos: 1.6%;
+        --PaddingInstrucciones:3%;
+        --PaddingUnaColumna:4%;
+       /*Menu Lateral*/
+        --MenuAncho: 34vw;
+        --MenuSeparacionLogoElementos:12%;
+        --MenuPadding:4%;
+        --MenuSeparacionElementos: 6%;
+       /*Fuentes*/
+        --TamanoFuenteParrafos: 14px;
+       /*Iconos*/
+        --AlturaIconosMenuLateral:25px;
+        /*Otros Elementos*/
+        --WidthHR:99%;
+        /*Búsquedas Recientes*/
+    --PaddingBusquedasRecientes:1.5%;
+   }
+}

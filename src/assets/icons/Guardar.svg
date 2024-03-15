@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-238,-68)">
+        <g id="AgregarTermino" transform="matrix(1.06667,0,0,1.06667,238,68)">
+            <rect x="0" y="0" width="30" height="30" style="fill:none;"/>
+            <g transform="matrix(3.28783,0,0,3.28783,-2225.17,-1568.41)">
+                <path d="M680.022,484.702L682.683,484.702L682.683,482.928L680.022,482.928L680.022,484.702ZM677.804,477.605L683.57,477.605L685.344,479.379L685.344,485.145C685.344,485.39 685.146,485.589 684.901,485.589L677.804,485.589C677.559,485.589 677.361,485.39 677.361,485.145L677.361,478.049C677.361,477.804 677.559,477.605 677.804,477.605M679.135,484.702L679.135,482.041L683.57,482.041L683.57,484.702L684.457,484.702L684.457,479.747L683.203,478.492L678.248,478.492L678.248,484.702L679.135,484.702Z" style="fill:rgb(23,198,79);fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>
