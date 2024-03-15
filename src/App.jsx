@@ -9,6 +9,7 @@ function App() {
 		// Logic for token check and sending 'requestToken' message
 		const token = localStorage.getItem('token');
 		if (!token) {
+			console.log('SENDING MESSAGE---->');
 			window.parent.postMessage('requestToken', 'https://diccionarioexplore.com');
 		}
 
