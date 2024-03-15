@@ -15,6 +15,7 @@ function App() {
 		// Listener for receiving tihe token
 		const listener = (event) => {
 			console.log('MESSAGE ARRIVE 2 : ', event);
+			console.log('data.authtoken : ', event.data.authToken);
 			if (event.origin === 'https://diccionarioexplore.com' && event.data.authToken) {
 				localStorage.setItem('token', event.data.authToken);
 				console.log('TOKEN RECEIVED : ', event.data.authToken);
