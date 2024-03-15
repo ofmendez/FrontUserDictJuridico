@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Iframe } from 'react-iframe';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -34,6 +35,21 @@ function App() {
 
 	return (
 		<>
+			<Iframe
+				url="https://diccionarioexplore.com"
+				width="0"
+				height="0"
+				style={
+					{
+						position: 'absolute',
+						top: 0,
+						left: 0,
+						width: 0,
+						height: 0,
+						border: 'none',
+						visibility: 'hidden'
+					}}
+			/>
 			<div>
 				<a href="https://vitejs.dev" target="_blank">
 					<img src={viteLogo} className="logo" alt="Vite logo" />
