@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { IconoEditar, IconoVer } from '@components/icons.js';
+import {  IconoVer } from '@components/icons.js';
 import TermInnerRow from '@components/TermInnerRow.jsx';
 
 const TermRow = ({ term, showBy, isExpanded, onExpand, onCollapse, home }) => {
@@ -38,9 +38,9 @@ const TermRow = ({ term, showBy, isExpanded, onExpand, onCollapse, home }) => {
 					<Link to={`/terms/${term._id}`}>
 						<img className='IconosTabla' src={IconoVer} />
 					</Link>
-					<Link to={`/terms/edit/${term._id}`}>
+					{/* <Link to={`/terms/edit/${term._id}`}>
 						<img className='IconosTabla' src={IconoEditar} />
-					</Link>
+					</Link> */}
 				</td>
 			</tr>
 			{isExpanded && printSortedDescriptors(term.meanings)}

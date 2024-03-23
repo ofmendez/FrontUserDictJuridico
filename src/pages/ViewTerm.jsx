@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 
 // import ContentFrame from '@components/ContentFrame.jsx';
-import { IconoEditar } from '@components/icons.js';
+// import { IconoEditar } from '@components/icons.js';
 import { loadTerm } from '@src/hooks/LoaderData.jsx';
 import ViewMeaning from '@components/ViewMeaning.jsx';
 import { Skeletons } from '@components/Skeletons.jsx';
@@ -36,10 +36,10 @@ const ViewTerm = () => {
 					</div>
 					<div className='SeccionDerechaBotones'>
 						{/* <ButtonRound onClick={handleDelete} ico={IconoEliminar} /> */}
-						<Link className='BotonAgregar' to={'../edit/' + id}>
+						{/* <Link className='BotonAgregar' to={'../edit/' + id}>
 							<img className='IconoMenu' src={IconoEditar} />
 							Editar Término
-						</Link>
+						</Link> */}
 					</div>
 				</Skeletons>
 			</div>
