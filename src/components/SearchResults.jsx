@@ -15,7 +15,7 @@ const SearchResults = ({ results }) => {
 							<p className='ResultadoBusquedaTermino'>
 								{r.term}
 							</p>
-							<p className='ResultadoBusquedaFuentemongodb+srv://ofmendez:nQz8yrKytGPYQEOw@cluster0.bss36fz.mongodb.net/?retryWrites=true&w=majority&authMechanism=DEFAULT'>
+							<p className='ResultadoBusqueda'>
 								{
 									r.highlights.reduce((max, tmp) => max.score > tmp.score ? max : tmp).texts.map((t, i) => {
 										if (t.type === 'text')
