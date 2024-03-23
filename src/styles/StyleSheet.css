@@ -58,6 +58,8 @@
      --AlturaIconoLupa: 26px;
      --AlturaIconoMenu: 26px;
      --AlturaIconosMenuLateral:20px;
+     --AlturaIconosTabla:20px;
+
     /* Ocultar Elementos */
      --OcultarElemento: flex;
     /*Otros Elementos*/
@@ -575,6 +577,7 @@ a:visited, a:active{
      font-size: var(--TamanoFuenteParrafos);
 }
  .SubmitBusqueda{
+		text-align: center;
      border: 0 solid transparent;
      padding: var(--PaddingElementos);
      display: var(--BuscadorDisplayBoton);
@@ -586,6 +589,10 @@ a:visited, a:active{
      font-weight: var(--FuenteNegrilla);
      font-size: var(--TamanoFuenteParrafos);
      cursor: pointer;
+	min-width: 120px;
+}
+.SubmitBusqueda:visited{
+	color: var(--ColorTextoAcento);
 }
  .SubmitBusqueda:hover{
      background-color: var(--ColorAcentoHover);
@@ -678,7 +685,7 @@ a:visited, a:active{
 }
 
 /* Configuración Todos los Términos */
-.DiccionarioCompleto{
+.DiccionarioCompleto, .DiccionarioCompleto:visited{
         background-color: var(--ColorAcento);
         color: var(--ColorTextoAcento);
         font-size: var(--TamanoFuenteParrafos);
@@ -689,6 +696,8 @@ a:visited, a:active{
         align-items: center;
         cursor: pointer;
         text-align: center;
+		  width: 100%;
+		  border: none;
    }
     .DiccionarioCompleto:hover{
         background-color: var(--ColorAcentoHover);
@@ -770,4 +779,76 @@ justify-content: space-between;
 
 .noPointerEvents{
 	pointer-events: none;
+}
+.dj_button{
+	border: 0 solid transparent;
+	padding: var(--PaddingBotonAgregar);
+	display: var(--BuscadorDisplayBoton);
+	background-color: var(--ColorAcento);
+	color: var(--ColorTextoAcento);
+	border-radius: var(--RadioEsquinas);
+	width: var(--BuscadorSubmitWidth);
+	/* margin-left: var(--BuscadorSeparacionSubmit); */
+	font-weight: var(--FuenteNegrilla);
+	font-size: var(--TamanoFuenteParrafos);
+	cursor: pointer;
+	min-width: 120px;
+}
+.dj_button:hover{
+	background-color: var(--ColorAcentoHover);
+}
+.SeccionSuperiorHerramientas{
+	display:flex;
+	justify-content: space-between;
+	align-items: var(--SeccionSuperiorAlineacion);
+	flex-direction: var(--SeccionSuperiorOrden);
+	row-gap: 10px;
+	column-gap: 10px;
+}
+
+.ContenedorTabla{
+	overflow-y: auto;
+	padding-right:20px;
+	max-height: 80svh;
+}
+.table-container tr td {
+	border-bottom: 1px solid #e4e4e4;
+}
+.SeccionContenidoSubpagina{
+	width: 100%;
+	background-color: var(--ColorSecundario);
+	padding: var(--PaddingContenidosHome);
+	border-radius: var(--RadioEsquinas);
+	display: flex;
+	flex-direction: column;
+	height: -webkit-fill-available;
+	min-height: 0;
+}
+.TablaUsuarios{
+	width:100%;
+	text-align: left;
+	font-size: var(--TamanoFuenteParrafos);
+	color: var(--ColorTexto);
+	font-weight: var(--FuenteRegular);
+	line-height: 1.2em;
+	border-collapse: collapse;
+	border-spacing: 5px;
+}
+.TablaUsuarios tr{
+	height: 36px;
+}
+.TablaUsuarios th:first-child, .TablaUsuarios th:nth-child(2), .TablaUsuarios th:nth-child(3), .TablaUsuarios th:nth-child(4), .TablaUsuarios td:first-child, .TablaUsuarios td:nth-child(2), .TablaUsuarios td:nth-child(3), .TablaUsuarios td:nth-child(4){
+	padding-right: 20px;
+}
+.TablaUsuarios  tr td:first-child{
+	max-width: 700px;
+}
+.TablaTextoCentrado{
+	text-align: center;
+}
+.IconosTabla{
+	height:var(--AlturaIconosTabla);
+}
+.opacity07{
+	opacity: 0.7;
 }
