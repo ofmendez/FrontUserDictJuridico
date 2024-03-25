@@ -49,7 +49,7 @@ const Menu = ({children}) => {
 						</ul>
 					</div>
 					<div className="MenuLateralSeccion InformacionPropiedadAplicativo">
-						© 2023 Explore Diccionario
+						© 2024 Explore Diccionario
 						Jurídico Minero-Energético.
 					</div>
 				</div>
