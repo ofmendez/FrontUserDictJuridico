@@ -190,7 +190,7 @@ const Home = () => {
 							<div className="SeparadorSecciones">
 
 							</div>
-							<p>Encuentra todos los términos disponibles en nuestro Diccionario Jurídico Minero-Energético ordenados de la A a la Z haciendo clic en el siguiente botón. Explora nuestros recursos completo ahora mismo.</p>
+							<p>Encuentra todos los términos disponibles en nuestro Diccionario Jurídico Minero-Energético ordenados de la A a la Z haciendo clic en el siguiente botón. Explora nuestros recursos completos ahora mismo.</p>
 							<div className="SeparadorSecciones">
 
 							</div>
