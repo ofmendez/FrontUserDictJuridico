@@ -6,9 +6,6 @@ import PrivateRoute from '@src/context/PrivateRoute';
 import { AuthProvider } from '@src/context/AuthProvider';
 
 function App() {
-	const tempToken = import.meta.env.VITE_TOKEN;
-	console.log('tempToken:', import.meta.env.VITE_TOKEN);
-	window.localStorage.setItem('token', tempToken);
 
 	return (
 		<Router>

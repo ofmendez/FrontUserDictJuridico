@@ -1,7 +1,15 @@
-import { IcoInicio } from "./icons";
+import { IcoInicio, IconoLogout, IconoSitioWeb } from "./icons";
 import { LogoBlanco } from "./img";
 
 const Menu = ({children}) => {
+
+	const logout = () => {
+		localStorage.removeItem('token');
+		localStorage.removeItem('user');
+		localStorage.removeItem('version');
+		window.location.href = "/login";
+	}
+
 	return (
 		<>
 			<div id="ContenedorMenuLateral">
@@ -14,6 +22,18 @@ const Menu = ({children}) => {
 									<div className="ContenedorItemMenuLateral ItemMenuActivo">
 										<img className="IconosMenuLateral" src={IcoInicio} /> Inicio</div>
 								</a>
+							</li>
+							<li>
+								<a href="https://diccionarioexplore.com/">
+									<div className="ContenedorItemMenuLateral">
+										<img className="IconosMenuLateral" src={IconoSitioWeb} /> Visita el Sitio Web</div>
+								</a>
+							</li>
+							<li>
+								<button onClick={logout}>
+									<div className="ContenedorItemMenuLateral">
+										<img className="IconosMenuLateral" src={IconoLogout} /> Cerrar Sesión</div>
+								</button>
 							</li>
 							{/* <li>
 								<a href="Favorites.html">

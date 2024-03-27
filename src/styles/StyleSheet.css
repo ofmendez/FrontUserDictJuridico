@@ -305,6 +305,10 @@ a:visited, a:active{
  .MenuLateralLista li{
      margin-bottom: var(--MenuSeparacionElementos);
 }
+ .MenuLateralLista button{
+     border: none;
+	  color: var(--ColorTextoAcento);
+}
  .MenuLateral a:visited, .MenuLateral a:active, .MenuLateral a{
      color: white;
 }

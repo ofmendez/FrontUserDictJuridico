@@ -28,6 +28,7 @@ import IconoModoOscuro from '@ico/ModoOscuro.svg';
 import IconoAgregarFavorito from '@ico/AgregarFavorito.svg';
 import IconoAbrir from '@ico/Abrir.svg';
 import IconoTerminosReal from '@ico/Terminos.svg';
+import IconoLogout from '@ico/Logout.svg';
 
 export {
 	IcoInicio,
@@ -58,5 +59,6 @@ export {
 	IconoModoOscuro,
 	IconoAgregarFavorito,
 	IconoAbrir,
-	IconoTerminosReal
+	IconoTerminosReal,
+	IconoLogout
 };
