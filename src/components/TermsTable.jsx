@@ -1,32 +1,25 @@
 import TermRow from '@components/TermRow.jsx';
 import '@styles/Loading.css';
 
-const TermsTable = ({ tableClass, terms, showBy, rowsState, home }) => {
+const TermsTable = ({ tableClass, terms, showBy, rowsState, home, order }) => {
+	const aviableOrders = {
+		asc: (a, b) => a.term.localeCompare(b.term),
+		desc: (a, b) => b.term.localeCompare(a.term)
+	};
 	const printSortedTerms = (terms, showBy, rowsState) => {
-		const sortedTerms = terms.sort((a, b) => a.term.localeCompare(b.term));
+		const sortedTerms = terms.sort(aviableOrders[order]);
+
 		const isExpanded = (id) => rowsState?.expandedRows.includes(id);
 		return sortedTerms.map((term) =>
 			<TermRow
 				key={term._id} showBy={showBy} term={term} home={home}
 				isExpanded={isExpanded(term._id)}
-				// eslint-disable-next-line no-unsafe-optional-chaining
-				onExpand={() => rowsState?.setExpandedRows([...rowsState?.expandedRows, term._id])}
-				onCollapse={() => rowsState?.setExpandedRows(rowsState?.expandedRows.filter((id) => id !== term._id))}
 			/>
 		);
 	};
 	return (
 		<table className={tableClass}>
-			<thead>
-				<tr className='TablaSeparadorTitulos'>
-					<th>Término</th>
-					<th>Publicación</th>
-					<th>Modificación</th>
-					{showBy && <th>Creado por</th>}
-					{showBy && <th>Modificado por</th>}
-					<th className='TablaTextoCentrado'>Acción</th>
-				</tr>
-			</thead>
+			<thead></thead>
 			<tbody>
 				{printSortedTerms(terms, showBy, rowsState)}
 			</tbody>

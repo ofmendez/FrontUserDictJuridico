@@ -6,7 +6,6 @@ const LoginForm = ({ handleSubmit }) => {
 		<div className='ContenidoPagina'>
 			<div className='SeccionLogin'>
 				<img className='LogoLogin' src={LogoPositivo} />
-				<p className='InstruccionLogin'>Inicia sesión como administrador</p>
 				<div className='SeparadorSecciones' />
 				<form className='FormaLogin' onSubmit={handleSubmit}>
 					<div className='FilaLogin FilaLoginInput'><img className='IconosLogin' src={IconoEmail} />

@@ -257,7 +257,7 @@ a:visited, a:active{
      background-color: var(--ColorAcento);
      color: var(--ColorSecundario);
      border-radius: var(--RadioEsquinas);
-     padding: var(--PaddingElementos);
+     padding: 16px;
      font-size: var(--TamanoFuenteParrafos);
      cursor: pointer;
 }
@@ -855,4 +855,12 @@ justify-content: space-between;
 }
 .opacity07{
 	opacity: 0.7;
+}
+.InputLogin {
+	flex-grow: 2;
+	border: 0 solid transparent;
+	outline: 0;
+	background-color: transparent;
+	padding-left: var(--BuscadorPaddingLupa);
+	font-size: var(--TamanoFuenteParrafos);
 }

@@ -25,7 +25,7 @@ const Users = () => {
 
 				<div>
 					<form>
-						<select name='select' className='FiltrosBusqueda' defaultValue={options[0]}>
+						<select name='rol' className='FiltrosBusqueda' defaultValue={options[0]}>
 							{
 								options.map((el, id) => <option disabled={id === 0} key={el} value={el}>{el}</option>)
 							}
@@ -46,15 +46,6 @@ const Users = () => {
 					<MainsSeparator />
 					<div className='ContenedorTabla ScrollVerde'>
 						<table className='TablaUsuarios'>
-							{/* <tbody>
-									<tr className='TablaSeparadorTitulos'>
-										<th>Usuario</th>
-										<th>Rol</th>
-										<th>Últ. ingreso</th>
-										<th>Estado</th>
-										<th className='TablaTextoCentrado'>Acción</th>
-									</tr>
-								</tbody> */}
 						</table>
 					</div>
 				</div>
