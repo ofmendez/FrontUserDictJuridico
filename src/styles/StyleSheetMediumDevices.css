@@ -22,5 +22,7 @@
         --WidthHR:99%;
         /*Búsquedas Recientes*/
     --PaddingBusquedasRecientes:1.5%;
+     /*Página Términos*/
+     --PaddingContenidosHome: 4%;
    }
 }

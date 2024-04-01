@@ -21,6 +21,9 @@
       --AlturaIconosMenuLateral:25px;
       /*Búsquedas Recientes*/
     --PaddingBusquedasRecientes:2%;
+
+     /*Página Términos*/
+     --PaddingContenidosHome: 6%;
    }
 
 }

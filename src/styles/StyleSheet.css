@@ -87,6 +87,9 @@
      --SeccionPalabraDelDiaAtajoDisplay: block;
      /*Pagina Favoritos*/
      --SeparadorFavoritos: 8px;
+
+     /*Página Términos*/
+     --PaddingContenidosHome: 8%;
 }
 /* Configuración General */
  *{
