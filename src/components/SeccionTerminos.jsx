@@ -46,8 +46,8 @@ const SeccionTerminos = (props, ref) => {
 										<option value='desc'> De la Z a la A</option>
 									</select>
 								</div>
-							<div className='SeccionContenidoSubpagina'>
 								<MainsSeparator />
+							<div className='SeccionContenidoSubpagina'>
 								<h3>Términos</h3>
 								<MainsSeparator />
 								<div className='ContenedorTabla ScrollVerde table-container'>
