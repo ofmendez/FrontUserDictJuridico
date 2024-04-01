@@ -31,7 +31,7 @@
         /*Sección Palabra del Día*/
          --SeccionPalabraDelDiaAtajoDisplay: none;
           /*Página Términos*/
-     --PaddingContenidosHome: 3%;
+     --PaddingContenidosHome: 2%;
     }
      #ContenedorMenuConfiguracion{
          transform: translate(-50%,50%);
