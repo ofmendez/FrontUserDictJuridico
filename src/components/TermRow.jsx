@@ -12,7 +12,8 @@ const TermRow = ({ term, isExpanded,  home }) => {
 	};
 	return (
 		<>
-			<Link to={`/terms/${term._id}`}><tr>
+			<tr>
+			<Link to={`/terms/${term._id}`}>
 				{home
 					? (<td>{term.term}</td>)
 					: (
@@ -27,8 +28,9 @@ const TermRow = ({ term, isExpanded,  home }) => {
 						<img className='IconoAbrir' src={IconoAbrir} />
 					
 				</td>
+				</Link>
 			</tr>
-			</Link>
+			
 			{isExpanded && printSortedDescriptors(term.meanings)}
 		</>
 	);
