@@ -29,6 +29,7 @@ const ViewTerm = () => {
 	return (
 		// <ContentFrame>
 		<>
+		<Menu >
 			<div className='SeccionSuperiorHerramientas'>
 				<Skeletons on={loadingTerm} msg='Cargando'>
 					<div className='SeccionBuscador'>
@@ -50,6 +51,7 @@ const ViewTerm = () => {
 					}
 				</Skeletons>
 			</div>
+			</Menu>
 		</>
 		// </ContentFrame>
 	);
