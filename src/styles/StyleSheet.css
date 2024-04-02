@@ -235,6 +235,13 @@ h4{
    border-radius: var(--RadioEsquinas);
 }
 
+.SeccionContenidoHome {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    column-gap: 20px;
+}
+
 /* ----------------- CONFIGURACIÓN LOGIN -----------------*/
 /* Configuración Sección Login */
  .SeccionLogin{

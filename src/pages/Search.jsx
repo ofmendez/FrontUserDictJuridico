@@ -38,8 +38,8 @@ const Search = () => {
 		<>
 			<Menu	>
 			<TermsSearchForm searchParams={searchParams} />
-			<div className='ContenidoPagina' id='SeccionContenidoHome'>
-				<div className='ContenidoUnaColumna'>
+			<div className='ContenidoPagina' id='ContenidoPagina'>
+				<div className='SeccionContenidoHome' id='SeccionContenidoHome'>
 					<Skeletons on={loadingTerm} msg='Cargando'>
 						<div className='SeccionContenidoPaginaBuscador'>
 							<SearchFilters contents={contents} subjects={subjects} searchParams={searchParams} />
