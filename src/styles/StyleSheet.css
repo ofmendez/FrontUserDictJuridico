@@ -94,10 +94,11 @@
      --DisplayBotonSeccionFiltros: block;
      --OrientacionBusqueda: column;
      --AnchoSeccionFiltros:20%;
-     --PaddingContenidosHome: 32px;
+     --PaddingContenidosResultadosBusqueda: 32px;
      --DisplaySeccionFiltros: flex;
      --DireccionFlexCategoriasBuscador: column;
      --PaddingBotonAgregar: 12px;
+     --AnchoSeccionResultados: calc(100% - (var(--AnchoSeccionFiltros)));
 }
 /* Configuración General */
  *{
@@ -787,7 +788,7 @@ h4{
     {
         width: var(--AnchoSeccionFiltros);
         background-color: var(--ColorSecundario);
-        padding: var(--PaddingContenidosHome);
+        padding: var(--PaddingContenidosResultadosBusqueda);
         border-radius: var(--RadioEsquinas);
         display: var(--SeccionFiltros);
         flex-direction: column;
@@ -818,6 +819,17 @@ h4{
         padding: var(--PaddingBotonAgregar);
         font-size: var(--TamanoFuenteParrafos);
         cursor: pointer;
+    }
+    .ContenedorDefiniciones {
+        background-color: var(--ColorSecundario);
+        border-radius: var(--RadioEsquinas);
+        padding: var(--PaddingContenidosResultadosBusqueda);
+        width: var(--AnchoSeccionResultados);
+        display: flex;
+        flex-direction: column;
+        height: -webkit-fill-available;
+        min-height: 0;
+        overflow-y: auto;
     }
 .ElementoResultado{
     display: flex;
