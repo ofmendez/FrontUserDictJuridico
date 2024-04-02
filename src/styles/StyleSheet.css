@@ -148,6 +148,10 @@ a:visited, a:active{
      margin:0 auto;
      border: 1px solid var(--ColorPlaceholder);
 }
+
+.SeparadorSeccionesOcultar{
+    display: var(--DisplaySeccionHeader);
+}
 /* Configuración Scroll */
  .ScrollVerde::-webkit-scrollbar {
      width: 9px;
@@ -772,10 +776,6 @@ a:visited, a:active{
 
 .SelectOrdenarPor {
     border: 0 solid transparent;
-}
-
-.SelectOrdenarPor:focus {
-    color: var(--ColorAcento);
 }
 
 /* ----------------- CONFIGURACIÓN TÉRMINO -----------------*/
