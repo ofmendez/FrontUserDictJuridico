@@ -8,6 +8,7 @@ import ViewMeaning from '@components/ViewMeaning.jsx';
 import { Skeletons } from '@components/Skeletons.jsx';
 // import ButtonRound from '@src/components/ButtonRound.jsx';
 // import { deleteTerm } from '@src/hooks/PostData.jsx';
+import Menu from '@src/components/Menu';
 
 const ViewTerm = () => {
 	const { id } = useParams();
