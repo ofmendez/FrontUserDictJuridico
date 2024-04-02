@@ -12,22 +12,22 @@ const TermRow = ({ term, isExpanded,  home }) => {
 	};
 	return (
 		<>
-			<tr>
-				{home
-					? (<td>{term.term}</td>)
-					: (
-						<td>
-							<summary>
-								<span className='dj-link'>{term.term}</span>
-							</summary>
-						</td>
-					)}
-				<td className='TablaTextoCentrado'>
-					<Link to={`/terms/${term._id}`}>
+			<Link to={`/terms/${term._id}`}>
+				<tr>
+					{home
+						? (<td>{term.term}</td>)
+						: (
+							<td>
+								<summary>
+									<span className='dj-link'>{term.term}</span>
+								</summary>
+							</td>
+						)}
+					<td className='TablaTextoCentrado'>
 						<img className='IconoAbrir' src={IconoAbrir} />
-					</Link>
-				</td>
-			</tr>
+					</td>
+				</tr>
+			</Link>
 			{isExpanded && printSortedDescriptors(term.meanings)}
 		</>
 	);
