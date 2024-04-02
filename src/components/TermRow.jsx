@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import {  IconoVer } from '@components/icons.js';
+import {  IconoAbrir } from '@components/icons.js';
 import TermInnerRow from '@components/TermInnerRow.jsx';
 
 const TermRow = ({ term, isExpanded,  home }) => {
@@ -24,7 +24,7 @@ const TermRow = ({ term, isExpanded,  home }) => {
 					)}
 				<td className='TablaTextoCentrado'>
 					<Link to={`/terms/${term._id}`}>
-						<img className='IconosTabla' src={IconoVer} />
+						<img className='IconosTabla' src={IconoAbrir} />
 					</Link>
 				</td>
 			</tr>
