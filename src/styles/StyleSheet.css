@@ -99,6 +99,7 @@
      --DireccionFlexCategoriasBuscador: column;
      --PaddingBotonAgregar: 12px;
      --AnchoSeccionResultados: calc(100% - (var(--AnchoSeccionFiltros)));
+     --PaddingResultadosBusqueda:2vh;
 }
 /* Configuración General */
  *{
@@ -787,6 +788,7 @@ h4{
 .FlexListaTerminos{
     display:flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /* ----------------- CONFIGURACIÓN RESULTADOS -----------------*/
@@ -862,6 +864,11 @@ h4{
     width: 100%;
     gap: 2vw;
     flex-direction: var(--OrientacionBusqueda);
+}
+
+.ResultadoBusqueda{
+    padding-top: var(--PaddingResultadosBusqueda);
+    padding-bottom: var(--PaddingResultadosBusqueda);
 }
 
 /* ----------------- CONFIGURACIÓN TÉRMINO -----------------*/
