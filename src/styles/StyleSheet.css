@@ -11,6 +11,7 @@
      --ColorTexto: #000000;
      --ColorTextoAcento: #ffffff;
      --ColorPlaceholder: #CECECE;
+     --ColorResaltado: #17c64f22;
     /*Estilos*/
      --MargenesContenido:6%;
      --MarginElementos:1%;
@@ -163,7 +164,9 @@ h4{
      margin:0 auto;
      border: 1px solid var(--ColorPlaceholder);
 }
-
+mark{
+    background-color: var(--ColorResaltado);
+}
 .SeparadorSeccionesOcultar{
     display: var(--DisplaySeccionHeader);
 }
@@ -203,6 +206,12 @@ h4{
 }
  .ContenedorAplicativo{
      background-color: var(--ColorFondos);
+}
+
+.ResultadoBusquedaSeparador{
+    display:block;
+    border: 0 solid transparent;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 /* ----------------- CONFIGURACIÓN PÁGINA CONTENIDO -----------------*/
@@ -869,6 +878,10 @@ h4{
 .ResultadoBusqueda{
     padding-top: var(--PaddingResultadosBusqueda);
     padding-bottom: var(--PaddingResultadosBusqueda);
+}
+
+.ResultadoBusquedaTermino{
+    font-weight: var(--FuenteNegrilla);
 }
 
 /* ----------------- CONFIGURACIÓN TÉRMINO -----------------*/
