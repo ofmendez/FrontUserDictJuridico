@@ -87,9 +87,11 @@
      --SeccionPalabraDelDiaAtajoDisplay: block;
      /*Pagina Favoritos*/
      --SeparadorFavoritos: 8px;
-
      /*Página Términos*/
      --PaddingContenidosHome: 8%;
+     /* Pagina Resultados*/
+     --DisplayBotonSeccionFiltros: block;
+     --OrientacionBusqueda: column;
 }
 /* Configuración General */
  *{
@@ -767,6 +769,10 @@ a:visited, a:active{
 }
 
 /* ----------------- CONFIGURACIÓN RESULTADOS -----------------*/
+.SeccionBotonFiltros{
+    display: var(--DisplayBotonSeccionFiltros);
+}
+
 .ElementoResultado{
     display: flex;
     flex-direction: row;
@@ -779,6 +785,13 @@ a:visited, a:active{
 .SelectOrdenarPor {
     border: 0 solid transparent;
     outline: none;
+}
+
+.SeccionContenidoPaginaBuscador {
+    display: flex;
+    width: 100%;
+    gap: 2vw;
+    flex-direction: var(--OrientacionBusqueda);
 }
 
 /* ----------------- CONFIGURACIÓN TÉRMINO -----------------*/

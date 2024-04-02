@@ -41,6 +41,9 @@
         --SeccionDerechaValorLeft: auto;
         --SeccionDerechaValorRight: 0;
         --SeccionesDerechaMenuAncho:25vw;
+        /*Resultados Busqueda*/
+        --DisplayBotonSeccionFiltros: none;
+        --OrientacionBusqueda: row;
    }
    /* Animaciones Menú */
     .slide-in {
