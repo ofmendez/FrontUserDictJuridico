@@ -44,6 +44,7 @@
         /*Resultados Busqueda*/
         --DisplayBotonSeccionFiltros: none;
         --OrientacionBusqueda: row;
+        --DisplaySeccionFiltros: block;
    }
    /* Animaciones Menú */
     .slide-in {

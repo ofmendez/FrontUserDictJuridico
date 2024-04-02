@@ -44,6 +44,7 @@
      --TamanoFuenteTitulosH1: 22px;
      --TamanoFuenteTitulosH2: 22px;
      --TamanoFuenteTitulosH3: 20px;
+     --TamanoFuenteTitulosH3: 14px;
      --TamanoFuenteParrafos: 14px;
      --TamanoFuenteMenor: 12px;
      --FuenteTipografia: 'Poppins', sans-serif;
@@ -92,6 +93,11 @@
      /* Pagina Resultados*/
      --DisplayBotonSeccionFiltros: block;
      --OrientacionBusqueda: column;
+     --AnchoSeccionFiltros:20%;
+     --PaddingContenidosHome: 32px;
+     --DisplaySeccionFiltros: flex;
+     --DireccionFlexCategoriasBuscador: column;
+     --PaddingBotonAgregar: 12px;
 }
 /* Configuración General */
  *{
@@ -141,6 +147,11 @@ a:visited, a:active{
      font-size: var(--TamanoFuenteTitulosH3) !important;
      font-weight: var(--FuenteNegrilla);
      line-height: 1em;
+}
+h4{
+    font-size: var(--TamanoFuenteTitulosH4) !important;
+    font-weight: var(--FuenteNegrilla);
+    line-height: 1em;
 }
  ul{
      list-style: none;
@@ -772,7 +783,42 @@ a:visited, a:active{
 .SeccionBotonFiltros{
     display: var(--DisplayBotonSeccionFiltros);
 }
+.SeccionContenidoBuscadorFiltros
+    {
+        width: var(--AnchoSeccionFiltros);
+        background-color: var(--ColorSecundario);
+        padding: var(--PaddingContenidosHome);
+        border-radius: var(--RadioEsquinas);
+        display: var(--SeccionFiltros);
+        flex-direction: column;
+        height: -webkit-fill-available;
+        min-height: 0;
+    }
 
+    .CategoriasBuscador {
+        display: flex;
+        flex-direction: var(--DireccionFlexCategoriasBuscador);
+        width: 100%;
+    }
+    .LabelBuscadorFiltros {
+        font-size: var(--TamanoFuenteParrafos);
+        color: var(--ColorTexto);
+        font-weight: var(--FuenteRegular);
+        text-align: justify;
+        line-height: 1.2em;
+    }
+    .SubmitBusquedaFiltros {
+        display: block;
+        text-align: center;
+        width: 100%;
+        border: 0 solid transparent;
+        background-color: var(--ColorAcento);
+        color: var(--ColorSecundario);
+        border-radius: var(--RadioEsquinas);
+        padding: var(--PaddingBotonAgregar);
+        font-size: var(--TamanoFuenteParrafos);
+        cursor: pointer;
+    }
 .ElementoResultado{
     display: flex;
     flex-direction: row;
