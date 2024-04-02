@@ -8,7 +8,6 @@ const SearchResults = ({ results }) => {
 			<h3>Resultados</h3>
 			<div className='ContenedorResultadosScroll ScrollVerde'>
 				{results.length === 0 && <><br /><p>No se encontraron resultados</p></>}
-				<br />
 				{results.map((r, i) =>
 					<div key={i}>
 
