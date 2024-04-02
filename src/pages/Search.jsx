@@ -41,8 +41,10 @@ const Search = () => {
 			<div className='ContenidoPagina' id='SeccionContenidoHome'>
 				<div className='ContenidoUnaColumna'>
 					<Skeletons on={loadingTerm} msg='Cargando'>
-						<SearchFilters contents={contents} subjects={subjects} searchParams={searchParams} />
-						<SearchResults results={results} />
+						<div className='SeccionContenidoBuscadorFiltros'>
+							<SearchFilters contents={contents} subjects={subjects} searchParams={searchParams} />
+							<SearchResults results={results} />
+						</div>
 					</Skeletons>
 				</div>
 			</div>
