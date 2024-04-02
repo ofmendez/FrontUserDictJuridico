@@ -13,24 +13,23 @@ const TermRow = ({ term, isExpanded,  home }) => {
 	return (
 		<>
 			<tr>
-			<Link to={`/terms/${term._id}`}>
 				{home
 					? (<td>{term.term}</td>)
 					: (
 						<td>
 							<summary>
-								<span className='dj-link'>{term.term}</span>
+								<Link to={`/terms/${term._id}`}>
+									<span className='dj-link'>{term.term}</span>
+								</Link>
 							</summary>
 						</td>
 					)}
 				<td className='TablaTextoCentrado'>
-					
+					<Link to={`/terms/${term._id}`}>
 						<img className='IconoAbrir' src={IconoAbrir} />
-					
+					</Link>
 				</td>
-				</Link>
 			</tr>
-			
 			{isExpanded && printSortedDescriptors(term.meanings)}
 		</>
 	);
