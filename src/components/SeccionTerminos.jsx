@@ -36,8 +36,8 @@ const SeccionTerminos = (props, ref) => {
 					</Skeletons>
 				)
 				:	(
-					<div className='SeccionContenidoHome' id='SeccionContenidoHome'>
-								<MainsSeparator />
+					<div className='ContenidoPagina' id='SeccionContenidoHome'>
+								
 						<Skeletons on={loadingTerms} msg='Cargando'>
 							<div className='SelectOrdenarPor'>
 									<span>Ordenar por:  </span>
