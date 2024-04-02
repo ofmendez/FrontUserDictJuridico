@@ -853,6 +853,9 @@ mark{
         flex-direction: column;
         height: -webkit-fill-available;
         min-height: 0;
+    }
+
+    .ContenedorResultadosScroll{
         overflow-y: auto;
     }
 .ElementoResultado{
