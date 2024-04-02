@@ -820,6 +820,9 @@ h4{
         font-size: var(--TamanoFuenteParrafos);
         cursor: pointer;
     }
+    .SubmitBusquedaFiltros:active, .SubmitBusquedaFiltros:visited, .SubmitBusquedaFiltros:hover  {
+        color: var(--ColorSecundario);
+    }
     .ContenedorDefiniciones {
         background-color: var(--ColorSecundario);
         border-radius: var(--RadioEsquinas);
