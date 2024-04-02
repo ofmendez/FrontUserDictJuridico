@@ -17,13 +17,13 @@ const TermsSearchForm = ({ searchParams }) => {
 	};
 
 	return (
-		<div className='SeccionSuperiorHerramientas' id='SeccionMensajeEstadisticas'>
+		<div>
 			<div className='SeccionContenedorBuscador'>
 				<div className='SeccionBuscador'>
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
-						<div className='SeccionInputBuscadorCompleto'>
+						<div className='SeccionInputBuscador'>
 							<img className='IconoLupa' src={IconoLupa} />
-							<input ref={inputRef} defaultValue={searchParams.get('q')} className='InputBuscadorCompleto' type='text' placeholder='Buscar' name='q' />
+							<input ref={inputRef} defaultValue={searchParams.get('q')} className='InputBuscador' type='text' placeholder='Buscar' name='q' />
 						</div>
 						<Link
 							onClick={handleSubmit}
