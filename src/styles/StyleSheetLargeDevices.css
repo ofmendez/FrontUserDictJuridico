@@ -27,6 +27,7 @@
         --AlturaIconosConfiguracion: 18px;
        /* Ocultar Elementos */
         --OcultarElemento: none;
+        --DisplaySeccionHeader: none;
        /*Buscador*/
         --BuscadorPaddingLupa:2%;
         --BuscadorDisplayBoton: block;
