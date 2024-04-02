@@ -784,6 +784,11 @@ h4{
     margin-bottom: var(--PaddingElementos);
 }
 
+.FlexListaTerminos{
+    display:flex;
+    flex-direction: column;
+}
+
 /* ----------------- CONFIGURACIÓN RESULTADOS -----------------*/
 .SeccionBotonFiltros{
     display: var(--DisplayBotonSeccionFiltros);
