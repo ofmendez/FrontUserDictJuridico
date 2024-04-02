@@ -208,7 +208,7 @@ h4{
 
 /* Configuración Contenedor Página */
 .ContenidoPagina{
-    padding: calc(var(--MargenesContenido)/2) var(--MargenesContenido) var(--MargenesContenido) var(--MargenesContenido);
+    /*padding: calc(var(--MargenesContenido)/2) var(--MargenesContenido) var(--MargenesContenido) var(--MargenesContenido);*/
     width: var(--SeccionesDerechaAncho);
     /* margin-left: var(--SeccionesDerechaMenuAncho); */
 }
