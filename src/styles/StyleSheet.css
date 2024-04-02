@@ -247,6 +247,7 @@ mark{
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+    height: 840px; /* Falta definir esta altura con un JavaScript */
 }
 
 /* ----------------- CONFIGURACIÓN LOGIN -----------------*/
