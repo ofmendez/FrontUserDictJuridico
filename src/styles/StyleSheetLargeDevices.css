@@ -45,6 +45,7 @@
         --DisplayBotonSeccionFiltros: none;
         --OrientacionBusqueda: row;
         --DisplaySeccionFiltros: block;
+        --AnchoSeccionFiltros:32%;
    }
    /* Animaciones Menú */
     .slide-in {

@@ -32,6 +32,8 @@
          --SeccionPalabraDelDiaAtajoDisplay: none;
           /*Página Términos*/
      --PaddingContenidosHome: 2%;
+     /*Pagina Resultados */
+     --AnchoSeccionFiltros:25%;
     }
      #ContenedorMenuConfiguracion{
          transform: translate(-50%,50%);
@@ -57,6 +59,15 @@
          padding-left: calc(var(--MargenesContenido)/2);
     }
 }
+
+/* ------------------------- SECCION FILTROS MAX WIDTH ------------------------- */
+@media only screen and (min-width: 15.0px) {
+    :root{
+         /*Pagina Resultados */
+     --AnchoSeccionFiltros:20%;
+   }
+}
+
 /* ------------------------- MAX MENU SIZE ------------------------- */
  @media only screen and (min-width: 1250px) {
      :root{
