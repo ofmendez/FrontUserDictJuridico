@@ -778,6 +778,7 @@ a:visited, a:active{
 
 .SelectOrdenarPor {
     border: 0 solid transparent;
+    outline: none;
 }
 
 /* ----------------- CONFIGURACIÓN TÉRMINO -----------------*/
