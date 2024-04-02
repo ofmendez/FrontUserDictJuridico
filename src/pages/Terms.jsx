@@ -29,7 +29,7 @@ const Terms = () => {
 						<img className="LogoPrincipal" src={LogoPositivo} />
 					</div>
 				</div>
-				<div className="SeparadorSecciones">
+				<div className="SeparadorSecciones SeparadorSeccionesOcultar">
 				</div>
 				<div className="SeccionBuscador">
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
