@@ -24,7 +24,7 @@ const TermRow = ({ term, isExpanded,  home }) => {
 					)}
 				<td className='TablaTextoCentrado'>
 					<Link to={`/terms/${term._id}`}>
-						<img className='IconosTabla' src={IconoVer} />
+						<img className='IconosTabla' src={IconoAbrir} />
 					</Link>
 				</td>
 			</tr>
