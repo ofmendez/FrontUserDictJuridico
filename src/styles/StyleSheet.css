@@ -211,7 +211,6 @@ h4{
     /*padding: calc(var(--MargenesContenido)/2) var(--MargenesContenido) var(--MargenesContenido) var(--MargenesContenido);*/
     width: var(--SeccionesDerechaAncho);
     padding-top: 30px;
-    flex-direction: column;
     /* margin-left: var(--SeccionesDerechaMenuAncho); */
 }
 
