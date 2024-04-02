@@ -863,6 +863,12 @@ justify-content: space-between;
 .IconosTabla{
 	height:var(--AlturaIconosTabla);
 }
+
+.EnlaceTerminosTabla{
+    display: block;
+    width:100%;
+    color: var(--ColorTexto);
+}
 .opacity07{
 	opacity: 0.7;
 }

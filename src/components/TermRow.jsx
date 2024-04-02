@@ -19,7 +19,7 @@ const TermRow = ({ term, isExpanded,  home }) => {
 						<td>
 							<summary>
 								<Link to={`/terms/${term._id}`}>
-									<span className='dj-link'>{term.term}</span>
+									<span className='dj-link EnlaceTerminosTabla'>{term.term}</span>
 								</Link>
 							</summary>
 						</td>
