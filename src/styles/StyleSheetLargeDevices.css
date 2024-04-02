@@ -30,7 +30,7 @@
         --DisplaySeccionHeader: none;
        /*Buscador*/
         --BuscadorPaddingLupa:2%;
-        --BuscadorDisplayBoton: block;
+        --BuscadorDisplayBoton: flex;
         --BuscadorInputWidth: 80%;
         --BuscadorSubmitWidth:20%;
         --BuscadorSeparaciónSubmit: 2%;

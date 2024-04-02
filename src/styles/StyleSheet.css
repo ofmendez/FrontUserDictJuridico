@@ -601,6 +601,8 @@ a:visited, a:active{
      font-size: var(--TamanoFuenteParrafos);
      cursor: pointer;
 	min-width: 120px;
+    align-items: center;
+    justify-content: center;
 }
 .SubmitBusqueda:visited{
 	color: var(--ColorTextoAcento);
