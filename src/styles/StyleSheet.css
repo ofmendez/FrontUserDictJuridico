@@ -350,6 +350,9 @@ mark{
      border: none;
 	  color: var(--ColorTextoAcento);
 }
+.MenuLateralLista li button:hover {
+    text-decoration: underline;
+}
  .MenuLateral a:visited, .MenuLateral a:active, .MenuLateral a{
      color: white;
 }

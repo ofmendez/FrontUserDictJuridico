@@ -15,7 +15,9 @@ const Menu = ({children}) => {
 			<div id="ContenedorMenuLateral">
 				<div className="MenuLateral" id="MenuLateral">
 					<div className="MenuLateralSeccion">
+					<a href="/">
 						<img className="LogoMenuLateral" src={LogoBlanco} />
+					</a>
 						<ul className="MenuLateralLista">
 							<li>
 								<a href="/">
