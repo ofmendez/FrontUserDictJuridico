@@ -33,9 +33,26 @@ const ViewTerm = () => {
 		<Menu >
 			<div className='SeccionSuperiorHerramientas'>
 				<Skeletons on={loadingTerm} msg='Cargando'>
-					<div className='SeccionBuscador'>
+
+				<div className="SeccionBuscador">
+					<form className='FormaBuscador' onSubmit={handleSubmit}>
+						<div className="SeccionInputBuscador">
+							<img className="IconoLupa" src={IconoLupa} />
+							<input value={inputText} onChange={e => setInputText(e.target.value)} className='InputBuscador' type='text' placeholder='Ingresa un término' name='buscar' />
+						</div>
+						<Link
+							onClick={handleSubmit}
+							className={'SubmitBusqueda' + (inputText ? '' : ' noPointerEvents opacity07')}
+						>
+							BUSCAR
+						</Link>
+					</form>
+				</div>
+
+
+					
 						<h1>{term.term}</h1>
-					</div>
+					
 					<div className='SeccionDerechaBotones'>
 						{/* <ButtonRound onClick={handleDelete} ico={IconoEliminar} /> */}
 						{/* <Link className='BotonAgregar' to={'../edit/' + id}>

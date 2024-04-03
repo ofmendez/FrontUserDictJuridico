@@ -252,7 +252,7 @@ mark{
     display: flex;
     flex-direction: row;
     column-gap: 20px;
-    height: 840px; /* Falta definir esta altura con un JavaScript */
+    height: 840px; /* NOTA: Falta definir esta altura con un JavaScript */
 }
 
 /* ----------------- CONFIGURACIÓN LOGIN -----------------*/
@@ -900,11 +900,19 @@ mark{
     cursor: pointer !important;
 } 
 
+.SeccionContenidoDefiniciones {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    row-gap: 20px;
+    max-height: 72svh;  /* NOTA: Falta definir la altura del contenedor automáticamente */
+    overflow-y: scroll;
+}
+
 .ContenidoDefinicion{
     background-color: var(--ColorSecundario);
     padding: var(--PaddingContenidosResultadosBusqueda);
     border-radius: var(--RadioEsquinas);
-    margin-bottom: 32px;
 }
 
 /* ----------------- CONFIGURACIÓN DEFINICIÓN  -----------------*/
