@@ -1,4 +1,4 @@
-import { IcoInicio, IconoLogout, IconoSitioWeb } from "./icons";
+import { IcoInicio, IconoLogout, IconoSitioWeb, IcoTerminos } from "./icons";
 import { LogoBlanco } from "./img";
 
 const Menu = ({children}) => {
@@ -25,8 +25,8 @@ const Menu = ({children}) => {
 							</li>
 							<li>
 								<a href="/terms">
-									<div className="ContenedorItemMenuLateral ItemMenuActivo">
-										<img className="IconosMenuLateral" src={IcoInicio} /> Términos</div>
+									<div className="ContenedorItemMenuLateral">
+										<img className="IconosMenuLateral" src={IcoTerminos} /> Términos</div>
 								</a>
 							</li>
 							<li>
