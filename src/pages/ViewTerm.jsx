@@ -48,11 +48,10 @@ const ViewTerm = () => {
 						</Link>
 					</form>
 				</div>
-
-
-					
+				
+					<div className='SeccionBuscador'>
 						<h1>{term.term}</h1>
-					
+					</div>
 					<div className='SeccionDerechaBotones'>
 						{/* <ButtonRound onClick={handleDelete} ico={IconoEliminar} /> */}
 						{/* <Link className='BotonAgregar' to={'../edit/' + id}>
