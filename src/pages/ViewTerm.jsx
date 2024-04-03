@@ -45,7 +45,7 @@ const ViewTerm = () => {
 					</div>
 				</Skeletons>
 			</div>
-			<div className='SeccionContenidoDefiniciones'>
+			<div className='SeccionContenidoDefiniciones ScrollVerde'>
 				<Skeletons on={loadingTerm}>
 					{
 						term.meanings?.map((el, i) => (<ViewMeaning meaning={el} key={i} />))
