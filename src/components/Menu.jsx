@@ -32,7 +32,7 @@ const Menu = ({children}) => {
 								</a>
 							</li>
 							<li>
-								<a href="https://diccionarioexplore.com/">
+								<a href="https://diccionarioexplore.com/" target="_blank">
 									<div className="ContenedorItemMenuLateral">
 										<img className="IconosMenuLateral" src={IconoSitioWeb} /> Visita el Sitio Web</div>
 								</a>
