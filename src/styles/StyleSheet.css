@@ -156,6 +156,11 @@ h4{
     font-weight: var(--FuenteNegrilla);
     line-height: 1em;
 }
+
+.Negrilla{
+    font-weight: var(--FuenteNegrilla);
+}
+
  ul{
      list-style: none;
 }
@@ -894,6 +899,13 @@ mark{
 .ContenedorTermino{
     cursor: pointer !important;
 } 
+
+.ContenidoDefinicion{
+    background-color: var(--ColorSecundario);
+    padding: var(--PaddingContenidosResultadosBusqueda);
+    border-radius: var(--RadioEsquinas);
+    margin-bottom: 32px;
+}
 
 /* ----------------- CONFIGURACIÓN DEFINICIÓN  -----------------*/
 .TituloDefinicionIcono{

@@ -4,9 +4,9 @@ const ViewMeaning = ({ meaning }) => {
 		<div className='ContenidoDefinicion'>
 			<div className='ContenedorSuperiorDefinicion'>
 				<div>
-					<p className='InformacionDefinicion'>DESCRIPTOR: {meaning.descriptor}</p>
-					<p className='InformacionDefinicion'>AÑO: {meaning.year}</p>
-					<p className='InformacionDefinicion'>MATERIA: {meaning.subject}</p>
+					<p className='InformacionDefinicion'><span className="Negrilla">DESCRIPTOR: {meaning.descriptor}</span></p>
+					<p className='InformacionDefinicion'><span className="Negrilla">AÑO:</span> {meaning.year}</p>
+					<p className='InformacionDefinicion'><span className="Negrilla">MATERIA:</span> {meaning.subject}</p>
 				</div>
 			</div>
 			<div className='SeparadorSecciones' />
@@ -16,7 +16,7 @@ const ViewMeaning = ({ meaning }) => {
 				</p>
 			</div>
 			<div className='SeparadorSecciones' />
-			<p className='InformacionDefinicion'>FUENTE: {meaning.source}</p>
+			<p className='InformacionDefinicion'><span className="Negrilla">FUENTE:</span> {meaning.source}</p>
 		</div>
 	);
 };
