@@ -1,4 +1,3 @@
-/* eslint-disable operator-linebreak */
 import '@styles/Skeleton.css';
 import '@styles/Loading.css';
 

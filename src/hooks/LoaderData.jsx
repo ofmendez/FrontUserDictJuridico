@@ -22,6 +22,14 @@ const loadTerm = ({ loadingTerm, setLoadingTerm, setTerm, id }) => {
 		});
 };
 
+const loadRandomTerm = ({ loadingTerm, setLoadingTerm, setRandomTerm}) => {
+	if (loadingTerm === 'ok') return;
+	fetchData({ setLoadinng: setLoadingTerm, path: `/terms/random` }).then((d) => setRandomTerm(d[0]))
+		.catch((err) => {
+			console.log(err);
+		});
+};
+
 const fetchData = ({ setLoadinng, path }) => {
 	return new Promise((resolve, reject) => {
 		const myHeaders = new Headers();
@@ -63,4 +71,4 @@ const processError = (err) => {
 	return err;
 };
 
-export { loadUsers, loadTerms, loadTerm };
+export { loadUsers, loadTerms, loadTerm, loadRandomTerm };

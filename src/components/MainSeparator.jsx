@@ -3,5 +3,10 @@ const MainsSeparator = () => {
 		<div className='SeparadorSeccionPrincipal' />
 	);
 };
+export const SectionsSeparator = () => {
+	return (
+		<div className='SeparadorSecciones' />
+	);
+};
 
 export default MainsSeparator;

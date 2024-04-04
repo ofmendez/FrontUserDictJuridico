@@ -1,44 +1,28 @@
 import { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 import Iframe from 'react-iframe';
 import { LogoPositivo } from '@components/img.js';
 
 // eslint-disable-next-line no-unused-vars
 import { IcoCronologia, IcoInicio, IcoUsuarios, IconoAbrir, IconoAgregarFavorito, IconoAtras, IconoCerrar, IconoConfiguracion, IconoFavoritos, IconoLupa, IconoMenu, IconoModoClaro, IconoModoOscuro, IconoSitioWeb, IconoTerminosReal } from '@components/icons.js';
-import { Link, useNavigate } from 'react-router-dom';
-import Menu from '@src/components/Menu';
+import SeccionPalabraDelDia from '@src/components/SeccionPalabraDelDia.jsx';
+import Menu from '@src/components/Menu.jsx';
+import { loadRandomTerm } from '@src/hooks/LoaderData.jsx';
+import { Skeletons } from '@src/components/Skeletons';
+
 
 const Home = () => {
 	const [inputText, setInputText] = useState('');
+	const [randomTerm, setRandomTerm] = useState(null);
+	const [loadingTerm, setLoadingTerm] = useState('init');
+
+
 	const navigate = useNavigate();
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		navigate(`./terms/search?q=${inputText}&content=term%252Cmeanings.descriptor%252Cmeanings.definition%252Cmeanings.source`);
 	};
-	useEffect(() => {
-		// Logic for token check and sending 'requestToken' message
-		const token = localStorage.getItem('token');
-		if (!token) {
-			console.log('SENDING MESSAGE---->');
-			window.parent.postMessage('requestToken', 'https://diccionarioexplore.com');
-		}
-
-		// Listener for receiving tihe token
-		// const listener = (event) => {
-		// 	console.log('MESSAGE ARRIVE 2 : ', event);
-		// 	console.log('data.authtoken : ', event.data.authToken);
-		// 	if (event.origin === 'https://diccionarioexplore.com' && event.data.authToken) {
-		// 		localStorage.setItem('token', event.data.authToken);
-		// 		console.log('TOKEN RECEIVED : ', event.data.authToken);
-		// 		// Proceed with actions when logged in 
-		// 	}
-		// };
-		// window.addEventListener('message', listener);
-
-		// Cleanup function (important to prevent memory leaks!)
-		return () => {
-			// window.removeEventListener('message', listener);
-		}
-	}, []); // Empty dependency array: Execute the effect only once on mount
+	useEffect(() => loadRandomTerm({ loadingTerm, setLoadingTerm, setRandomTerm }), []);
 
 
 	return (
@@ -158,7 +142,10 @@ const Home = () => {
 						<div className="SeparadorSecciones">
 
 						</div>
-						<div className="SeccionBusquedasRecientes">
+						<Skeletons on={loadingTerm} msg='Cargando'>
+							<span>No hay búsquedas recientes.</span>
+						</Skeletons>
+						{/* <div className="SeccionBusquedasRecientes">
 							<a href="Results.html">
 								<div className="ElementoBusquedaReciente">
 									<div className="TextoBusquedaReciente">Regalías</div>
@@ -181,7 +168,7 @@ const Home = () => {
 									<img className="IconoAbrir" src={IconoAbrir} />
 								</div>
 							</div>
-						</div>
+						</div> */}
 						<div className="SeccionTodosLosTerminos">
 							<div className="SeparadorSeccionPrincipal">
 
@@ -205,15 +192,9 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="ColumnaDerechaDesaparece">
-						<div className="SeccionPalabraDelDiaWidget">
-							<h2>Palabra del día</h2>
-							<div className="SeparadorSecciones">
-
-							</div>
-							<div className="ContenidoPalabradelDia">
-								
-							</div>
-						</div>
+					<Skeletons on={loadingTerm} msg='Cargando'>
+						<SeccionPalabraDelDia randomTerm={randomTerm}/>
+					</Skeletons>
 					</div>
 					<div id="AlturaAtajosAsignada">
 
