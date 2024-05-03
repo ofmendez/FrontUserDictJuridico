@@ -690,8 +690,11 @@ mark{
      background-color: var(--ColorSecundario);
      color: var(--ColorTexto);
      font-size: var(--TamanoFuenteParrafos);
-     padding: calc(var(--PaddingElementos)*4);
+     padding: var(--PaddingResultadosBusqueda);
      border-radius: var(--RadioEsquinas);
+     height: 79vh;
+     overflow-y: auto;
+     padding-right: 16px;
 }
  .ContenedorPalabraIconoWidgetPalabraDelDia{
      display: flex;
