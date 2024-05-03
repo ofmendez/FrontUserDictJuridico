@@ -682,7 +682,7 @@ mark{
      padding: calc(var(--PaddingElementos)*4);
      border-radius: var(--RadioEsquinas);
 }
- .ContenidoPalabradelDia{
+ .ContenidoPalabraDelDia{
      background-color: var(--ColorSecundario);
      color: var(--ColorTexto);
      font-size: var(--TamanoFuenteParrafos);

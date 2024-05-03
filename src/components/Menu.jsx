@@ -80,6 +80,9 @@ const Menu = ({children}) => {
 						© 2024 Explore Diccionario
 						Jurídico Minero-Energético.
 					</div>
+					<div className="MenuLateralSeccion InformacionPropiedadAplicativo">
+						Desarrollado por <a href="https://ricaurteruedaabogados.com/" target="_blank">Ricaurte Rueda Abogados</a>.
+					</div>
 				</div>
 			</div>
 			<div className="SeccionHeaderFija" >
