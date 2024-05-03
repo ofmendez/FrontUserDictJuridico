@@ -18,7 +18,6 @@ const ViewTerm = () => {
 	const [loadingTerm, setLoadingTerm] = useState('init');
 	const [inputText, setInputText] = useState('');
 	const navigate = useNavigate();
-	// const navigate = useNavigate();
 
 	useEffect(() => { loadTerm({ id, loadingTerm, setLoadingTerm, setTerm }); }, []);
 
@@ -59,7 +58,7 @@ const ViewTerm = () => {
 
 			<div className='SeccionSuperiorHerramientas'>
 				<Skeletons on={loadingTerm} msg='Cargando'>
-					<div className='SeccionBuscador'>
+					<div class="ContenedorTerminosExpandidos">
 						<h1>{term.term}</h1>
 					</div>
 					<div className='SeccionDerechaBotones'>

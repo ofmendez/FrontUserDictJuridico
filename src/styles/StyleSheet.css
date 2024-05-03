@@ -910,6 +910,10 @@ mark{
 }
 
 /* ----------------- CONFIGURACIÓN TÉRMINO -----------------*/
+.ContenedorTerminosExpandidos{
+    padding-top:30px;
+}
+
 .ContenedorTermino{
     cursor: pointer !important;
 } 
