@@ -4,6 +4,7 @@ import {  useParams } from 'react-router-dom';
 // import ContentFrame from '@components/ContentFrame.jsx';
 // import { IconoEditar } from '@components/icons.js';
 import { loadTerm } from '@src/hooks/LoaderData.jsx';
+import { IconoLupa } from '@components/icons.js';
 import ViewMeaning from '@components/ViewMeaning.jsx';
 import { Skeletons } from '@components/Skeletons.jsx';
 // import ButtonRound from '@src/components/ButtonRound.jsx';
