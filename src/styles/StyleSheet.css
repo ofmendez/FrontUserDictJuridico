@@ -678,6 +678,14 @@ mark{
      opacity: 1;
 }
 /*Configuración Palabra del día Widget */
+
+.SeccionPalabraDelDiaWidget{
+     background-color: var(--ColorSecundario);
+     color: var(--ColorTexto);
+     font-size: var(--TamanoFuenteParrafos);
+     padding: calc(var(--PaddingElementos)*4);
+     border-radius: var(--RadioEsquinas);
+}
  .ContenidoPalabradelDia{
      background-color: var(--ColorSecundario);
      color: var(--ColorTexto);

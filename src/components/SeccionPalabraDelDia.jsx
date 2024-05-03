@@ -7,7 +7,7 @@ const SeccionPalabraDelDia = ({ randomTerm }) => {
 
 	return (
 		<div className='SeccionPalabraDelDiaWidget'>
-			<h3>Palabra aleatoria hija</h3>
+			<h3>Palabra aleatoria</h3>
 			<SectionsSeparator />
 			<div className='ContenidoPalabraDelDia ScrollVerde' >
 				<h2>
