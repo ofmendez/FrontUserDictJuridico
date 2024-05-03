@@ -4,6 +4,7 @@ import {  useParams } from 'react-router-dom';
 // import ContentFrame from '@components/ContentFrame.jsx';
 // import { IconoEditar } from '@components/icons.js';
 import { loadTerm } from '@src/hooks/LoaderData.jsx';
+import { Link, useNavigate } from 'react-router-dom';
 import { IconoLupa } from '@components/icons.js';
 import ViewMeaning from '@components/ViewMeaning.jsx';
 import { Skeletons } from '@components/Skeletons.jsx';
@@ -16,6 +17,7 @@ const ViewTerm = () => {
 	const [term, setTerm] = useState({});
 	const [loadingTerm, setLoadingTerm] = useState('init');
 	const [inputText, setInputText] = useState('');
+	const navigate = useNavigate();
 	// const navigate = useNavigate();
 
 	useEffect(() => { loadTerm({ id, loadingTerm, setLoadingTerm, setTerm }); }, []);
