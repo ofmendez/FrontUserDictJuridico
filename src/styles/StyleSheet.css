@@ -248,7 +248,7 @@ mark{
     display: flex;
     flex-direction: row;
     column-gap: 20px;
-    height: 840px; /* NOTA: Falta definir esta altura con un JavaScript */
+    height: 86svh; /* NOTA: Falta definir esta altura con un JavaScript */
 }
 
 /* ----------------- CONFIGURACIÓN LOGIN -----------------*/
@@ -920,7 +920,7 @@ mark{
     margin-top: 30px;
     padding-right: 20px;
     row-gap: 20px;
-    max-height: 72svh;  /* NOTA: Falta definir la altura del contenedor automáticamente */
+    max-height: 80vh;  /* NOTA: Falta definir la altura del contenedor automáticamente */
     overflow-y: auto;
 }
 
