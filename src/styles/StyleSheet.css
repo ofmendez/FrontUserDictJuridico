@@ -679,14 +679,13 @@ mark{
      background-color: var(--ColorSecundario);
      color: var(--ColorTexto);
      font-size: var(--TamanoFuenteParrafos);
-     padding: calc(var(--PaddingElementos)*4);
+     padding: var(--PaddingContenidosResultadosBusqueda);
      border-radius: var(--RadioEsquinas);
 }
  .ContenidoPalabraDelDia{
      background-color: var(--ColorSecundario);
      color: var(--ColorTexto);
      font-size: var(--TamanoFuenteParrafos);
-     padding: var(--PaddingResultadosBusqueda);
      border-radius: var(--RadioEsquinas);
      height: 79vh;
      overflow-y: auto;
