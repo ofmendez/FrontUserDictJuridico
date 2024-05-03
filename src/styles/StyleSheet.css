@@ -686,7 +686,6 @@ mark{
      background-color: var(--ColorSecundario);
      color: var(--ColorTexto);
      font-size: var(--TamanoFuenteParrafos);
-     border-radius: var(--RadioEsquinas);
      height: 79vh;
      overflow-y: auto;
      padding-right: 16px;

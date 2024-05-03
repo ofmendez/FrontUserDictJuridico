@@ -77,10 +77,10 @@ const Menu = ({children}) => {
 						</ul>
 					</div>
 					<div className="MenuLateralSeccion InformacionPropiedadAplicativo">
-						© 2024 Explore Diccionario
-						Jurídico Minero-Energético.
+						<p>© 2024 Explore Diccionario
+						Jurídico Minero-Energético.</p>
 					
-						Desarrollado por <a href="https://ricaurteruedaabogados.com/" target="_blank">Ricaurte Rueda Abogados</a>.
+						<p>Desarrollado por <a href="https://ricaurteruedaabogados.com/" target="_blank">Ricaurte Rueda Abogados</a>.</p>
 					</div>
 				</div>
 			</div>
