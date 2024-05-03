@@ -15,6 +15,7 @@ const ViewTerm = () => {
 	const { id } = useParams();
 	const [term, setTerm] = useState({});
 	const [loadingTerm, setLoadingTerm] = useState('init');
+	const [inputText, setInputText] = useState('');
 	// const navigate = useNavigate();
 
 	useEffect(() => { loadTerm({ id, loadingTerm, setLoadingTerm, setTerm }); }, []);
