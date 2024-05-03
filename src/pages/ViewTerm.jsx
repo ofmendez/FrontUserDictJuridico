@@ -28,6 +28,11 @@ const ViewTerm = () => {
 	// 	deleteTerm({ id, setLoadingTerm, handleDonePost: doneDelete });
 	// };
 
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		navigate(`./search?q=${inputText}&content=term%252Cmeanings.descriptor%252Cmeanings.definition%252Cmeanings.source`);
+	};
+
 	return (
 		// <ContentFrame>
 		<>
