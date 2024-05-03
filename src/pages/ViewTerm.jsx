@@ -40,11 +40,8 @@ const ViewTerm = () => {
 		// <ContentFrame>
 		<>
 		<Menu >
-			<div className='SeccionSuperiorHerramientas'>
-				<Skeletons on={loadingTerm} msg='Cargando'>
 
-
-				<div className="SeccionBuscador">
+		<div className="SeccionBuscador">
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
 						<div className="SeccionInputBuscador">
 							<img className="IconoLupa" src={IconoLupa} />
@@ -60,8 +57,8 @@ const ViewTerm = () => {
 				</div>
 
 
-
-
+			<div className='SeccionSuperiorHerramientas'>
+				<Skeletons on={loadingTerm} msg='Cargando'>
 					<div className='SeccionBuscador'>
 						<h1>{term.term}</h1>
 					</div>
