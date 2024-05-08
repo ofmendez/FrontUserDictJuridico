@@ -1,4 +1,3 @@
-
 const NoPage = () => {
 	return (
 		// Add grid styles to center two elements together and vertical center them

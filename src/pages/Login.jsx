@@ -42,7 +42,6 @@ const Login = () => {
 		};
 
 		// window.addEventListener('message', listener);
-
 		// Cleanup function (in case you need it)
 		return () => {
 			window.removeEventListener('message', listener);

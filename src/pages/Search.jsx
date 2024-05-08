@@ -36,22 +36,22 @@ const Search = () => {
 	return (
 		// <ContentFrame>
 		<>
-			<Menu	>
-			<TermsSearchForm searchParams={searchParams} />
-			<div className='ContenidoPagina' id='ContenidoPagina'>
-				<div className='SeccionContenidoHome' id='SeccionContenidoHome'>
-					<Skeletons on={loadingTerm} msg='Cargando'>
-						<div className='SeccionContenidoPaginaBuscador'>
-							<SearchFilters contents={contents} subjects={subjects} searchParams={searchParams} />
-							<SearchResults results={results} />
-						</div>
-					</Skeletons>
+			<Menu>
+				<TermsSearchForm searchParams={searchParams} />
+				<div className='ContenidoPagina' id='ContenidoPagina'>
+					<div className='SeccionContenidoHome' id='SeccionContenidoHome'>
+						<Skeletons on={loadingTerm} msg='Cargando'>
+							<div className='SeccionContenidoPaginaBuscador'>
+								<SearchFilters contents={contents} subjects={subjects} searchParams={searchParams} />
+								<SearchResults results={results} />
+							</div>
+						</Skeletons>
+					</div>
 				</div>
-			</div>
 			</Menu>
 		</>
 
-		// </ContentFrame>
+	// </ContentFrame>
 	);
 };
 

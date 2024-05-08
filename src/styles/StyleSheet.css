@@ -1025,3 +1025,24 @@ justify-content: space-between;
 	padding-left: var(--BuscadorPaddingLupa);
 	font-size: var(--TamanoFuenteParrafos);
 }
+
+.highlight{
+	animation: highlight 0.3s 2 ease-in-out;
+}
+
+.descriptor_row{
+	color: var(--ColorTexto);
+}
+
+@keyframes highlight {
+	0% {
+		background-color: var(--ColorSecundario)
+	}
+	/* with --ColorAcento but half opacity */
+	50% {
+		background-color: rgba(23, 198, 79, 0.5);
+	}
+	100% {
+		background-color: var(--ColorSecundario)
+	}
+}

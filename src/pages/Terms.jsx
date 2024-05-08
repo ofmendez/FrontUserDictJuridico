@@ -11,7 +11,7 @@ const Terms = () => {
 	const [inputText, setInputText] = useState('');
 	const navigate = useNavigate();
 	const termsRef = useRef(null);
-	
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		navigate(`./search?q=${inputText}&content=term%252Cmeanings.descriptor%252Cmeanings.definition%252Cmeanings.source`);
@@ -20,21 +20,22 @@ const Terms = () => {
 	return (
 		// <ContentFrame>
 		<>
-			<Menu >
-				<div className="SeccionHeader">
-					<div className="SeccionHeaderIzquierda"><a onClick={console.log("abrirMenuLateral()")}>
-						<img className="IconoMenu" src={IconoMenu} /></a>
+			<Menu>
+				<div className='SeccionHeader'>
+					<div className='SeccionHeaderIzquierda'>
+						<a onClick={console.log('abrirMenuLateral()')}>
+							<img className='IconoMenu' src={IconoMenu} />
+						</a>
 					</div>
-					<div className="SeccionHeaderDerecha">
-						<img className="LogoPrincipal" src={LogoPositivo} />
+					<div className='SeccionHeaderDerecha'>
+						<img className='LogoPrincipal' src={LogoPositivo} />
 					</div>
 				</div>
-				<div className="SeparadorSecciones SeparadorSeccionesOcultar">
-				</div>
-				<div className="SeccionBuscador">
+				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
+				<div className='SeccionBuscador'>
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
-						<div className="SeccionInputBuscador">
-							<img className="IconoLupa" src={IconoLupa} />
+						<div className='SeccionInputBuscador'>
+							<img className='IconoLupa' src={IconoLupa} />
 							<input value={inputText} onChange={e => setInputText(e.target.value)} className='InputBuscador' type='text' placeholder='Ingresa un término' name='buscar' />
 						</div>
 						<Link
@@ -45,12 +46,11 @@ const Terms = () => {
 						</Link>
 					</form>
 				</div>
-				<div className='SeccionSuperiorHerramientas' id='SeccionMensajeEstadisticas'>
-				</div>
+				<div className='SeccionSuperiorHerramientas' id='SeccionMensajeEstadisticas' />
 				<SeccionTerminos rowsState={{ expandedRows, setExpandedRows }} ref={termsRef} />
 			</Menu>
 		</>
-		//  </ContentFrame> 
+		//  </ContentFrame>
 	);
 };
 export default Terms;

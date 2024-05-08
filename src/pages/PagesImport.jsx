@@ -6,4 +6,4 @@ import ViewTerm from '@src/pages/ViewTerm.jsx';
 import Search from '@src/pages/Search.jsx';
 import Login from '@src/pages/Login.jsx';
 
-export { Terms, Users, NoPage, Home, ViewTerm, Search , Login};
+export { Terms, Users, NoPage, Home, ViewTerm, Search, Login };

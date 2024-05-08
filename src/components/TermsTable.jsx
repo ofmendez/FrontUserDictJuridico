@@ -1,7 +1,7 @@
 import TermRow from '@components/TermRow.jsx';
 import '@styles/Loading.css';
 
-const TermsTable = ({ tableClass, terms, showBy, rowsState, home, order }) => {
+const TermsTable = ({ tableClass, terms, showBy, rowsState, home, order, avSubjects }) => {
 	const aviableOrders = {
 		asc: (a, b) => a.term.localeCompare(b.term),
 		desc: (a, b) => b.term.localeCompare(a.term)
@@ -14,12 +14,15 @@ const TermsTable = ({ tableClass, terms, showBy, rowsState, home, order }) => {
 			<TermRow
 				key={term._id} showBy={showBy} term={term} home={home}
 				isExpanded={isExpanded(term._id)}
+				onExpand={() => rowsState?.setExpandedRows([...rowsState.expandedRows, term._id])}
+				onCollapse={() => rowsState?.setExpandedRows(rowsState?.expandedRows.filter((id) => id !== term._id))}
+				avSubjects={avSubjects}
 			/>
 		);
 	};
 	return (
 		<table className={tableClass}>
-			<thead></thead>
+			<thead />
 			<tbody>
 				{printSortedTerms(terms, showBy, rowsState)}
 			</tbody>

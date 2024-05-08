@@ -17,7 +17,7 @@ const SearchFilters = ({ contents, subjects, searchParams }) => {
 		setTarget(getTarget());
 	};
 
-	function getTarget() {
+	function getTarget () {
 		const trueContents = Object.keys(contents.current).filter((key) => contents.current[key]);
 		const trueSubjects = Object.keys(subjects.current).filter((key) => subjects.current[key]);
 		const encodedContents = encodeURIComponent(trueContents.join(','));

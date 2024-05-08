@@ -6,10 +6,14 @@ import SeccionPalabraDelDia from '@components/SeccionPalabraDelDia.jsx';
 import MainsSeparator from '@components/MainSeparator.jsx';
 import TermsTable from '@components/TermsTable.jsx';
 import { loadTerms } from '@src/hooks/LoaderData.jsx';
+import TermsFilters from '@components/TermsFilters.jsx';
+
 
 const SeccionTerminos = (props, ref) => {
 	const [terms, setTerms] = useState([]);
 	const [loadingTerms, setLoadingTerms] = useState('init');
+	const [avSubjects, setAvSubjects] = useState({ Jurisprudencia: true, Doctrina: true, Norma: true });
+
 	const [order, setOrder] = useState('asc');
 	useEffect(() => loadTerms({ loadingTerms, setLoadingTerms, setTerms }), []);
 	useImperativeHandle(ref, () => ({ getTerms: () => terms }));
@@ -37,6 +41,7 @@ const SeccionTerminos = (props, ref) => {
 				)
 				:	(
 					<div className='ContenidoPagina' id='SeccionContenidoHome'>
+						<TermsFilters setAvSubjects={setAvSubjects} avSubjects={avSubjects} />
 								
 						<Skeletons on={loadingTerms} msg='Cargando'>
 							<div className='FlexListaTerminos'>
@@ -52,7 +57,9 @@ const SeccionTerminos = (props, ref) => {
 									<h3>Términos</h3>
 									<MainsSeparator />
 									<div className='ContenedorTabla ScrollVerde table-container'>
-										<TermsTable tableClass='TablaUsuarios' showBy terms={terms} rowsState={props.rowsState} order={order}/>
+										<TermsTable tableClass='TablaUsuarios' showBy 
+										terms={terms} rowsState={props.rowsState} order={order}
+										avSubjects={avSubjects}/>
 									</div>
 								</div>
 							</div>

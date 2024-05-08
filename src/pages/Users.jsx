@@ -45,8 +45,7 @@ const Users = () => {
 					<h3>En construccción!!</h3>
 					<MainsSeparator />
 					<div className='ContenedorTabla ScrollVerde'>
-						<table className='TablaUsuarios'>
-						</table>
+						<table className='TablaUsuarios' />
 					</div>
 				</div>
 			</div>
