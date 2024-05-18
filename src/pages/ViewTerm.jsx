@@ -15,7 +15,7 @@ const ViewTerm = () => {
 	const [loadingTerm, setLoadingTerm] = useState('init');
 	const [inputText, setInputText] = useState('');
 	const navigate = useNavigate();
-	const subjectOrder = ['Norma', 'Jurisprudencia', 'Doctrina'];
+	const subjectOrder = ['Norma', 'Jurisprudencia', 'Doctrina', 'MATERIA'];
 	// const targetParagraphRef = useRef(null);
 
 	useEffect(() => { loadTerm({ id, loadingTerm, setLoadingTerm, setTerm }); }, []);
