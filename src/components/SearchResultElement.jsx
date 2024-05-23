@@ -11,34 +11,37 @@ const SearchResultElement = ({ r }) => {
 			allText += t.value;
 			return null;
 		});
-		const meaningMatch = r.meanings.find(m => {
-			let dbText = '';
+		let meaningMatch = null;
+		if (r.meanings)
+			meaningMatch = r.meanings.find(m => {
+				let dbText = '';
 
-			switch (path) {
-			case 'term':
-				dbText = m.term;
-				break;
-			case 'meanings.descriptor':
-				dbText = m.descriptor;
-				break;
-			case 'meanings.definition':
-				dbText = m.definition;
-				break;
-			case 'meanings.source':
-				dbText = m.source;
-				break;
-			default:
-				break;
-			}
-			if (r.term === 'Barequeo') {
-				console.log('path:', path);
-				console.log('dbText:', dbText);
-			}
+				switch (path) {
+				case 'term':
+					dbText = m.term;
+					break;
+				case 'meanings.descriptor':
+					dbText = m.descriptor;
+					break;
+				case 'meanings.definition':
+					dbText = m.definition;
+					break;
+				case 'meanings.source':
+					dbText = m.source;
+					break;
+				default:
+					break;
+				}
+				// if (r.term === 'Barequeo') {
+				// 	console.log('path:', path);
+				// 	console.log('dbText:', dbText);
+				// }
 
-			return dbText.includes(allText);
-		});
-		if (r.term === 'Barequeo')
-			console.log('meaningMatch:', meaningMatch);
+				return dbText.includes(allText);
+			});
+
+		// if (r.term === 'Barequeo')
+		// 	console.log('meaningMatch:', meaningMatch);
 
 		if (meaningMatch)
 			return meaningMatch._id;
