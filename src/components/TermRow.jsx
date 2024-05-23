@@ -29,14 +29,17 @@ const TermRow = ({ term, isExpanded, onExpand, onCollapse, home, avSubjects }) =
 			if (avSubjects && avSubjects[m.subject])
 				return (
 					<TermInnerRow
-						key={`0${index}-${j}`}
+						// key={`0${index}-${j}`}
+						key={`${m._id}`}
 						idTerm={idTerm}
-						idDesc={`0${index}-${j}`}
+						// idDesc={`0${index}-${j}`}
+						idDesc={`${m._id}`}
 						descriptor={m.descriptor}
 					/>
 				);
 			else
-				return <React.Fragment key={`0${index}-${j}`} />;
+				return <React.Fragment key={`${m._id}`} />;
+				// return <React.Fragment key={`0${index}-${j}`} />;
 		});
 	}
 	return (

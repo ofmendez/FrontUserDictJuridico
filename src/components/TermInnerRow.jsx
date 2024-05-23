@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 const TermInnerRow = ({ descriptor, idTerm, idDesc }) => {
 	return (
 		<tr>
-			<Link className='descriptor_row' to={`/terms/${idTerm}#${idDesc}`}>
-				<td>
+			<td>
+				<Link className='descriptor_row' to={`/terms/${idTerm}#${idDesc}`}>
 					•&nbsp; {descriptor}
-				</td>
-			</Link>
+				</Link>
+			</td>
 		</tr>
 	);
 };

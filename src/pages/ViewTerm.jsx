@@ -39,23 +39,30 @@ const ViewTerm = () => {
 	}
 
 	// eslint-disable-next-line no-unused-vars
-	const
-		printSortedDescriptors 	= (meanings, _) => {
-			console.log('meanings:', meanings);
-			let result = [];
-			for (let i = 0; i < subjectOrder.length; i++) {
-				const sortedMean = meanings?.filter((m) => m.subject === subjectOrder[i]).sort((a, b) => {
-					if (a.year === b.year)
-						return a.descriptor.localeCompare(b.descriptor);
-					return b.year - a.year;
-				});
-				result = result.concat(printMeanings(sortedMean, i));
-			}
-			return result;
-		};
+	const printSortedDescriptors 	= (meanings, _) => {
+		console.log('meanings:', meanings);
+		let result = [];
+		for (let i = 0; i < subjectOrder.length; i++) {
+			const sortedMean = meanings?.filter((m) => m.subject === subjectOrder[i]).sort((a, b) => {
+				if (a.year === b.year)
+					return a.descriptor.localeCompare(b.descriptor);
+				return b.year - a.year;
+			});
+			result = result.concat(printMeanings(sortedMean, i));
+		}
+		return result;
+	};
 
 	function printMeanings (sortedMean, index) {
-		return sortedMean?.map((m, j) => <ViewMeaning meaning={m} key={`0${index}-${j}`} id={`0${index}-${j}`} query={searchParams.get('q')} />);
+		return sortedMean?.map((m, j) =>
+			<ViewMeaning
+				meaning={m}
+				// key={`0${index}-${j}`}
+				// id={`0${index}-${j}`}
+				key={`${m._id}`}
+				id={`${m._id}`}
+				query={searchParams.get('q')}
+			/>);
 	}
 
 	useEffect(() => {
