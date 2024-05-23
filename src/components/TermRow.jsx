@@ -26,6 +26,8 @@ const TermRow = ({ term, isExpanded, onExpand, onCollapse, home, avSubjects }) =
 	};
 	function printMeanings (sortedMean, index, idTerm) {
 		return sortedMean.map((m, j) => {
+			if (!m._id)
+				console.warn('DAÑADO!!!!!!');
 			if (avSubjects && avSubjects[m.subject])
 				return (
 					<TermInnerRow
