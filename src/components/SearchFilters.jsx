@@ -79,7 +79,6 @@ const SearchFilters = ({ contents, subjects, searchParams }) => {
 					<input type='checkbox' id='SeccionFuente' name='meanings.source' value='SeccionFuente' defaultChecked={contents.current['meanings.source']} />
 					<label className='LabelBuscadorFiltros'> Fuente</label>
 					<br />
-					<br />
 					<div>
 						<Link
 							to={target}

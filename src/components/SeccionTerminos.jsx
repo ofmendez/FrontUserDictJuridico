@@ -41,7 +41,7 @@ const SeccionTerminos = (props, ref) => {
 				:	(
 					<div className='ContenidoPagina' id='SeccionContenidoHome'>
 						<TermsFilters setAvSubjects={setAvSubjects} avSubjects={avSubjects} />
-
+						<MainsSeparator />
 						<Skeletons on={loadingTerms} msg='Cargando'>
 							<div className='FlexListaTerminos'>
 								<div className='SelectOrdenarPor'>

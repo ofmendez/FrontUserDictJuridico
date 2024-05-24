@@ -825,7 +825,7 @@ mark{
         background-color: var(--ColorSecundario);
         padding: 2vw;
         border-radius: var(--RadioEsquinas);
-        display: var(--SeccionFiltros);
+        display: var(--DisplaySeccionFiltros);
         flex-direction: column;
         height: auto;
         min-height: 0;
