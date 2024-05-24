@@ -32,6 +32,7 @@
          --SeccionPalabraDelDiaAtajoDisplay: none;
           /*Página Términos*/
      --PaddingContenidosHome: 2%;
+     --FlexDirectionInputFiltros: column;
      /*Pagina Resultados */
      --AnchoSeccionFiltros:25%;
     }

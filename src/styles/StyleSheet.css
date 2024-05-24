@@ -97,6 +97,7 @@
      --AnchoSeccionFiltros:20%;
      --PaddingContenidosResultadosBusqueda: 32px;
      --DisplaySeccionFiltros: flex;
+     --FlexDirectionInputFiltros: row;
      --DireccionFlexCategoriasBuscador: column;
      --PaddingBotonAgregar: 12px;
      --AnchoSeccionResultados: calc(100% - (var(--AnchoSeccionFiltros)));
@@ -833,7 +834,7 @@ mark{
 
     .ContenedorInputFiltros{
         display: flex;
-        flex-direction: var(--DireccionFlexCategoriasBuscador);
+        flex-direction: var(--FlexDirectionInputFiltros);
     }
 
     .CategoriasBuscador {
