@@ -251,6 +251,7 @@ mark{
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+    width:100%;
     height: 86svh; /* NOTA: Falta definir esta altura con un JavaScript */
 }
 
