@@ -52,14 +52,20 @@ const SearchFilters = ({ contents, subjects, searchParams }) => {
 					<div className='CategoriasBuscador'>
 						<h4>Materia</h4>
 					</div>
-					<input type='checkbox' id='MateriaJurisprudencia' name='Jurisprudencia' value='MateriaJurisprudencia' defaultChecked={subjects.current.Jurisprudencia} />
-					<label className='LabelBuscadorFiltros'> Jurisprudencia</label>
-					<br />
-					<input type='checkbox' id='MateriaDoctrina' name='Doctrina' value='MateriaDoctrina' defaultChecked={subjects.current.Doctrina} />
-					<label className='LabelBuscadorFiltros'> Doctrina</label>
-					<br />
+					<div className='ContenedorInputFiltros'>
+					<div>
+						<input type='checkbox' id='MateriaJurisprudencia' name='Jurisprudencia' value='MateriaJurisprudencia' defaultChecked={subjects.current.Jurisprudencia} />
+						<label className='LabelBuscadorFiltros'> Jurisprudencia</label>
+					</div>
+					<div>
+						<input type='checkbox' id='MateriaDoctrina' name='Doctrina' value='MateriaDoctrina' defaultChecked={subjects.current.Doctrina} />
+						<label className='LabelBuscadorFiltros'> Doctrina</label>
+					</div>
+					<div>
 					<input type='checkbox' id='MateriaNorma' name='Norma' value='MateriaNorma' defaultChecked={subjects.current.Norma} />
 					<label className='LabelBuscadorFiltros'> Norma</label>
+					</div>
+					</div>
 					<br />
 					<br />
 				</form>
