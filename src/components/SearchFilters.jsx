@@ -68,10 +68,10 @@ const SearchFilters = ({ contents, subjects, searchParams }) => {
 					</div>
 					<br />
 				</form>
-				<div>
-					<h4>Sección contenido</h4>
-				</div>
 				<form className='FormaBuscadorFiltros' onChange={handleChangeContents}>
+					<div className='CategoriasBuscador'>
+						<h4>Sección contenido</h4>
+					</div>
 					<div className='ContenedorInputFiltros'>
 						<div>
 							<input type='checkbox' id='SeccionTermino' name='term' value='SeccionTermino' defaultChecked={contents.current.term} />

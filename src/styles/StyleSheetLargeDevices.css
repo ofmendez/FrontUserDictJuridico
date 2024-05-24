@@ -46,6 +46,7 @@
         --DisplayBotonSeccionFiltros: none;
         --DisplaySeccionFiltros: block;
         --AnchoSeccionFiltros:100%;
+        --AnchoSeccionResultados:100%;
    }
    /* Animaciones Menú */
     .slide-in {
