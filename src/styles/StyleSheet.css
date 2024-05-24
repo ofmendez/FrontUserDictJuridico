@@ -220,6 +220,7 @@ mark{
 /* Configuración Contenedor Página */
 .ContenidoPagina{
     padding-top: 30px;
+    gap:1.5vw;
 }
 
 .ContenedorDefiniciones{
@@ -822,11 +823,11 @@ mark{
     {
         width: var(--AnchoSeccionFiltros);
         background-color: var(--ColorSecundario);
-        padding: var(--PaddingContenidosResultadosBusqueda);
+        padding: 2vw;
         border-radius: var(--RadioEsquinas);
         display: var(--SeccionFiltros);
         flex-direction: column;
-        height: -webkit-fill-available;
+        height: auto;
         min-height: 0;
     }
 
