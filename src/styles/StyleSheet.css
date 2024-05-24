@@ -835,7 +835,6 @@ a.descriptor_row {
         display: var(--DisplaySeccionFiltros);
         flex-direction: column;
         height: auto;
-        min-height: 0;
     }
 
     .ContenedorInputFiltros{
