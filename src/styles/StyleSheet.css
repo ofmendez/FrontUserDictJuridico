@@ -819,6 +819,7 @@ mark{
 
 a.descriptor_row {
     padding-left: 30px;
+    display: inline-block;
 }
 
 /* ----------------- CONFIGURACIÓN RESULTADOS -----------------*/

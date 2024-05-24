@@ -36,6 +36,7 @@
      --AlignItemsInputFiltros:flex-start;
      /*Pagina Resultados */
      --AnchoSeccionFiltros:25%;
+     --OrientacionBusqueda: row;
     }
      #ContenedorMenuConfiguracion{
          transform: translate(-50%,50%);

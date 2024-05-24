@@ -44,7 +44,6 @@
         --SeccionesDerechaMenuAncho:25vw;
         /*Resultados Busqueda*/
         --DisplayBotonSeccionFiltros: none;
-        --OrientacionBusqueda: row;
         --DisplaySeccionFiltros: block;
         --AnchoSeccionFiltros:100%;
    }
