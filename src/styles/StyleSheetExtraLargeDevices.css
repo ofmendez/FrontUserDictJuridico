@@ -33,6 +33,7 @@
           /*Página Términos*/
      --PaddingContenidosHome: 2%;
      --FlexDirectionInputFiltros: column;
+     --AlignItemsInputFiltros:flex-start;
      /*Pagina Resultados */
      --AnchoSeccionFiltros:25%;
     }

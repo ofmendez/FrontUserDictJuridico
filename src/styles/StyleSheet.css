@@ -98,6 +98,7 @@
      --PaddingContenidosResultadosBusqueda: 32px;
      --DisplaySeccionFiltros: flex;
      --FlexDirectionInputFiltros: row;
+     --AlignItemsInputFiltros: center;
      --DireccionFlexCategoriasBuscador: column;
      --PaddingBotonAgregar: 12px;
      --AnchoSeccionResultados: calc(100% - (var(--AnchoSeccionFiltros)));
@@ -221,7 +222,7 @@ mark{
 /* Configuración Contenedor Página */
 .ContenidoPagina{
     padding-top: 30px;
-    gap:1.5vw;
+    gap:12px;
 }
 
 .ContenedorDefiniciones{
@@ -835,7 +836,13 @@ mark{
     .ContenedorInputFiltros{
         display: flex;
         flex-direction: var(--FlexDirectionInputFiltros);
-        gap: 10px;
+        column-gap: 15px;
+        align-items: var(--AlignItemsInputFiltros);
+    }
+
+    .ContenedorInputFiltros div {
+        display: flex;
+        gap: 5px;
         align-items: center;
     }
 
