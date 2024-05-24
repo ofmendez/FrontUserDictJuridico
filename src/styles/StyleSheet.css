@@ -817,6 +817,10 @@ mark{
     width: 100%;
 }
 
+a.descriptor_row {
+    padding-left: 30px;
+}
+
 /* ----------------- CONFIGURACIÓN RESULTADOS -----------------*/
 .SeccionBotonFiltros{
     display: var(--DisplayBotonSeccionFiltros);
@@ -837,6 +841,7 @@ mark{
         display: flex;
         flex-direction: var(--FlexDirectionInputFiltros);
         column-gap: 15px;
+        row-gap: 8px;
         align-items: var(--AlignItemsInputFiltros);
     }
 
@@ -850,6 +855,7 @@ mark{
         display: flex;
         flex-direction: var(--DireccionFlexCategoriasBuscador);
         width: 100%;
+        padding-bottom:12px;
     }
     .LabelBuscadorFiltros {
         font-size: var(--TamanoFuenteParrafos);
