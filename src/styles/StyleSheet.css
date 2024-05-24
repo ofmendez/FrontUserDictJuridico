@@ -125,6 +125,11 @@ a:visited, a:active{
     color:var(--ColorTexto)
 }
 
+::marker {
+    color: var(--ColorAcento);
+    font-size: 12px;
+}
+
  p{
      font-size: var(--TamanoFuenteParrafos);
      color: var(--ColorTexto);
