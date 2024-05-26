@@ -43,8 +43,11 @@ const SearchResultElement = ({ r }) => {
 		// if (r.term === 'Barequeo')
 		// 	console.log('meaningMatch:', meaningMatch);
 
-		if (meaningMatch)
+		if (meaningMatch) {
+			console.log('meaningMatch 1:', meaningMatch);
 			return meaningMatch._id;
+		}
+		console.log('meaningMatch: 2', meaningMatch);
 		return r._id;
 	};
 	return (
