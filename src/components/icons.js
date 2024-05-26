@@ -18,7 +18,7 @@ import IconoCancelar from '@ico/Cancelar.svg';
 import IconoPassword from '@ico/Contrasena.svg';
 import IconoEmail from '@ico/Email.svg';
 import IconoFiltrar from '@ico/Filtrar.svg';
-//user
+// user
 import IconoFavoritos from '@ico/Favoritos.svg';
 import IconoSitioWeb from '@ico/SitioWeb.svg';
 import IconoConfiguracion from '@ico/Configuracion.svg';

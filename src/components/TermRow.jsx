@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 import { IconoAbrir } from '@components/icons.js';
 import TermInnerRow from '@components/TermInnerRow.jsx';
 import React from 'react';
@@ -25,23 +24,19 @@ const TermRow = ({ term, isExpanded, onExpand, onCollapse, home, avSubjects }) =
 		return result;
 	};
 	function printMeanings (sortedMean, index, idTerm) {
-		return sortedMean.map((m, j) => {
+		return sortedMean.map((m, _) => {
 			if (!m._id)
 				console.warn('DAÑADO!!!!!!');
 			if (avSubjects && avSubjects[m.subject])
 				return (
 					<TermInnerRow
-						// key={`0${index}-${j}`}
 						key={`${m._id}`}
 						idTerm={idTerm}
-						// idDesc={`0${index}-${j}`}
-						idDesc={`${m._id}`}
-						descriptor={m.descriptor}
+						meaning={m}
 					/>
 				);
 			else
 				return <React.Fragment key={`${m._id}`} />;
-				// return <React.Fragment key={`0${index}-${j}`} />;
 		});
 	}
 	return (

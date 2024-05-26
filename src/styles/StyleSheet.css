@@ -1062,6 +1062,10 @@ justify-content: space-between;
 	color: var(--ColorTexto);
 }
 
+.snippet{
+	opacity: 0.4;
+}
+
 @keyframes highlight {
 	0% {
 		background-color: var(--ColorSecundario)

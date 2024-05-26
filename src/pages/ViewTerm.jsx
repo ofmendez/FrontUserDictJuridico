@@ -1,12 +1,10 @@
-import { useEffect, useState } from 'react';
 import { useParams, useSearchParams, Link, useNavigate } from 'react-router-dom';
-// import ContentFrame from '@components/ContentFrame.jsx';
-import { loadTerm } from '@src/hooks/LoaderData.jsx';
+import { useEffect, useState } from 'react';
 import { IconoLupa } from '@components/icons.js';
-import ViewMeaning from '@components/ViewMeaning.jsx';
 import { Skeletons } from '@components/Skeletons.jsx';
+import { loadTerm } from '@src/hooks/LoaderData.jsx';
+import ViewMeaning from '@components/ViewMeaning.jsx';
 import Menu from '@components/Menu.jsx';
-// import ButtonRound from '@src/components/ButtonRound.jsx';
 
 const ViewTerm = () => {
 	const { id } = useParams();
@@ -16,7 +14,6 @@ const ViewTerm = () => {
 	const [inputText, setInputText] = useState('');
 	const navigate = useNavigate();
 	const subjectOrder = ['Norma', 'Jurisprudencia', 'Doctrina', 'MATERIA'];
-	// const targetParagraphRef = useRef(null);
 
 	useEffect(() => { loadTerm({ id, loadingTerm, setLoadingTerm, setTerm }); }, []);
 
@@ -53,12 +50,10 @@ const ViewTerm = () => {
 		return result;
 	};
 
-	function printMeanings (sortedMean, index) {
-		return sortedMean?.map((m, j) =>
+	function printMeanings (sortedMean, _) {
+		return sortedMean?.map((m, _) =>
 			<ViewMeaning
 				meaning={m}
-				// key={`0${index}-${j}`}
-				// id={`0${index}-${j}`}
 				key={`${m._id}`}
 				id={`${m._id}`}
 				query={searchParams.get('q')}
@@ -82,7 +77,6 @@ const ViewTerm = () => {
 		// <ContentFrame>
 		<>
 			<Menu>
-
 				<div className='SeccionBuscador'>
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
 						<div className='SeccionInputBuscador'>
@@ -108,7 +102,6 @@ const ViewTerm = () => {
 					<Skeletons on={loadingTerm}>
 						{
 							printSortedDescriptors(term.meanings, 0)
-						// term.meanings?.map((el, i) => (<ViewMeaning meaning={el} key={i} id={i} />))
 						}
 					</Skeletons>
 				</div>
