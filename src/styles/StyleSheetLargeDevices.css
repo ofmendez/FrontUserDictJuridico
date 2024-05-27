@@ -47,6 +47,7 @@
         --DisplaySeccionFiltros: block;
         --AnchoSeccionFiltros:100%;
         --AnchoSeccionResultados:100%;
+        --AlturaContenedorDefiniciones: -webkit-fill-available;
         /* Seccion Términos */
         --AlturaSeccionTodosLosTerminos:62svh;
          /* Pagina Termino*/

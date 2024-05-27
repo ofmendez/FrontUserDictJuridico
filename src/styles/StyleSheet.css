@@ -108,6 +108,7 @@
      --PaddingBotonAgregar: 12px;
      --AnchoSeccionResultados: 100%;
      --PaddingResultadosBusqueda:2vh;
+     --AlturaContenedorDefiniciones: 80svh;
 }
 /* Configuración General */
  *{
@@ -912,8 +913,7 @@ a.descriptor_row {
         width: var(--AnchoSeccionResultados);
         display: flex;
         flex-direction: column;
-        height: -webkit-fill-available;
-        min-height: 0;
+        height: var(--AlturaContenedorDefiniciones);
     }
 
     .ContenedorResultadosScroll{
