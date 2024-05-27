@@ -92,6 +92,7 @@
      /*Página Términos*/
      --PaddingContenidosHome: 8%;
      --PaddingFiltrosTerminos: 28px;
+     --AlturaSeccionTodosLosTerminos:55svh;
      /* Pagina Resultados*/
      --DisplayBotonSeccionFiltros: block;
      --OrientacionBusqueda: column;
@@ -816,6 +817,10 @@ mark{
     font-weight: var(--FuenteNegrilla);
     line-height: 1em;
     margin-bottom: var(--PaddingElementos);
+}
+
+.TablaTodosLosTerminos {
+    height: var(--AlturaSeccionTodosLosTerminos);
 }
 
 .FlexListaTerminos{

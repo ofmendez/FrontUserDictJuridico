@@ -44,6 +44,8 @@
         --DisplaySeccionFiltros: block;
         --AnchoSeccionFiltros:100%;
         --AnchoSeccionResultados:100%;
+        /* Seccion Términos */
+        --AlturaSeccionTodosLosTerminos:62svh;
    }
    /* Animaciones Menú */
     .slide-in {

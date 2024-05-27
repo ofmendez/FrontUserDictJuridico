@@ -10,6 +10,7 @@
          --PaddingElementos:1%;
          --PaddingInstrucciones:4%;
          --PaddingUnaColumna:20px;
+         --PaddingContenidosHome:28px;
         /*Menu Lateral*/
          --MenuAncho: 22vw;
          --MenuAnchoMaxWidth: 280px;
@@ -34,6 +35,7 @@
      --PaddingContenidosHome: 2%;
      --FlexDirectionInputFiltros: column;
      --AlignItemsInputFiltros:flex-start;
+     --AlturaSeccionTodosLosTerminos:-webkit-fill-available;
      /*Pagina Resultados */
      --AnchoSeccionFiltros:25%;
      --OrientacionBusqueda: row;
