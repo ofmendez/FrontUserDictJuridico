@@ -34,14 +34,14 @@ const SearchFilters = ({ contents, subjects, searchParams }) => {
 				{/* CAMBIAR ANCLAS A BOTONES */}
 				<a id='BotonAbrirFiltros'>
 					<div className='BotonAgregar'>
-						<img className='IconoMenu' src={IconoFiltrar} />
-						Filtrar Resultados
+						<div><img className='IconoMenu' src={IconoFiltrar} /></div>
+						<div><p>Filtrar Resultados</p></div>
 					</div>
 				</a>
 				<a id='BotonCerrarFiltros'>
 					<div className='BotonAgregar'>
-						<img className='IconoMenu' src={IconoFiltrar} />
-						Cerrar Filtros
+						<div><img className='IconoMenu' src={IconoFiltrar} /></div>
+						<div><p>Cerrar Filtros</p></div>
 					</div>
 				</a>
 			</div>
