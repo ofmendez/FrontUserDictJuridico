@@ -172,6 +172,8 @@ const Home = () => {
 							<MainsSeparator />
 							<MainsSeparator />
 							<MainsSeparator />
+							<MainsSeparator />
+							<MainsSeparator />
 							{/* <div className="DiccionarioCompleto">
 								<img className="IconoDiccionarioCompleto" src={IconoTerminosReal} />
 								<span>CONSULTA TODOS LOS TÉRMINOS</span>
