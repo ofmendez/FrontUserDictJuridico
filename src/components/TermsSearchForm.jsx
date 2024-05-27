@@ -26,9 +26,12 @@ const TermsSearchForm = ({ searchParams }) => {
 						</a>
 					</div>
 					<div className='SeccionHeaderDerecha'>
-						<img className='LogoPrincipal' src={LogoPositivo} />
+						<a href='/'>
+							<img className='LogoPrincipal' src={LogoPositivo} />
+						</a>
 					</div>
 				</div>
+				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
 			<div className='SeccionContenedorBuscador'>
 				<div className='SeccionBuscador'>
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
