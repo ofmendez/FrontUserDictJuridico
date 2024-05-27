@@ -105,7 +105,7 @@
      --AlignItemsInputFiltros: center;
      --DireccionFlexCategoriasBuscador: column;
      --PaddingBotonAgregar: 12px;
-     --AnchoSeccionResultados: calc(100% - (var(--AnchoSeccionFiltros)));
+     --AnchoSeccionResultados: 100%;
      --PaddingResultadosBusqueda:2vh;
 }
 /* Configuración General */
