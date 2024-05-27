@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
 const SearchResultElement = ({ r }) => {
-	const getMeaningId = (r) => {
+	const getDocument = (r) => {
 		if (r.highlights.length === 0)
-			return r._id;
+			return r;
 		let allText = '';
 		const bestHighlight = r.highlights.reduce((max, tmp) => max.score > tmp.score ? max : tmp);
 		const path = bestHighlight.path;
@@ -32,26 +32,12 @@ const SearchResultElement = ({ r }) => {
 				default:
 					break;
 				}
-				// if (r.term === 'Barequeo') {
-				// 	console.log('path:', path);
-				// 	console.log('dbText:', dbText);
-				// }
-
 				return dbText.includes(allText);
 			});
-
-		// if (r.term === 'Barequeo')
-		// 	console.log('meaningMatch:', meaningMatch);
-
-		if (meaningMatch) {
-			console.log('meaningMatch 1:', meaningMatch);
-			return meaningMatch._id;
-		}
-		console.log('meaningMatch: 2', meaningMatch);
-		return r._id;
+		return meaningMatch || r;
 	};
 	return (
-		<Link to={`/terms/${r._id}#${getMeaningId(r)}`} className='ResultadoBusqueda'>
+		<Link to={`/terms/${r._id}#${getDocument(r)._id}`} className='ResultadoBusqueda'>
 			<div className='ResultadoBusqueda hovered'>
 				<p className='ResultadoBusquedaTermino'>
 					{r.term}
@@ -66,6 +52,7 @@ const SearchResultElement = ({ r }) => {
 						})
 					}
 				</p>
+				<span className='snippet'> {getDocument(r).subject} {getDocument(r).year}</span>
 			</div>
 
 		</Link>
