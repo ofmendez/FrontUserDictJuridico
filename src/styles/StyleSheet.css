@@ -91,6 +91,7 @@
      --SeparadorFavoritos: 8px;
      /*Página Términos*/
      --PaddingContenidosHome: 8%;
+     --PaddingFiltrosTerminos: 28px;
      /* Pagina Resultados*/
      --DisplayBotonSeccionFiltros: block;
      --OrientacionBusqueda: column;
@@ -836,7 +837,7 @@ a.descriptor_row {
     {
         width: var(--AnchoSeccionFiltros);
         background-color: var(--ColorSecundario);
-        padding: 2vw;
+        padding: var(--PaddingFiltrosTerminos);
         border-radius: var(--RadioEsquinas);
         display: var(--DisplaySeccionFiltros);
         flex-direction: column;
