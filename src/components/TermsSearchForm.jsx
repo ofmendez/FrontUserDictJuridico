@@ -1,6 +1,7 @@
 import { useRef } from 'react';
-import { IconoLupa } from '@components/icons.js';
+import { IconoLupa, IconoMenu } from '@components/icons.js';
 import { Link, useNavigate } from 'react-router-dom';
+import { LogoPositivo } from '@components/img.js';
 
 const TermsSearchForm = ({ searchParams }) => {
 	const navigate = useNavigate();
@@ -18,6 +19,16 @@ const TermsSearchForm = ({ searchParams }) => {
 
 	return (
 		<div>
+			<div className='SeccionHeader'>
+					<div className='SeccionHeaderIzquierda'>
+						<a onClick={console.log('abrirMenuLateral()')}>
+							<img className='IconoMenu' src={IconoMenu} />
+						</a>
+					</div>
+					<div className='SeccionHeaderDerecha'>
+						<img className='LogoPrincipal' src={LogoPositivo} />
+					</div>
+				</div>
 			<div className='SeccionContenedorBuscador'>
 				<div className='SeccionBuscador'>
 					<form className='FormaBuscador' onSubmit={handleSubmit}>

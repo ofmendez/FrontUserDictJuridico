@@ -24,6 +24,8 @@
         --TamanoFuenteParrafos: 14px;
        /*Iconos*/
         --AlturaIconosConfiguracion: 18px;
+        /*Otros Elementos*/
+        --PositionSeccionHeaderFija:fixed;
        /* Ocultar Elementos */
         --OcultarElemento: none;
         --DisplaySeccionHeader: none;

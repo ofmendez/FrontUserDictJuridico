@@ -65,6 +65,7 @@
      --OcultarElemento: flex;
      --DisplaySeccionHeader: flex;
     /*Otros Elementos*/
+    --PositionSeccionHeaderFija:absolute;
      --AlturaLogoPrincipal: 40px;
      --SeparadorSeccionPrincipal: 2vh;
      --SeparadorSecciones: 2vh;
@@ -575,7 +576,7 @@ mark{
 /* ----------------- CONFIGURACIÓN HOME -----------------*/
 /* Configuración Header */
  .SeccionHeaderFija{
-     position: fixed;
+     position: var(--PositionSeccionHeaderFija);
      width:var(--SeccionesDerechaAncho);
      top: 0;
      left: var(--SeccionDerechaValorLeft);
