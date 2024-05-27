@@ -820,7 +820,7 @@ mark{
 }
 
 .TablaTodosLosTerminos {
-    height: var(--AlturaSeccionTodosLosTerminos);
+    height: var(--AlturaSeccionTodosLosTerminos) !important;
 }
 
 .FlexListaTerminos{

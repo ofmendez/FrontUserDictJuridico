@@ -32,7 +32,6 @@
         /*Sección Palabra del Día*/
          --SeccionPalabraDelDiaAtajoDisplay: none;
           /*Página Términos*/
-     --PaddingContenidosHome: 2%;
      --FlexDirectionInputFiltros: column;
      --AlignItemsInputFiltros:flex-start;
      --AlturaSeccionTodosLosTerminos:-webkit-fill-available;
