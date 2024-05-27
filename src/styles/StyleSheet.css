@@ -94,7 +94,7 @@
      /* Pagina Resultados*/
      --DisplayBotonSeccionFiltros: block;
      --OrientacionBusqueda: column;
-     --AnchoSeccionFiltros:20%;
+     --AnchoSeccionFiltros:100%;
      --PaddingContenidosResultadosBusqueda: 32px;
      --DisplaySeccionFiltros: flex;
      --FlexDirectionInputFiltros: row;

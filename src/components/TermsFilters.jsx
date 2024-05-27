@@ -8,21 +8,6 @@ const TermsFilters = ({ avSubjects, setAvSubjects }) => {
 
 	return (
 		<>
-			<div className='SeccionBotonFiltros'>
-				{/* CAMBIAR ANCLAS A BOTONES */}
-				<a id='BotonAbrirFiltros'>
-					<div className='BotonAgregar'>
-						<img className='IconoMenu' src={IconoFiltrar} />
-						Filtrar Resultados
-					</div>
-				</a>
-				<a id='BotonCerrarFiltros'>
-					<div className='BotonAgregar'>
-						<img className='IconoMenu' src={IconoFiltrar} />
-						Cerrar Filtros
-					</div>
-				</a>
-			</div>
 			<div className='SeccionContenidoBuscadorFiltros' id='SeccionFiltros'>
 				<h3>Filtros</h3>
 				<br />
