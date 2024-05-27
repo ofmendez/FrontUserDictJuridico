@@ -80,7 +80,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className='SeccionHeaderFija' id='SeccionHeaderFija'>
+			<div className='SeccionHeaderFija ContainerHomePosition' id='SeccionHeaderFija'>
 				<div className='SeccionHeader'>
 					<div className='SeccionHeaderIzquierda'>
 						<a onClick={console.log('abrirMenuLateral()')}>

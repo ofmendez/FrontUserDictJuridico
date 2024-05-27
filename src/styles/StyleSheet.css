@@ -88,12 +88,12 @@
     /*Sección Palabra del Día*/
      --SeccionPalabraDelDiaAtajoDisplay: block;
      /* Página Home*/
-     --PermitirScrollMobile:absolute;
+     --PermitirScrollMobile:fixed;
      /*Pagina Favoritos*/
      --SeparadorFavoritos: 8px;
      /*Página Términos*/
      --PaddingContenidosHome: 8%;
-     --PaddingFiltrosTerminos: 28px;
+     --PaddingFiltrosTerminos: 25px;
      --AlturaSeccionTodosLosTerminos:55svh;
      /* Pagina Resultados*/
      --DisplayBotonSeccionFiltros: block;
