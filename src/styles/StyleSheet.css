@@ -845,15 +845,11 @@ a.descriptor_row {
     display: flex;
     column-gap: 10px;
     align-items: center;
-    background-color: var(--ColorAcento);
-    border-radius: var(--RadioEsquinas);
+    background-color: transparent;
     padding: 5px;
     justify-content: center;
 }
 
-.SeccionBotonFiltros a#BotonAbrirFiltros div p, .SeccionBotonFiltros a#BotonCerrarFiltros div p{
-    color: var(--ColorTextoAcento);
-}
 .SeccionContenidoBuscadorFiltros
     {
         width: var(--AnchoSeccionFiltros);
