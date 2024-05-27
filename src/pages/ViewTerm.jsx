@@ -1,10 +1,11 @@
 import { useParams, useSearchParams, Link, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { IconoLupa } from '@components/icons.js';
+import { IconoLupa, IconoMenu } from '@components/icons.js';
 import { Skeletons } from '@components/Skeletons.jsx';
 import { loadTerm } from '@src/hooks/LoaderData.jsx';
 import ViewMeaning from '@components/ViewMeaning.jsx';
 import Menu from '@components/Menu.jsx';
+import { LogoPositivo } from '@src/components/img';
 
 const ViewTerm = () => {
 	const { id } = useParams();
@@ -77,6 +78,17 @@ const ViewTerm = () => {
 		// <ContentFrame>
 		<>
 			<Menu>
+			<div className='SeccionHeader'>
+					<div className='SeccionHeaderIzquierda'>
+						<a onClick={console.log('abrirMenuLateral()')}>
+							<img className='IconoMenu' src={IconoMenu} />
+						</a>
+					</div>
+					<div className='SeccionHeaderDerecha'>
+						<img className='LogoPrincipal' src={LogoPositivo} />
+					</div>
+				</div>
+				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
 				<div className='SeccionBuscador'>
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
 						<div className='SeccionInputBuscador'>
