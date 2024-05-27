@@ -841,8 +841,18 @@ a.descriptor_row {
 }
 
 /* ----------------- CONFIGURACIÓN RESULTADOS -----------------*/
-.SeccionBotonFiltros{
-    display: var(--DisplayBotonSeccionFiltros);
+.SeccionBotonFiltros a#BotonAbrirFiltros div, .SeccionBotonFiltros a#BotonCerrarFiltros div {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    background-color: var(--ColorAcento);
+    border-radius: var(--RadioEsquinas);
+    padding: 5px;
+    justify-content: center;
+}
+
+.SeccionBotonFiltros a#BotonAbrirFiltros div p, .SeccionBotonFiltros a#BotonCerrarFiltros div p{
+    color: var(--ColorTextoAcento);
 }
 .SeccionContenidoBuscadorFiltros
     {
