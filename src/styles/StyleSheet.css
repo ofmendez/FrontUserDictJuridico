@@ -844,6 +844,10 @@ a.descriptor_row {
 }
 
 /* ----------------- CONFIGURACIÓN RESULTADOS -----------------*/
+
+.SeccionBotonFiltros {
+    display: var(--DisplaySeccionFiltros);
+}
 .SeccionBotonFiltros a#BotonAbrirFiltros div, .SeccionBotonFiltros a#BotonCerrarFiltros div {
     display: flex;
     column-gap: 10px;
