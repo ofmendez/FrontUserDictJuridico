@@ -2,9 +2,6 @@ import { SectionsSeparator } from '@components/MainSeparator.jsx';
 
 // eslint-disable-next-line no-unused-vars
 const SeccionPalabraDelDia = ({ randomTerm }) => {
-	console.log('SeccionPalabraDelDia', randomTerm);
-	console.log('SeccionPalabraDelDia', randomTerm.term);
-
 	return (
 		<div className='SeccionPalabraDelDiaWidget'>
 			<h3>Palabra al azar</h3>

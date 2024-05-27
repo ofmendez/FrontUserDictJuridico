@@ -18,7 +18,7 @@ const SearchResultElement = ({ r }) => {
 
 				switch (path) {
 				case 'term':
-					dbText = m.term;
+					dbText = r.term;
 					break;
 				case 'meanings.descriptor':
 					dbText = m.descriptor;

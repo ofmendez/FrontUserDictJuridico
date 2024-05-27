@@ -20,18 +20,18 @@ const TermsSearchForm = ({ searchParams }) => {
 	return (
 		<div>
 			<div className='SeccionHeader'>
-					<div className='SeccionHeaderIzquierda'>
-						<a onClick={console.log('abrirMenuLateral()')}>
-							<img className='IconoMenu' src={IconoMenu} />
-						</a>
-					</div>
-					<div className='SeccionHeaderDerecha'>
-						<a href='/'>
-							<img className='LogoPrincipal' src={LogoPositivo} />
-						</a>
-					</div>
+				<div className='SeccionHeaderIzquierda'>
+					<a onClick={console.log('abrirMenuLateral()')}>
+						<img className='IconoMenu' src={IconoMenu} />
+					</a>
 				</div>
-				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
+				<div className='SeccionHeaderDerecha'>
+					<a href='/'>
+						<img className='LogoPrincipal' src={LogoPositivo} />
+					</a>
+				</div>
+			</div>
+			<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
 			<div className='SeccionContenedorBuscador'>
 				<div className='SeccionBuscador'>
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
