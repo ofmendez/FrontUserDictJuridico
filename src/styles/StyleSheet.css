@@ -93,6 +93,8 @@
      --PaddingContenidosHome: 8%;
      --PaddingFiltrosTerminos: 25px;
      --AlturaSeccionTodosLosTerminos:55svh;
+     /* Pagina Termino*/
+     --AltoContenedorDefinicionesTermino:72svh;
      /* Pagina Resultados*/
      --DisplayBotonSeccionFiltros: block;
      --OrientacionBusqueda: column;
@@ -957,7 +959,7 @@ a.descriptor_row {
     margin-top: 30px;
     padding-right: 20px;
     row-gap: 20px;
-    max-height: 72vh;  /* NOTA: Falta definir la altura del contenedor automáticamente */
+    max-height: var(--AltoContenedorDefinicionesTermino);
     overflow-y: auto;
 }
 

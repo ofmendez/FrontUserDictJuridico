@@ -47,6 +47,8 @@
         --AnchoSeccionResultados:100%;
         /* Seccion Términos */
         --AlturaSeccionTodosLosTerminos:62svh;
+         /* Pagina Termino*/
+     --AltoContenedorDefinicionesTermino:80svh;
    }
    /* Animaciones Menú */
     .slide-in {
