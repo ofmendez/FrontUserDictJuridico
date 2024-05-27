@@ -78,7 +78,7 @@ const ViewTerm = () => {
 		// <ContentFrame>
 		<>
 			<Menu>
-			<div className='SeccionHeader'>
+				<div className='SeccionHeader'>
 					<div className='SeccionHeaderIzquierda'>
 						<a onClick={console.log('abrirMenuLateral()')}>
 							<img className='IconoMenu' src={IconoMenu} />
