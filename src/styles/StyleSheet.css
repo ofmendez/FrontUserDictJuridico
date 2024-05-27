@@ -861,6 +861,7 @@ a.descriptor_row {
         column-gap: 15px;
         row-gap: 8px;
         align-items: var(--AlignItemsInputFiltros);
+        flex-wrap: wrap;
     }
 
     .ContenedorInputFiltros div {

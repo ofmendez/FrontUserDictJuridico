@@ -85,7 +85,9 @@ const ViewTerm = () => {
 						</a>
 					</div>
 					<div className='SeccionHeaderDerecha'>
-						<img className='LogoPrincipal' src={LogoPositivo} />
+						<a href='/'>
+							<img className='LogoPrincipal' src={LogoPositivo} />
+						</a>
 					</div>
 				</div>
 				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
