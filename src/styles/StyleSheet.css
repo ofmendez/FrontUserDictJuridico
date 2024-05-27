@@ -113,7 +113,7 @@
      box-sizing: border-box;
      transition: background-color 0.5s, color 0.05s, filter 0.5s, border 0.5s;
      -webkit-tap-highlight-color: transparent;
-    
+    background-color: transparent;
 }
  body{
      background-color: var(--ColorFondos);
@@ -914,6 +914,7 @@ a.descriptor_row {
 .SelectOrdenarPor {
     border: 0 solid transparent;
     outline: none;
+    background-color: transparent;
 }
 
 .SeccionContenidoPaginaBuscador {

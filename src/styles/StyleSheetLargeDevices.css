@@ -1,7 +1,4 @@
 @media only screen and (min-width: 992px) {
-    *{
-        background-color: transparent;
-   }
     :root {
        /*Estilos*/
         --MargenesContenido:2.5%;
