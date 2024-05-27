@@ -87,8 +87,6 @@
      --SeccionDerechaTamanoAutomatico: 1000px;
     /*Sección Palabra del Día*/
      --SeccionPalabraDelDiaAtajoDisplay: block;
-     /* Página Home*/
-     --PermitirScrollMobile:fixed;
      /*Pagina Favoritos*/
      --SeparadorFavoritos: 8px;
      /*Página Términos*/
@@ -575,7 +573,7 @@ mark{
 /* ----------------- CONFIGURACIÓN HOME -----------------*/
 /* Configuración Header */
  .SeccionHeaderFija{
-     position: var(--PermitirScrollMobile);
+     position: fixed;
      width:var(--SeccionesDerechaAncho);
      top: 0;
      left: var(--SeccionDerechaValorLeft);
@@ -584,6 +582,10 @@ mark{
      background-color: var(--ColorFondos);
      z-index: 5;
 }
+.ContainerHomePosition {
+    position: absolute !important;
+}
+
  .SeccionHeader{
      display: var(--DisplaySeccionHeader);
      flex-direction: row;
