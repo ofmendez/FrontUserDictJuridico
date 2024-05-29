@@ -843,6 +843,10 @@ a.descriptor_row {
     display: inline-block;
 }
 
+.descriptor_row{
+	color: var(--ColorTexto);
+}
+
 /* ----------------- CONFIGURACIÓN RESULTADOS -----------------*/
 
 .SeccionBotonFiltros {
@@ -1082,10 +1086,6 @@ justify-content: space-between;
 
 .highlight{
 	animation: highlight 0.3s 2 ease-in-out;
-}
-
-.descriptor_row{
-	color: var(--ColorTexto);
 }
 
 .snippet {

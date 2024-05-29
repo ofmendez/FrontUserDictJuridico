@@ -16,7 +16,7 @@ const TermRow = ({ term, isExpanded, onExpand, onCollapse, home, avSubjects }) =
 		for (let i = 0; i < subjectOrder.length; i++) {
 			const sortedMean = meanings.filter((m) => m.subject === subjectOrder[i]).sort((a, b) => {
 				if (a.year === b.year)
-					return a.descriptor.localeCompare(b.descriptor);
+					return a.descriptor.localeCompare(b.descriptor, undefined, { numeric: true, sensitivity: 'base' });
 				return b.year - a.year;
 			});
 			result = result.concat(printMeanings(sortedMean, i, idTerm));
