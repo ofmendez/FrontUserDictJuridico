@@ -3,29 +3,31 @@ import { Terms, Users, NoPage, Home, ViewTerm, Search, Login } from '@src/pages/
 
 import '@styles/main-styles.css';
 import PrivateRoute from '@src/context/PrivateRoute';
+import { MenuProvider } from '@src/context/MenuContext.jsx';
 import { AuthProvider } from '@src/context/AuthProvider';
 
-function App() {
-
+function App () {
 	return (
 		<Router>
 			<AuthProvider>
-				<Routes>
-					<Route path='login' element={<Login />} />
-					<Route path='' element={<PrivateRoute />}>
-						<Route index element={<Home />} />
-						<Route path='terms' element={<Outlet />}>
-							<Route index element={<Terms />} />
-							<Route path='search' element={<Search />} />
-							<Route path=':id' element={<ViewTerm />} />
+				<MenuProvider>
+					<Routes>
+						<Route path='login' element={<Login />} />
+						<Route path='' element={<PrivateRoute />}>
+							<Route index element={<Home />} />
+							<Route path='terms' element={<Outlet />}>
+								<Route index element={<Terms />} />
+								<Route path='search' element={<Search />} />
+								<Route path=':id' element={<ViewTerm />} />
+							</Route>
+							<Route path='users' element={<Users />} />
+							<Route path='*' element={<NoPage />} />
 						</Route>
-						<Route path='users' element={<Users />} />
-						<Route path='*' element={<NoPage />} />
-					</Route>
-				</Routes>
+					</Routes>
+				</MenuProvider>
 			</AuthProvider>
 		</Router>
 	);
 }
 
-export default App
+export default App;

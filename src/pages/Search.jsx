@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-// import ContentFrame from '@src/components/ContentFrame';
+import ContentFrame from '@src/components/ContentFrame';
 import SearchFilters from '@src/components/SearchFilters';
 import SearchResults from '@src/components/SearchResults';
 import { Skeletons } from '@src/components/Skeletons';
@@ -34,9 +34,9 @@ const Search = () => {
 	});
 
 	return (
-		// <ContentFrame>
-		<>
-			<Menu>
+		<ContentFrame>
+			<>
+				{/* <Menu> */}
 				<TermsSearchForm searchParams={searchParams} />
 				<div className='ContenidoPagina' id='ContenidoPagina'>
 					<div className='SeccionContenidoHome' id='SeccionContenidoHome'>
@@ -48,10 +48,10 @@ const Search = () => {
 						</Skeletons>
 					</div>
 				</div>
-			</Menu>
-		</>
+				{/* </Menu> */}
+			</>
 
-	// </ContentFrame>
+		</ContentFrame>
 	);
 };
 

@@ -87,9 +87,10 @@ const Menu = ({ children }) => {
 					</div>
 				</div>
 			</div>
-			<div className='SeccionHeaderFija'>
-				{children}
-			</div>
+			{/* <div className='SeccionHeaderFija'> */}
+			{/* <div className='SeccionHeaderFija ContainerHomePosition' id='SeccionHeaderFija'> */}
+			{children}
+			{/* </div> */}
 		</>
 
 	);

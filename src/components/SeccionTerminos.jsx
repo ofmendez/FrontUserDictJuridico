@@ -39,7 +39,8 @@ const SeccionTerminos = (props, ref) => {
 					</Skeletons>
 				)
 				:	(
-					<div className='ContenidoPagina' id='SeccionContenidoHome'>
+					// <div className='ContenidoPagina' id='SeccionContenidoHome'>
+					<>
 						<TermsFilters setAvSubjects={setAvSubjects} avSubjects={avSubjects} />
 						<MainsSeparator />
 						<Skeletons on={loadingTerms} msg='Cargando'>
@@ -65,7 +66,8 @@ const SeccionTerminos = (props, ref) => {
 								</div>
 							</div>
 						</Skeletons>
-					</div>
+					</>
+					// </div>
 				)
 	);
 };

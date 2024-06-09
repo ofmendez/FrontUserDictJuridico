@@ -6,6 +6,7 @@ import { loadTerm } from '@src/hooks/LoaderData.jsx';
 import ViewMeaning from '@components/ViewMeaning.jsx';
 import Menu from '@components/Menu.jsx';
 import { LogoPositivo } from '@src/components/img';
+import ContentFrame from '@src/components/ContentFrame.jsx';
 
 const ViewTerm = () => {
 	const { id } = useParams();
@@ -75,9 +76,9 @@ const ViewTerm = () => {
 	}, [loadingTerm]);
 
 	return (
-		// <ContentFrame>
-		<>
-			<Menu>
+		<ContentFrame>
+			<>
+				{/* <Menu> */}
 				<div className='SeccionHeader'>
 					<div className='SeccionHeaderIzquierda'>
 						<a onClick={console.log('abrirMenuLateral()')}>
@@ -119,9 +120,9 @@ const ViewTerm = () => {
 						}
 					</Skeletons>
 				</div>
-			</Menu>
-		</>
-		// </ContentFrame>
+				{/* </Menu> */}
+			</>
+		</ContentFrame>
 	);
 };
 
