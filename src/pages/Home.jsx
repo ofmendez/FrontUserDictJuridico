@@ -44,44 +44,6 @@ const Home = () => {
 			/>
 			{/* <Menu /> */}
 			<ContentFrame>
-				<div className='OverlayMenu hidden' id='OverlayMenu' onClick={console.log('cerrarMenuLateral()')} />
-				<div id='ContenedorMenuConfiguracion'>
-					<div className='MenuConfiguracion' id='MenuConfiguracion'>
-						<div className='SeccionAtrasTitulo'>
-							<img className='IconoAtrasConfiguracion IconosConfiguracion' onClick={console.log('abrirMenuLateral()')} src={IconoAtras} />
-							<p>Configuración</p>
-							<img className='IconoCerrarConfiguracion IconosConfiguracion' onClick={console.log('cerrarMenuLateral()')} src={IconoCerrar} />
-						</div>
-						<div className='SelectoresConfiguracion'>
-							<table className='TablaTamanosFuente'>
-								<tbody>
-									<tr>
-										<td onClick={console.log('decrecerTamañoFuente()')} id='ConfiguracionAchicarLetra'>Aa</td>
-										<td onClick={console.log('incrementarTamañoFuente()')} id='ConfiguracionAgrandarLetra'>Aa</td>
-									</tr>
-								</tbody>
-							</table>
-							<table className='TablaConfiguracionModo ModoActivo' onClick={console.log('ejecutarModoClaro()')} id='TablaModoClaro'>
-								<tbody>
-									<tr>
-										<td id='ConfiguracionModoClaro'>
-											<img src={IconoModoClaro} />
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<table className='TablaConfiguracionModo' onClick={console.log('ejecutarModoOscuro()')} id='TablaModoOscuro'>
-								<tbody>
-									<tr>
-										<td id='ConfiguracionModoOscuro'>
-											<img src={IconoModoOscuro} />
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
 				{/* <div className='SeccionHeaderFija ContainerHomePosition' id='SeccionHeaderFija'> */}
 
 				<div id='MedidaAlturaBarraFija' />

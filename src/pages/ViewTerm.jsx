@@ -79,7 +79,7 @@ const ViewTerm = () => {
 		<ContentFrame>
 			<>
 				{/* <Menu> */}
-				<div className='SeccionHeader'>
+				{/* <div className='SeccionHeader'>
 					<div className='SeccionHeaderIzquierda'>
 						<a onClick={console.log('abrirMenuLateral()')}>
 							<img className='IconoMenu' src={IconoMenu} />
@@ -90,7 +90,7 @@ const ViewTerm = () => {
 							<img className='LogoPrincipal' src={LogoPositivo} />
 						</a>
 					</div>
-				</div>
+				</div> */}
 				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
 				<div className='SeccionBuscador'>
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
