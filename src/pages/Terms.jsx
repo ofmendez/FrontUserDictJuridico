@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { IconoLupa, IconoMenu } from '@components/icons.js';
 import SeccionTerminos from '@components/SeccionTerminos.jsx';
-// import ContentFrame from '@src/components/ContentFrame.jsx';
+import ContentFrame from '@src/components/ContentFrame.jsx';
 import { LogoPositivo } from '@src/components/img';
 import Menu from '@src/components/Menu';
 
@@ -18,9 +18,9 @@ const Terms = () => {
 	};
 
 	return (
-		// <ContentFrame>
 		<>
-			<Menu>
+			<ContentFrame>
+				{/* <Menu> */}
 				<div className='SeccionHeader'>
 					<div className='SeccionHeaderIzquierda'>
 						<a onClick={console.log('abrirMenuLateral()')}>
@@ -30,7 +30,7 @@ const Terms = () => {
 					<div className='SeccionHeaderDerecha'>
 						<a href='/'>
 							<img className='LogoPrincipal' src={LogoPositivo} />
-							</a>
+						</a>
 					</div>
 				</div>
 				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
@@ -50,9 +50,9 @@ const Terms = () => {
 				</div>
 				<div className='SeccionSuperiorHerramientas' id='SeccionMensajeEstadisticas' />
 				<SeccionTerminos rowsState={{ expandedRows, setExpandedRows }} ref={termsRef} />
-			</Menu>
+				{/* </Menu> */}
+			</ContentFrame>
 		</>
-		//  </ContentFrame>
 	);
 };
 export default Terms;
