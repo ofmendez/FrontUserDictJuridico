@@ -159,7 +159,7 @@ const Home = () => {
 					</div>
 					<div id='AlturaAtajosAsignada' />
 				</div>
-				<div className='SeccionAtajos' id='AlturaMenuAtajos'>
+				{/* <div className='SeccionAtajos' id='AlturaMenuAtajos'>
 					<a href='Home.html'>
 						<div className='ElementoAtajo'>
 							<img className='IconoAtajos IconoAtajoActivo' src={IcoInicio} />
@@ -181,7 +181,7 @@ const Home = () => {
 							Cronología
 						</div>
 					</a>
-				</div>
+				</div> */}
 				{/* </div> */}
 			</ContentFrame>
 		</>
