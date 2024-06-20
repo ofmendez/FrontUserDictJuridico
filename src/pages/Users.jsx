@@ -6,7 +6,6 @@ const Users = () => {
 	const options = ['Filtrar', 'Administrador', 'Editor', 'Lector', 'Activo', 'Inactivo'];
 
 	return (
-		// <ContentFrame>
 		<>
 			<div className='SeccionSuperiorHerramientas' id='SeccionMensajeEstadisticas'>
 				<div>
@@ -50,7 +49,6 @@ const Users = () => {
 				</div>
 			</div>
 		</>
-		// </ContentFrame>
 	);
 };
 

@@ -4,7 +4,6 @@ import { IconoLupa, IconoMenu } from '@components/icons.js';
 import SeccionTerminos from '@components/SeccionTerminos.jsx';
 import ContentFrame from '@src/components/ContentFrame.jsx';
 import { LogoPositivo } from '@src/components/img';
-import Menu from '@src/components/Menu';
 
 const Terms = () => {
 	const [expandedRows, setExpandedRows] = useState([]);

@@ -4,7 +4,6 @@ import { IconoLupa, IconoMenu } from '@components/icons.js';
 import { Skeletons } from '@components/Skeletons.jsx';
 import { loadTerm } from '@src/hooks/LoaderData.jsx';
 import ViewMeaning from '@components/ViewMeaning.jsx';
-import Menu from '@components/Menu.jsx';
 import { LogoPositivo } from '@src/components/img';
 import ContentFrame from '@src/components/ContentFrame.jsx';
 
@@ -77,51 +76,47 @@ const ViewTerm = () => {
 
 	return (
 		<ContentFrame>
-			<>
-				{/* <Menu> */}
-				<div className='SeccionHeader'>
-					<div className='SeccionHeaderIzquierda'>
-						<a onClick={console.log('abrirMenuLateral()')}>
-							<img className='IconoMenu' src={IconoMenu} />
-						</a>
+			<div className='SeccionHeader'>
+				<div className='SeccionHeaderIzquierda'>
+					<a onClick={console.log('abrirMenuLateral()')}>
+						<img className='IconoMenu' src={IconoMenu} />
+					</a>
+				</div>
+				<div className='SeccionHeaderDerecha'>
+					<a href='/'>
+						<img className='LogoPrincipal' src={LogoPositivo} />
+					</a>
+				</div>
+			</div>
+			<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
+			<div className='SeccionBuscador'>
+				<form className='FormaBuscador' onSubmit={handleSubmit}>
+					<div className='SeccionInputBuscador'>
+						<img className='IconoLupa' src={IconoLupa} />
+						<input value={inputText} onChange={e => setInputText(e.target.value)} className='InputBuscador' type='text' placeholder='Ingresa un término' name='buscar' />
 					</div>
-					<div className='SeccionHeaderDerecha'>
-						<a href='/'>
-							<img className='LogoPrincipal' src={LogoPositivo} />
-						</a>
+					<Link
+						onClick={handleSubmit}
+						className={'SubmitBusqueda' + (inputText ? '' : ' noPointerEvents opacity07')}
+					>
+						BUSCAR
+					</Link>
+				</form>
+			</div>
+			<div className='SeccionSuperiorHerramientas'>
+				<Skeletons on={loadingTerm} msg='Cargando'>
+					<div className='ContenedorTerminosExpandidos'>
+						<h1>{term.term}</h1>
 					</div>
-				</div>
-				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
-				<div className='SeccionBuscador'>
-					<form className='FormaBuscador' onSubmit={handleSubmit}>
-						<div className='SeccionInputBuscador'>
-							<img className='IconoLupa' src={IconoLupa} />
-							<input value={inputText} onChange={e => setInputText(e.target.value)} className='InputBuscador' type='text' placeholder='Ingresa un término' name='buscar' />
-						</div>
-						<Link
-							onClick={handleSubmit}
-							className={'SubmitBusqueda' + (inputText ? '' : ' noPointerEvents opacity07')}
-						>
-							BUSCAR
-						</Link>
-					</form>
-				</div>
-				<div className='SeccionSuperiorHerramientas'>
-					<Skeletons on={loadingTerm} msg='Cargando'>
-						<div className='ContenedorTerminosExpandidos'>
-							<h1>{term.term}</h1>
-						</div>
-					</Skeletons>
-				</div>
-				<div className='SeccionContenidoDefiniciones ScrollVerde' id='scrolleable'>
-					<Skeletons on={loadingTerm}>
-						{
-							printSortedDescriptors(term.meanings, 0)
-						}
-					</Skeletons>
-				</div>
-				{/* </Menu> */}
-			</>
+				</Skeletons>
+			</div>
+			<div className='SeccionContenidoDefiniciones ScrollVerde' id='scrolleable'>
+				<Skeletons on={loadingTerm}>
+					{
+						printSortedDescriptors(term.meanings, 0)
+					}
+				</Skeletons>
+			</div>
 		</ContentFrame>
 	);
 };
