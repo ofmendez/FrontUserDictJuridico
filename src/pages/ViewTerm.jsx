@@ -29,6 +29,7 @@ const ViewTerm = () => {
 			if ('onscrollend' in elementContainer) {
 				elementContainer.addEventListener('scrollend', resolve, { once: true });
 				element.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+				resolve();
 			} else {
 				element.scrollIntoView({ block: 'center', inline: 'center' });
 				resolve();
