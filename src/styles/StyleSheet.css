@@ -543,9 +543,9 @@ mark{
 /* ----------------- CONFIGURACIÓN SECCIÓN ATAJOS -----------------*/
 /* Configuración Sección Atajos */
 .SeccionAtajos{
-    display:none;
     background-color: var(--ColorAcento);
     display: var(--OcultarElemento);
+    display:none;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
