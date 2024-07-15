@@ -41,7 +41,7 @@ const SeccionTerminos = (props, ref) => {
 				:	(
 					// <div className='ContenidoPagina' id='SeccionContenidoHome'>
 					<>
-						<TermsFilters setAvSubjects={setAvSubjects} avSubjects={avSubjects} />
+						
 						<MainsSeparator />
 						<Skeletons on={loadingTerms} msg='Cargando'>
 							<div className='FlexListaTerminos'>
@@ -53,6 +53,10 @@ const SeccionTerminos = (props, ref) => {
 									</select>
 								</div>
 								<MainsSeparator />
+
+								<TermsFilters setAvSubjects={setAvSubjects} avSubjects={avSubjects} />
+
+								
 								<div className='SeccionContenidoSubpagina TablaTodosLosTerminos'>
 									<h3>Términos</h3>
 									<MainsSeparator />
