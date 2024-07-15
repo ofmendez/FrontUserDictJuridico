@@ -94,6 +94,7 @@
      --PaddingContenidosHome: 8%;
      --PaddingFiltrosTerminos: 25px;
      --AlturaSeccionTodosLosTerminos:55svh;
+     --DireccionFlexContenedorFiltrosTerminos:column;
      /* Pagina Termino*/
      --AltoContenedorDefinicionesTermino:72svh;
      /* Pagina Resultados*/
@@ -821,6 +822,12 @@ mark{
     height: var(--SeparadorFavoritos);
 }
 /* ----------------- CONFIGURACIÓN TÉRMINOS GENERAL -----------------*/
+
+.ContenedorFiltrosTerminos{
+    display: flex;
+    flex-direction: var(--DireccionFlexContenedorFiltrosTerminos);
+    gap: 20px;
+}
 
 .CaracteristicaDefinicion{
     font-weight: var(--FuenteNegrilla);

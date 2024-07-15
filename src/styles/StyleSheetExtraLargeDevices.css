@@ -6,37 +6,37 @@
     */
      :root {
         /*Estilos*/
-         --MargenesContenido:30px;
-         --PaddingElementos:1%;
-         --PaddingInstrucciones:4%;
-         --PaddingUnaColumna:20px;
-         --PaddingContenidosHome:28px;
+            --MargenesContenido:30px;
+            --PaddingElementos:1%;
+            --PaddingInstrucciones:4%;
+            --PaddingUnaColumna:20px;
+            --PaddingContenidosHome:28px;
         /*Menu Lateral*/
-         --MenuAncho: 22vw;
-         --MenuAnchoMaxWidth: 280px;
-         --MenuPadding:30px;
+            --MenuAncho: 22vw;
+            --MenuAnchoMaxWidth: 280px;
+            --MenuPadding:30px;
         /*Configuración*/
-         --ConfiguracionAnchoContenedor: 500px;
-         --ConfiguracionPosicionBottom: 50%;
-         --ConfiguracionSeccionDerechaValorLeft: 50%;
-         --ConfiguracionSeccionDerechaValorRight: auto;
-         --ConfiguracionPaddingContenedor:30px;
-         --ConfiguracionAnchoBotonesTamañoLetra: 130px;
-         --ConfiguracionAnchoBotonesModo: 60px;
-
+            --ConfiguracionAnchoContenedor: 500px;
+            --ConfiguracionPosicionBottom: 50%;
+            --ConfiguracionSeccionDerechaValorLeft: 50%;
+            --ConfiguracionSeccionDerechaValorRight: auto;
+            --ConfiguracionPaddingContenedor:30px;
+            --ConfiguracionAnchoBotonesTamañoLetra: 130px;
+            --ConfiguracionAnchoBotonesModo: 60px;
         /*Búsquedas Recientes*/
-         --PaddingBusquedasRecientes:10px;
+            --PaddingBusquedasRecientes:10px;
         /*Sección Derecha*/
-        --SeccionDerechaTamanoAutomatico: calc(100vw - 280px);
-         --SeccionesDerechaMenuAncho:22vw;
+            --SeccionDerechaTamanoAutomatico: calc(100vw - 280px);
+            --SeccionesDerechaMenuAncho:22vw;
         /*Sección Palabra del Día*/
-         --SeccionPalabraDelDiaAtajoDisplay: none;
-          /*Página Términos*/
-     --AlignItemsInputFiltros:flex-start;
-     --AlturaSeccionTodosLosTerminos:-webkit-fill-available;
-     /*Pagina Resultados */
-     --AnchoSeccionFiltros:25%;
-     --OrientacionBusqueda: row;
+            --SeccionPalabraDelDiaAtajoDisplay: none;
+        /*Página Términos*/
+            --AlignItemsInputFiltros:flex-start;
+            --AlturaSeccionTodosLosTerminos:-webkit-fill-available;
+            --DireccionFlexContenedorFiltrosTerminos:row;
+        /*Pagina Resultados */
+            --AnchoSeccionFiltros:25%;
+            --OrientacionBusqueda: row;
     }
      #ContenedorMenuConfiguracion{
          transform: translate(-50%,50%);
