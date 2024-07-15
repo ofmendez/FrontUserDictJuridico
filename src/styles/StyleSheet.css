@@ -870,7 +870,6 @@ a.descriptor_row {
         display: var(--DisplaySeccionFiltros);
         flex-direction: column;
         height: auto;
-        margin-top: 20px;
     }
 
     .ContenedorInputFiltros{

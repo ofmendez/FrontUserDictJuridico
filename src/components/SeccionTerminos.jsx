@@ -54,18 +54,19 @@ const SeccionTerminos = (props, ref) => {
 								</div>
 								<MainsSeparator />
 
-								<TermsFilters setAvSubjects={setAvSubjects} avSubjects={avSubjects} />
+								<div className='ContenedorFiltrosTerminos'>
+									<TermsFilters setAvSubjects={setAvSubjects} avSubjects={avSubjects} />
 
-								
-								<div className='SeccionContenidoSubpagina TablaTodosLosTerminos'>
-									<h3>Términos</h3>
-									<MainsSeparator />
-									<div className='ContenedorTabla ScrollVerde table-container'>
-										<TermsTable
-											tableClass='TablaUsuarios' showBy
-											terms={terms} rowsState={props.rowsState} order={order}
-											avSubjects={avSubjects}
-										/>
+									<div className='SeccionContenidoSubpagina TablaTodosLosTerminos'>
+										<h3>Términos</h3>
+										<MainsSeparator />
+										<div className='ContenedorTabla ScrollVerde table-container'>
+											<TermsTable
+												tableClass='TablaUsuarios' showBy
+												terms={terms} rowsState={props.rowsState} order={order}
+												avSubjects={avSubjects}
+											/>
+										</div>
 									</div>
 								</div>
 							</div>
