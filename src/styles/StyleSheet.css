@@ -543,6 +543,7 @@ mark{
 /* ----------------- CONFIGURACIÓN SECCIÓN ATAJOS -----------------*/
 /* Configuración Sección Atajos */
 .SeccionAtajos{
+    display:none;
     background-color: var(--ColorAcento);
     display: var(--OcultarElemento);
     flex-direction: row;
