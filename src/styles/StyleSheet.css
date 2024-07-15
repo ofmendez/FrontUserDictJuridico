@@ -590,7 +590,7 @@ mark{
      z-index: 5;
 }
 .ContainerHomePosition {
-    position: absolute !important;
+    /*position: absolute !important;*/
 }
 
  .SeccionHeader{
