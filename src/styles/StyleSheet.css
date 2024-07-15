@@ -414,6 +414,7 @@ mark{
      width: var(--ConfiguracionAnchoContenedor);
      left: var(--ConfiguracionSeccionDerechaValorLeft);
      right: var(--ConfiguracionSeccionDerechaValorRight);
+     display:none;
 }
  .MenuConfiguracion{
      width: 100%;
