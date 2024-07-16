@@ -85,8 +85,9 @@ const SeccionTerminos = (props, ref) => {
 										<div className='ContenedorTabla ScrollVerde table-container'>
 											<TermsTable
 												tableClass='TablaUsuarios' showBy
-												terms={terms} rowsState={props.rowsState} order={order}
+												terms={terms} rowsState={{ expandedRows, setExpandedRows }} order={order}
 												avSubjects={avSubjects}
+												
 											/>
 										</div>
 									</div>
