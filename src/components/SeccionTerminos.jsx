@@ -18,6 +18,20 @@ const SeccionTerminos = (props, ref) => {
 	const [order, setOrder] = useState('asc');
 	useEffect(() => loadTerms({ loadingTerms, setLoadingTerms, setTerms }), []);
 	useImperativeHandle(ref, () => ({ getTerms: () => terms }));
+
+
+	const [expandedRows, setExpandedRows] = useState([]);
+	const expandAllRows = () => {
+		const terms = termsRef.current?.getTerms();
+		const allRows = terms.map(obj => obj._id);
+		setExpandedRows(allRows);
+	};
+	const collapseAllRows = () => {
+		setExpandedRows([]);
+	};
+
+
+
 	return (
 		props.home
 			? (
