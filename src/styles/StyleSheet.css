@@ -592,6 +592,7 @@ mark{
      padding: var(--MargenesContenido) var(--MargenesContenido) calc(var(--MargenesContenido)/2) var(--MargenesContenido);
      background-color: var(--ColorFondos);
      z-index: 5;
+     overflow:auto;
 }
 
  .SeccionHeader{
@@ -979,7 +980,6 @@ a.descriptor_row {
         width: var(--AnchoSeccionResultados);
         display: flex;
         flex-direction: column;
-        height: var(--AlturaContenedorDefiniciones);
     }
 
     .ContenedorResultadosScroll{

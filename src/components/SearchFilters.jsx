@@ -68,7 +68,6 @@ const SearchFilters = ({ contents, subjects, searchParams }) => {
 								<label className='LabelBuscadorFiltros'> Norma</label>
 							</div>
 						</div>
-						<br />
 					</form>
 					</div>
 						<div className='SeccionFiltrosSeccionContenido'>
