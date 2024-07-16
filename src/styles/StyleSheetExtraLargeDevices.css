@@ -35,8 +35,6 @@
             --TextoExpandir:' Expandir';
             --TextoContraer:' Contraer';
             --AlturaSeccionTodosLosTerminos:64svh;
-        /*Pagina Resultados */
-            --OrientacionBusqueda: row;
     }
      #ContenedorMenuConfiguracion{
          transform: translate(-50%,50%);
