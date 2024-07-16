@@ -829,7 +829,7 @@ mark{
 .SeccionBuscadorConBotones{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     gap: 4vw;
 }
