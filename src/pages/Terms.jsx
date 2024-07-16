@@ -57,8 +57,7 @@ const Terms = () => {
 					</form>
 
 
-					<Button onClick={expandAllRows}><span className='BotonExpandir'>+</span></Button>
-					<Button onClick={collapseAllRows}><span className='BotonContraer'>-</span></Button>
+					
 
 
 				</div>
