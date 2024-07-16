@@ -112,6 +112,7 @@
      --AnchoSeccionResultados: 100%;
      --PaddingResultadosBusqueda:2vh;
      --AlturaContenedorDefiniciones: 80svh;
+     --DireccionSeccionesFiltros:column;
 }
 /* Configuración General */
  *{
@@ -918,6 +919,14 @@ a.descriptor_row {
         display: var(--DisplaySeccionFiltros);
         flex-direction: column;
         height: auto;
+    }
+
+    .FiltrosDisponibles {
+        display: flex;
+        flex-direction: var(--DireccionSeccionesFiltros);
+        column-gap: 80px;
+        row-gap: 15px;
+        padding-bottom: 10px;
     }
 
     .ContenedorInputFiltros{
