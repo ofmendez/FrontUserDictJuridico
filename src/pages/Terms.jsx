@@ -43,7 +43,7 @@ const Terms = () => {
 					</div>
 				</div> */}
 				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
-				<div className='SeccionBuscador'>
+				<div className='SeccionBuscador SeccionBuscadorConBotones'>
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
 						<div className='SeccionInputBuscador'>
 							<img className='IconoLupa' src={IconoLupa} />

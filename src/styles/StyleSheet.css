@@ -592,9 +592,6 @@ mark{
      background-color: var(--ColorFondos);
      z-index: 5;
 }
-.ContainerHomePosition {
-    /*position: absolute !important;*/
-}
 
  .SeccionHeader{
      display: var(--DisplaySeccionHeader);
@@ -826,11 +823,24 @@ mark{
     height: var(--SeparadorFavoritos);
 }
 /* ----------------- CONFIGURACIÓN TÉRMINOS GENERAL -----------------*/
+.SeccionBuscadorConBotones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 .ContenedorBotonesExpandirContraer{
     display:flex;
     justify-content: space-between;
     row-gap: 10px;
     column-gap: 10px;
+}
+.BotonExpandir, .BotonContraer {
+    background-color: var(--ColorAcento);
+    color: var(--ColorTextoAcento);
+    border-radius: var(--RadioEsquinas);
+    display: inline-block;
+    width: max-content;
 }
 .BotonExpandir::after{
     content: var(--TextoExpandir);
