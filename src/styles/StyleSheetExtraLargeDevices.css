@@ -35,10 +35,8 @@
             --TextoExpandir:' Expandir';
             --TextoContraer:' Contraer';
             --AlturaSeccionTodosLosTerminos:-webkit-fill-available;
-            --DireccionFlexContenedorFiltrosTerminos:row;
             --FlexDirectionInputFiltros: column;
         /*Pagina Resultados */
-            --AnchoSeccionFiltros:25%;
             --OrientacionBusqueda: row;
     }
      #ContenedorMenuConfiguracion{
