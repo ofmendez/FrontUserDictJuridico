@@ -94,7 +94,6 @@ const SearchFilters = ({ contents, subjects, searchParams }) => {
 									<label className='LabelBuscadorFiltros'> Fuente</label>
 								</div>
 							</div>
-							<br />
 						</form>
 					</div>
 				</div>
