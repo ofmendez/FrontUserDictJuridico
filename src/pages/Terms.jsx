@@ -44,7 +44,7 @@ const Terms = () => {
 				</div> */}
 				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
 				<div className='SeccionBuscador SeccionBuscadorConBotones'>
-					<form className='FormaBuscador' onSubmit={handleSubmit}>
+					<form className='FormaBuscador FormaBuscadorConBotones' onSubmit={handleSubmit}>
 						<div className='SeccionInputBuscador'>
 							<img className='IconoLupa' src={IconoLupa} />
 							<input value={inputText} onChange={e => setInputText(e.target.value)} className='InputBuscador' type='text' placeholder='Ingresa un término' name='buscar' />

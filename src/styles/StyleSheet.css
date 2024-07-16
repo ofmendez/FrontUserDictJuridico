@@ -831,6 +831,10 @@ mark{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 4vw;
+}
+.FormaBuscadorConBotones{
+    flex: 2;
 }
 .ContenedorBotonesExpandirContraer{
     display:flex;
@@ -839,14 +843,18 @@ mark{
     row-gap: 10px;
     column-gap: 10px;
 }
+.ContenedorBotonesExpandirContraer button {
+    border: 0;
+}
 .BotonExpandir, .BotonContraer {
     background-color: var(--ColorAcento);
     color: var(--ColorTextoAcento);
     border-radius: var(--RadioEsquinas);
     display: inline-block;
     width: max-content;
-    height: 50px;
+    height: -webkit-fill-available;
     padding: 5px 12px;
+    font-weight: var(--FuenteNegrilla);
 }
 .BotonExpandir::after{
     content: var(--TextoExpandir);
