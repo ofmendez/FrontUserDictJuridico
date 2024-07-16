@@ -622,6 +622,7 @@ mark{
      flex-direction: row;
      flex-wrap: nowrap;
      justify-content: space-between;
+     height: 50px;
 }
  .SeccionInputBuscador{
      display: flex;
@@ -630,6 +631,8 @@ mark{
      padding: var(--PaddingElementos);
      border-radius: var(--RadioEsquinas);
      width: var(--BuscadorInputWidth);
+     align-items: center;
+     padding: 5px 12px;
 }
  .IconoLupa{
      height:var(--AlturaIconoLupa);
@@ -832,6 +835,7 @@ mark{
 .ContenedorBotonesExpandirContraer{
     display:flex;
     justify-content: space-between;
+    align-items: center;
     row-gap: 10px;
     column-gap: 10px;
 }
@@ -841,6 +845,8 @@ mark{
     border-radius: var(--RadioEsquinas);
     display: inline-block;
     width: max-content;
+    height: 50px;
+    padding: 5px 12px;
 }
 .BotonExpandir::after{
     content: var(--TextoExpandir);
