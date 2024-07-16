@@ -5,6 +5,7 @@ import SeccionTerminos from '@components/SeccionTerminos.jsx';
 import ContentFrame from '@src/components/ContentFrame.jsx';
 import { LogoPositivo } from '@src/components/img';
 import Menu from '@src/components/Menu';
+import Button from '@src/components/Button.jsx';
 
 const Terms = () => {
 	const [expandedRows, setExpandedRows] = useState([]);
@@ -55,12 +56,12 @@ const Terms = () => {
 							BUSCAR
 						</Link>
 					</form>
-
-
-					
-
-
 				</div>
+
+				<Button onClick={expandAllRows}><span className='BotonExpandir'>+</span></Button>
+				<Button onClick={collapseAllRows}><span className='BotonContraer'>-</span></Button>
+
+
 				<div className='SeccionSuperiorHerramientas' id='SeccionMensajeEstadisticas' />
 				<SeccionTerminos rowsState={{ expandedRows, setExpandedRows }} ref={termsRef} />
 				{/* </Menu> */}
