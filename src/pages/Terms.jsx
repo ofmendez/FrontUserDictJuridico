@@ -11,10 +11,18 @@ const Terms = () => {
 	const [inputText, setInputText] = useState('');
 	const navigate = useNavigate();
 	const termsRef = useRef(null);
-
+	const expandAllRows = () => {
+		const terms = termsRef.current?.getTerms();
+		const allRows = terms.map(obj => obj._id);
+		setExpandedRows(allRows);
+	};
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		navigate(`./search?q=${inputText}&content=term%252Cmeanings.descriptor%252Cmeanings.definition%252Cmeanings.source`);
+	};
+
+	const collapseAllRows = () => {
+		setExpandedRows([]);
 	};
 
 	return (
@@ -47,6 +55,12 @@ const Terms = () => {
 							BUSCAR
 						</Link>
 					</form>
+
+
+					<Button onClick={expandAllRows}><span className='BotonExpandir'>+</span></Button>
+					<Button onClick={collapseAllRows}><span className='BotonContraer'>-</span></Button>
+
+
 				</div>
 				<div className='SeccionSuperiorHerramientas' id='SeccionMensajeEstadisticas' />
 				<SeccionTerminos rowsState={{ expandedRows, setExpandedRows }} ref={termsRef} />
