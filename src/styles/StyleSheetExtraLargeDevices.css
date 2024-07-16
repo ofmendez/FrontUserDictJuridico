@@ -34,7 +34,6 @@
             --AlignItemsInputFiltros:flex-start;
             --TextoExpandir:' Expandir';
             --TextoContraer:' Contraer';
-            --AlturaSeccionTodosLosTerminos:-webkit-fill-available;
         /*Pagina Resultados */
             --OrientacionBusqueda: row;
     }
