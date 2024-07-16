@@ -93,6 +93,8 @@
      /*Página Términos*/
      --PaddingContenidosHome: 8%;
      --PaddingFiltrosTerminos: 25px;
+     --TextoExpandir: '';
+     --TextoContraer: '';
      --AlturaSeccionTodosLosTerminos:55svh;
      --DireccionFlexContenedorFiltrosTerminos:column;
      /* Pagina Termino*/
@@ -824,6 +826,18 @@ mark{
     height: var(--SeparadorFavoritos);
 }
 /* ----------------- CONFIGURACIÓN TÉRMINOS GENERAL -----------------*/
+.ContenedorBotonesExpandirContraer{
+    display:flex;
+    justify-content: space-between;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.BotonExpandir::after{
+    content: var(--TextoExpandir);
+}
+.BotonContraer::after{
+    content: var(--TextoContraer);
+}
 
 .ContenedorFiltrosTerminos{
     display: flex;

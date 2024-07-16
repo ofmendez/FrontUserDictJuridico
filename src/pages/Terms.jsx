@@ -56,12 +56,11 @@ const Terms = () => {
 							BUSCAR
 						</Link>
 					</form>
+					<div className='ContenedorBotonesExpandirContraer'>
+						<Button onClick={expandAllRows}><span className='BotonExpandir'>+</span></Button>
+						<Button onClick={collapseAllRows}><span className='BotonContraer'>-</span></Button>
+					</div>
 				</div>
-
-				<Button onClick={expandAllRows}><span className='BotonExpandir'>+</span></Button>
-				<Button onClick={collapseAllRows}><span className='BotonContraer'>-</span></Button>
-
-
 				<div className='SeccionSuperiorHerramientas' id='SeccionMensajeEstadisticas' />
 				<SeccionTerminos rowsState={{ expandedRows, setExpandedRows }} ref={termsRef} />
 				{/* </Menu> */}

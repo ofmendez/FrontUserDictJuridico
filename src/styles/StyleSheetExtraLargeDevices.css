@@ -32,6 +32,8 @@
             --SeccionPalabraDelDiaAtajoDisplay: none;
         /*Página Términos*/
             --AlignItemsInputFiltros:flex-start;
+            --TextoExpandir:' Expandir';
+            --TextoContraer:' Contraer';
             --AlturaSeccionTodosLosTerminos:-webkit-fill-available;
             --DireccionFlexContenedorFiltrosTerminos:row;
             --FlexDirectionInputFiltros: column;

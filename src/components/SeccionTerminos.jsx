@@ -8,8 +8,6 @@ import TermsTable from '@components/TermsTable.jsx';
 import { loadTerms } from '@src/hooks/LoaderData.jsx';
 import TermsFilters from '@components/TermsFilters.jsx';
 
-import Button from '@src/components/Button.jsx';
-
 const SeccionTerminos = (props, ref) => {
 	const [terms, setTerms] = useState([]);
 	const [loadingTerms, setLoadingTerms] = useState('init');
@@ -18,20 +16,6 @@ const SeccionTerminos = (props, ref) => {
 	const [order, setOrder] = useState('asc');
 	useEffect(() => loadTerms({ loadingTerms, setLoadingTerms, setTerms }), []);
 	useImperativeHandle(ref, () => ({ getTerms: () => terms }));
-
-
-	const [expandedRows, setExpandedRows] = useState([]);
-	const expandAllRows = () => {
-		const terms = termsRef.current?.getTerms();
-		const allRows = terms.map(obj => obj._id);
-		setExpandedRows(allRows);
-	};
-	const collapseAllRows = () => {
-		setExpandedRows([]);
-	};
-
-
-
 	return (
 		props.home
 			? (
@@ -75,19 +59,12 @@ const SeccionTerminos = (props, ref) => {
 
 									<div className='SeccionContenidoSubpagina TablaTodosLosTerminos'>
 										<h3>Términos</h3>
-
-										<Button onClick={expandAllRows}><span className='BotonExpandir'>+</span></Button>
-										<Button onClick={collapseAllRows}><span className='BotonContraer'>-</span></Button>
-
-
-
 										<MainsSeparator />
 										<div className='ContenedorTabla ScrollVerde table-container'>
 											<TermsTable
 												tableClass='TablaUsuarios' showBy
-												terms={terms} rowsState={{ expandedRows, setExpandedRows }} order={order}
+												terms={terms} rowsState={props.rowsState} order={order}
 												avSubjects={avSubjects}
-												
 											/>
 										</div>
 									</div>
