@@ -855,6 +855,7 @@ mark{
     height: -webkit-fill-available;
     padding: 5px 12px;
     font-weight: var(--FuenteNegrilla);
+    cursor: pointer;
 }
 .BotonExpandir::after{
     content: var(--TextoExpandir);
