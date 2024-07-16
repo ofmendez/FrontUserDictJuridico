@@ -63,13 +63,6 @@
     }
 }
 
-/* ------------------------- SECCION FILTROS MAX WIDTH ------------------------- */
-@media only screen and (min-width: 1500px) {
-    :root{
-         /*Pagina Resultados */
-     --AnchoSeccionFiltros:20%;
-   }
-}
 
 /* ------------------------- MAX MENU SIZE ------------------------- */
  @media only screen and (min-width: 1250px) {
