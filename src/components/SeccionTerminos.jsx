@@ -8,6 +8,8 @@ import TermsTable from '@components/TermsTable.jsx';
 import { loadTerms } from '@src/hooks/LoaderData.jsx';
 import TermsFilters from '@components/TermsFilters.jsx';
 
+import Button from '@src/components/Button.jsx';
+
 const SeccionTerminos = (props, ref) => {
 	const [terms, setTerms] = useState([]);
 	const [loadingTerms, setLoadingTerms] = useState('init');
@@ -59,6 +61,12 @@ const SeccionTerminos = (props, ref) => {
 
 									<div className='SeccionContenidoSubpagina TablaTodosLosTerminos'>
 										<h3>Términos</h3>
+
+										<Button onClick={expandAllRows}><span className='BotonExpandir'>+</span></Button>
+										<Button onClick={collapseAllRows}><span className='BotonContraer'>-</span></Button>
+
+
+
 										<MainsSeparator />
 										<div className='ContenedorTabla ScrollVerde table-container'>
 											<TermsTable
