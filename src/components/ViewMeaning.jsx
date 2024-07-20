@@ -18,6 +18,9 @@ const ViewMeaning = ({ meaning, id }) => {
 			</div>
 			<div className='SeparadorSecciones' />
 			<p className='InformacionDefinicion'><span className='Negrilla'>FUENTE:</span> {meaning.source}</p>
+			<a href={meaning.file ? meaning.file : 'https://diccionarioexplore.com/'} target='_blank' rel='noreferrer'>
+				{meaning.file ? meaning.file : 'https://diccionarioexplore.com/'}
+			</a>
 		</div>
 	);
 };
