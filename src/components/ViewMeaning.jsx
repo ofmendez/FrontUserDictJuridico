@@ -19,7 +19,7 @@ const ViewMeaning = ({ meaning, id }) => {
 			<div className='SeparadorSecciones' />
 			<p className='InformacionDefinicion'><span className='Negrilla'>FUENTE:</span> {meaning.source}</p>
 			<a className='EnlaceFuente' href={meaning.file ? meaning.file : ''} target='_blank' rel='noreferrer'>
-				{meaning.file ? meaning.file : ''}
+				{meaning.file ? 'Documento completo' : ''}
 			</a>
 		</div>
 	);
