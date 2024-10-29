@@ -129,4 +129,13 @@
      .ContenidoPagina{
          width: calc(1920px - var(--MenuAnchoMaxWidth));
     }
+
+     .ColumnaIzquierda{
+         width:48.5%;
+    }
+    
+     .ColumnaDerechaDesaparece, .ColumnaDerecha{
+         width:48.5%;
+    }
+     
 }
