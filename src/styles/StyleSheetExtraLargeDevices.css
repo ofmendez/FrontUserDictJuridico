@@ -124,6 +124,7 @@
          position:absolute;
          width: calc(1920px - var(--MenuAnchoMaxWidth));
          overflow-x: hidden;
+         min-height: 100svh;
     }
      .ContenidoPagina{
          width: calc(1920px - var(--MenuAnchoMaxWidth));
