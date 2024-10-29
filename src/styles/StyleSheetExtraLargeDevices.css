@@ -85,6 +85,9 @@
         /*Sección Derecha*/
          --SeccionesDerechaAncho: calc(100vw - var(--MenuAncho));
          --SeccionesDerechaMenuAncho:22vw;
+
+         /* PaginaTerminos */
+         --AltoContenedorDefinicionesTermino: auto;
     }
      body{
          background: linear-gradient(90deg, var(--ColorAcento) 0%, var(--ColorAcento) 50%, var(--ColorFondos) 50%, var(--ColorFondos) 100%);
@@ -98,6 +101,10 @@
          margin: 0 auto;
          min-height:100svh;
     }
+     div#ContenedorMenuLateral {
+    position: fixed;
+}
+     
      .MenuLateral{
          position:absolute;
          min-height: 100svh;
@@ -116,6 +123,7 @@
      .SeccionHeaderFija{
          position:absolute;
          width: calc(1920px - var(--MenuAnchoMaxWidth));
+         overflow-x: hidden;
     }
      .ContenidoPagina{
          width: calc(1920px - var(--MenuAnchoMaxWidth));
