@@ -41,7 +41,6 @@ const SeccionTerminos = (props, ref) => {
 				:	(
 					// <div className='ContenidoPagina' id='SeccionContenidoHome'>
 					<>
-						
 						<MainsSeparator />
 						<Skeletons on={loadingTerms} msg='Cargando'>
 							<div className='FlexListaTerminos'>
