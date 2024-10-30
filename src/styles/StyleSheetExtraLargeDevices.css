@@ -6,38 +6,37 @@
     */
      :root {
         /*Estilos*/
-         --MargenesContenido:30px;
-         --PaddingElementos:1%;
-         --PaddingInstrucciones:4%;
-         --PaddingUnaColumna:20px;
-         --PaddingContenidosHome:28px;
+            --MargenesContenido:30px;
+            --PaddingElementos:1%;
+            --PaddingInstrucciones:4%;
+            --PaddingUnaColumna:20px;
+            --PaddingContenidosHome:28px;
         /*Menu Lateral*/
-         --MenuAncho: 22vw;
-         --MenuAnchoMaxWidth: 280px;
-         --MenuPadding:30px;
+            --MenuAncho: 22vw;
+            --MenuAnchoMaxWidth: 280px;
+            --MenuPadding:30px;
         /*Configuración*/
-         --ConfiguracionAnchoContenedor: 500px;
-         --ConfiguracionPosicionBottom: 50%;
-         --ConfiguracionSeccionDerechaValorLeft: 50%;
-         --ConfiguracionSeccionDerechaValorRight: auto;
-         --ConfiguracionPaddingContenedor:30px;
-         --ConfiguracionAnchoBotonesTamañoLetra: 130px;
-         --ConfiguracionAnchoBotonesModo: 60px;
-
+            --ConfiguracionAnchoContenedor: 500px;
+            --ConfiguracionPosicionBottom: 50%;
+            --ConfiguracionSeccionDerechaValorLeft: 50%;
+            --ConfiguracionSeccionDerechaValorRight: auto;
+            --ConfiguracionPaddingContenedor:30px;
+            --ConfiguracionAnchoBotonesTamañoLetra: 130px;
+            --ConfiguracionAnchoBotonesModo: 60px;
         /*Búsquedas Recientes*/
-         --PaddingBusquedasRecientes:10px;
+            --PaddingBusquedasRecientes:10px;
         /*Sección Derecha*/
-        --SeccionDerechaTamanoAutomatico: calc(100vw - 280px);
-         --SeccionesDerechaMenuAncho:22vw;
+            --SeccionDerechaTamanoAutomatico: calc(100vw - 280px);
+            --SeccionesDerechaMenuAncho:22vw;
         /*Sección Palabra del Día*/
-         --SeccionPalabraDelDiaAtajoDisplay: none;
-          /*Página Términos*/
-     --FlexDirectionInputFiltros: column;
-     --AlignItemsInputFiltros:flex-start;
-     --AlturaSeccionTodosLosTerminos:-webkit-fill-available;
-     /*Pagina Resultados */
-     --AnchoSeccionFiltros:25%;
-     --OrientacionBusqueda: row;
+            --SeccionPalabraDelDiaAtajoDisplay: none;
+        /*Página Términos*/
+            --AlignItemsInputFiltros:flex-start;
+            --TextoExpandir:' Expandir';
+            --TextoContraer:' Contraer';
+            --AlturaSeccionTodosLosTerminos:64svh;
+            /* Pagina Resultados*/
+            --DireccionSeccionesFiltros:row;
     }
      #ContenedorMenuConfiguracion{
          transform: translate(-50%,50%);
@@ -64,13 +63,6 @@
     }
 }
 
-/* ------------------------- SECCION FILTROS MAX WIDTH ------------------------- */
-@media only screen and (min-width: 1500px) {
-    :root{
-         /*Pagina Resultados */
-     --AnchoSeccionFiltros:20%;
-   }
-}
 
 /* ------------------------- MAX MENU SIZE ------------------------- */
  @media only screen and (min-width: 1250px) {
@@ -93,6 +85,9 @@
         /*Sección Derecha*/
          --SeccionesDerechaAncho: calc(100vw - var(--MenuAncho));
          --SeccionesDerechaMenuAncho:22vw;
+
+         /* PaginaTerminos */
+         --AltoContenedorDefinicionesTermino: auto;
     }
      body{
          background: linear-gradient(90deg, var(--ColorAcento) 0%, var(--ColorAcento) 50%, var(--ColorFondos) 50%, var(--ColorFondos) 100%);
@@ -106,6 +101,10 @@
          margin: 0 auto;
          min-height:100svh;
     }
+     div#ContenedorMenuLateral {
+    position: fixed;
+}
+     
      .MenuLateral{
          position:absolute;
          min-height: 100svh;
@@ -124,8 +123,19 @@
      .SeccionHeaderFija{
          position:absolute;
          width: calc(1920px - var(--MenuAnchoMaxWidth));
+         overflow-x: hidden;
+         min-height: 100svh;
     }
      .ContenidoPagina{
          width: calc(1920px - var(--MenuAnchoMaxWidth));
     }
+
+     .ColumnaIzquierda{
+         width:48.5%;
+    }
+    
+     .ColumnaDerechaDesaparece, .ColumnaDerecha{
+         width:48.5%;
+    }
+     
 }

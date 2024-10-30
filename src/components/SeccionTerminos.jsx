@@ -39,8 +39,9 @@ const SeccionTerminos = (props, ref) => {
 					</Skeletons>
 				)
 				:	(
-					<div className='ContenidoPagina' id='SeccionContenidoHome'>
-						<TermsFilters setAvSubjects={setAvSubjects} avSubjects={avSubjects} />
+					// <div className='ContenidoPagina' id='SeccionContenidoHome'>
+					<>
+						
 						<MainsSeparator />
 						<Skeletons on={loadingTerms} msg='Cargando'>
 							<div className='FlexListaTerminos'>
@@ -52,20 +53,26 @@ const SeccionTerminos = (props, ref) => {
 									</select>
 								</div>
 								<MainsSeparator />
-								<div className='SeccionContenidoSubpagina TablaTodosLosTerminos'>
-									<h3>Términos</h3>
-									<MainsSeparator />
-									<div className='ContenedorTabla ScrollVerde table-container'>
-										<TermsTable
-											tableClass='TablaUsuarios' showBy
-											terms={terms} rowsState={props.rowsState} order={order}
-											avSubjects={avSubjects}
-										/>
+
+								<div className='ContenedorFiltrosTerminos'>
+									<TermsFilters setAvSubjects={setAvSubjects} avSubjects={avSubjects} />
+
+									<div className='SeccionContenidoSubpagina TablaTodosLosTerminos'>
+										<h3>Términos</h3>
+										<MainsSeparator />
+										<div className='ContenedorTabla ScrollVerde table-container'>
+											<TermsTable
+												tableClass='TablaUsuarios' showBy
+												terms={terms} rowsState={props.rowsState} order={order}
+												avSubjects={avSubjects}
+											/>
+										</div>
 									</div>
 								</div>
 							</div>
 						</Skeletons>
-					</div>
+					</>
+					// </div>
 				)
 	);
 };

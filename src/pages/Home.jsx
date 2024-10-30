@@ -3,11 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import Iframe from 'react-iframe';
 import { LogoPositivo } from '@components/img.js';
 import MainsSeparator from '@components/MainSeparator.jsx';
+import ContentFrame from '@src/components/ContentFrame';
 
 // eslint-disable-next-line no-unused-vars
 import { IcoCronologia, IcoInicio, IcoUsuarios, IconoAbrir, IconoAgregarFavorito, IconoAtras, IconoCerrar, IconoConfiguracion, IconoFavoritos, IconoLupa, IconoMenu, IconoModoClaro, IconoModoOscuro, IconoSitioWeb, IconoTerminosReal } from '@components/icons.js';
 import SeccionPalabraDelDia from '@src/components/SeccionPalabraDelDia.jsx';
-import Menu from '@src/components/Menu.jsx';
+// import Menu from '@src/components/Menu.jsx';
 import { loadRandomTerm } from '@src/hooks/LoaderData.jsx';
 import { Skeletons } from '@src/components/Skeletons';
 
@@ -41,77 +42,10 @@ const Home = () => {
 					}
 				}
 			/>
-			<Menu />
-			<div className='OverlayMenu hidden' id='OverlayMenu' onClick={console.log('cerrarMenuLateral()')} />
-			<div id='ContenedorMenuConfiguracion'>
-				<div className='MenuConfiguracion' id='MenuConfiguracion'>
-					<div className='SeccionAtrasTitulo'>
-						<img className='IconoAtrasConfiguracion IconosConfiguracion' onClick={console.log('abrirMenuLateral()')} src={IconoAtras} />
-						<p>Configuración</p>
-						<img className='IconoCerrarConfiguracion IconosConfiguracion' onClick={console.log('cerrarMenuLateral()')} src={IconoCerrar} />
-					</div>
-					<div className='SelectoresConfiguracion'>
-						<table className='TablaTamanosFuente'>
-							<tbody>
-								<tr>
-									<td onClick={console.log('decrecerTamañoFuente()')} id='ConfiguracionAchicarLetra'>Aa</td>
-									<td onClick={console.log('incrementarTamañoFuente()')} id='ConfiguracionAgrandarLetra'>Aa</td>
-								</tr>
-							</tbody>
-						</table>
-						<table className='TablaConfiguracionModo ModoActivo' onClick={console.log('ejecutarModoClaro()')} id='TablaModoClaro'>
-							<tbody>
-								<tr>
-									<td id='ConfiguracionModoClaro'>
-										<img src={IconoModoClaro} />
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<table className='TablaConfiguracionModo' onClick={console.log('ejecutarModoOscuro()')} id='TablaModoOscuro'>
-							<tbody>
-								<tr>
-									<td id='ConfiguracionModoOscuro'>
-										<img src={IconoModoOscuro} />
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-			<div className='SeccionHeaderFija ContainerHomePosition' id='SeccionHeaderFija'>
-				<div className='SeccionHeader'>
-					<div className='SeccionHeaderIzquierda'>
-						<a onClick={console.log('abrirMenuLateral()')}>
-							<img className='IconoMenu' src={IconoMenu} />
-						</a>
-					</div>
-					<div className='SeccionHeaderDerecha'>
-						<img className='LogoPrincipal' src={LogoPositivo} />
-					</div>
-				</div>
-				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
-				<div className='SeccionBuscador'>
-					{/* <form className="FormaBuscador" action="/action_page.php"> */}
-					<form className='FormaBuscador' onSubmit={handleSubmit}>
+			{/* <Menu /> */}
+			<ContentFrame>
+				{/* <div className='SeccionHeaderFija ContainerHomePosition' id='SeccionHeaderFija'> */}
 
-						<div className='SeccionInputBuscador'>
-							<img className='IconoLupa' src={IconoLupa} />
-							<input value={inputText} onChange={e => setInputText(e.target.value)} className='InputBuscador' type='text' placeholder='Ingresa un término' name='buscar' />
-
-							{/* <input className="InputBuscador" type="text" placeholder="Ingresa un término" name="buscar" /> */}
-						</div>
-						<Link
-							onClick={handleSubmit}
-							className={'SubmitBusqueda' + (inputText ? '' : ' noPointerEvents opacity07')}
-						>
-							BUSCAR
-						</Link>
-						{/* <input className="SubmitBusqueda" type="submit" value="BUSCAR" /> */}
-						{/* </div> */}
-					</form>
-				</div>
 				<div id='MedidaAlturaBarraFija' />
 				<div className='ContenidoPagina' id='ContenidoPagina'>
 					<div className='ColumnaIzquierda'>
@@ -210,7 +144,8 @@ const Home = () => {
 						</div>
 					</a>
 				</div>
-			</div>
+				{/* </div> */}
+			</ContentFrame>
 		</>
 	);
 };

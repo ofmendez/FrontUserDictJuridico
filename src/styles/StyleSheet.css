@@ -93,7 +93,10 @@
      /*Página Términos*/
      --PaddingContenidosHome: 8%;
      --PaddingFiltrosTerminos: 25px;
+     --TextoExpandir: '';
+     --TextoContraer: '';
      --AlturaSeccionTodosLosTerminos:55svh;
+     --DireccionFlexContenedorFiltrosTerminos:column;
      /* Pagina Termino*/
      --AltoContenedorDefinicionesTermino:72svh;
      /* Pagina Resultados*/
@@ -109,6 +112,7 @@
      --AnchoSeccionResultados: 100%;
      --PaddingResultadosBusqueda:2vh;
      --AlturaContenedorDefiniciones: 80svh;
+     --DireccionSeccionesFiltros:column;
 }
 /* Configuración General */
  *{
@@ -413,6 +417,7 @@ mark{
      width: var(--ConfiguracionAnchoContenedor);
      left: var(--ConfiguracionSeccionDerechaValorLeft);
      right: var(--ConfiguracionSeccionDerechaValorRight);
+     display:none;
 }
  .MenuConfiguracion{
      width: 100%;
@@ -543,6 +548,7 @@ mark{
 .SeccionAtajos{
     background-color: var(--ColorAcento);
     display: var(--OcultarElemento);
+    display:none;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -586,9 +592,7 @@ mark{
      padding: var(--MargenesContenido) var(--MargenesContenido) calc(var(--MargenesContenido)/2) var(--MargenesContenido);
      background-color: var(--ColorFondos);
      z-index: 5;
-}
-.ContainerHomePosition {
-    position: absolute !important;
+     overflow:auto;
 }
 
  .SeccionHeader{
@@ -620,6 +624,7 @@ mark{
      flex-direction: row;
      flex-wrap: nowrap;
      justify-content: space-between;
+     height: 50px;
 }
  .SeccionInputBuscador{
      display: flex;
@@ -628,6 +633,8 @@ mark{
      padding: var(--PaddingElementos);
      border-radius: var(--RadioEsquinas);
      width: var(--BuscadorInputWidth);
+     align-items: center;
+     padding: 5px 12px;
 }
  .IconoLupa{
      height:var(--AlturaIconoLupa);
@@ -821,6 +828,49 @@ mark{
     height: var(--SeparadorFavoritos);
 }
 /* ----------------- CONFIGURACIÓN TÉRMINOS GENERAL -----------------*/
+.SeccionBuscadorConBotones{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 4vw;
+}
+.FormaBuscadorConBotones{
+    flex: 2;
+}
+.ContenedorBotonesExpandirContraer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.ContenedorBotonesExpandirContraer button {
+    border: 0;
+}
+.BotonExpandir, .BotonContraer {
+    background-color: var(--ColorAcento);
+    color: var(--ColorTextoAcento);
+    border-radius: var(--RadioEsquinas);
+    display: inline-block;
+    width: max-content;
+    height: -webkit-fill-available;
+    padding: 5px 20px;
+    font-weight: var(--FuenteNegrilla);
+    cursor: pointer;
+}
+.BotonExpandir::after{
+    content: var(--TextoExpandir);
+}
+.BotonContraer::after{
+    content: var(--TextoContraer);
+}
+
+.ContenedorFiltrosTerminos{
+    display: flex;
+    flex-direction: var(--DireccionFlexContenedorFiltrosTerminos);
+    gap: 20px;
+}
 
 .CaracteristicaDefinicion{
     font-weight: var(--FuenteNegrilla);
@@ -870,6 +920,14 @@ a.descriptor_row {
         display: var(--DisplaySeccionFiltros);
         flex-direction: column;
         height: auto;
+    }
+
+    .FiltrosDisponibles {
+        display: flex;
+        flex-direction: var(--DireccionSeccionesFiltros);
+        column-gap: 80px;
+        row-gap: 15px;
+        padding-bottom: 10px;
     }
 
     .ContenedorInputFiltros{
@@ -922,7 +980,6 @@ a.descriptor_row {
         width: var(--AnchoSeccionResultados);
         display: flex;
         flex-direction: column;
-        height: var(--AlturaContenedorDefiniciones);
     }
 
     .ContenedorResultadosScroll{
@@ -985,7 +1042,10 @@ a.descriptor_row {
     padding: var(--PaddingContenidosResultadosBusqueda);
     border-radius: var(--RadioEsquinas);
 }
-
+.EnlaceFuente {
+    color: var(--ColorAcento) !important;
+    font-size: var(--TamanoFuenteParrafos);
+}
 /* ----------------- CONFIGURACIÓN DEFINICIÓN  -----------------*/
 .TituloDefinicionIcono{
 display: flex;

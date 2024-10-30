@@ -6,6 +6,7 @@ import { loadTerm } from '@src/hooks/LoaderData.jsx';
 import ViewMeaning from '@components/ViewMeaning.jsx';
 import Menu from '@components/Menu.jsx';
 import { LogoPositivo } from '@src/components/img';
+import ContentFrame from '@src/components/ContentFrame.jsx';
 
 const ViewTerm = () => {
 	const { id } = useParams();
@@ -75,10 +76,10 @@ const ViewTerm = () => {
 	}, [loadingTerm]);
 
 	return (
-		// <ContentFrame>
-		<>
-			<Menu>
-				<div className='SeccionHeader'>
+		<ContentFrame>
+			<>
+				{/* <Menu> */}
+				{/* <div className='SeccionHeader'>
 					<div className='SeccionHeaderIzquierda'>
 						<a onClick={console.log('abrirMenuLateral()')}>
 							<img className='IconoMenu' src={IconoMenu} />
@@ -89,7 +90,7 @@ const ViewTerm = () => {
 							<img className='LogoPrincipal' src={LogoPositivo} />
 						</a>
 					</div>
-				</div>
+				</div> */}
 				<div className='SeparadorSecciones SeparadorSeccionesOcultar' />
 				<div className='SeccionBuscador'>
 					<form className='FormaBuscador' onSubmit={handleSubmit}>
@@ -119,9 +120,9 @@ const ViewTerm = () => {
 						}
 					</Skeletons>
 				</div>
-			</Menu>
-		</>
-		// </ContentFrame>
+				{/* </Menu> */}
+			</>
+		</ContentFrame>
 	);
 };
 
