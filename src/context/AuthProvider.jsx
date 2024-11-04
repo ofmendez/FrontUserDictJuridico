@@ -1,7 +1,7 @@
 import { createContext, useState /* Suspense, lazy */ } from 'react';
 
 export const AuthContext = createContext({
-	isAuthenticated: false,
+	isAuthenticated: false
 });
 
 export const AuthProvider = ({ children }) => {
