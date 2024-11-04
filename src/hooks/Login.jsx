@@ -28,7 +28,12 @@ const fetchLogin = ({ setLoadinng, path, query }) => {
 		}).catch(err => {
 			setLoadinng('error');
 			console.log(err);
-			const msg = err.data && err.data.status === 401 ? 'Usuario o contraseña incorrectos.' : 'Ha ocurrido un error, por favor intenta nuevamente.';
+			const msg = err.data &&
+				err.data.status === 401
+				? ' Usuario o contraseña incorrectos.'
+				: err.data.status === 410
+					? ' La suscripción ha expirado.'
+					: ' Ha ocurrido un error, por favor intenta nuevamente.';
 			reject(new Error(msg));
 		});
 	});

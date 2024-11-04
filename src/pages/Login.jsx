@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from 'react';
-
 import { tryLogin } from '@src/hooks/Login.jsx';
 import OverlayLoading from '@components/OverlayLoading.jsx';
 import { AuthContext } from '@src/context/AuthProvider.jsx';
@@ -14,7 +13,7 @@ const Login = () => {
 	const handleDoneFetch = (d) => {
 		window.localStorage.setItem('token', d.token);
 		window.localStorage.setItem('user', JSON.stringify(d.user));
-		window.localStorage.setItem('expire', Date.now() + 6 * 24 * 60 * 60 * 1000);
+		window.localStorage.setItem('expire', Date.now() + 1 * 24 * 60 * 60 * 1000);
 		console.log('today: ', Date.now(), 'name: ', JSON.parse(window.localStorage.user).name);
 		loginCtx();
 	};
@@ -41,8 +40,6 @@ const Login = () => {
 			}
 		};
 
-		// window.addEventListener('message', listener);
-		// Cleanup function (in case you need it)
 		return () => {
 			window.removeEventListener('message', listener);
 		};
