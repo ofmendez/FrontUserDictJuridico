@@ -1,5 +1,6 @@
 import { IcoInicio, IconoLogout, IconoSitioWeb, IcoTerminos } from './icons';
 import { LogoBlanco } from './img';
+import MenuItem from '@components/MenuItem.jsx';
 
 const Menu = ({ children }) => {
 	const logout = () => {
@@ -18,20 +19,8 @@ const Menu = ({ children }) => {
 							<img className='LogoMenuLateral' src={LogoBlanco} />
 						</a>
 						<ul className='MenuLateralLista'>
-							<li>
-								<a href='/'>
-									<div className='ContenedorItemMenuLateral ItemMenuActivo'>
-										<img className='IconosMenuLateral' src={IcoInicio} /> Inicio
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href='/terms'>
-									<div className='ContenedorItemMenuLateral'>
-										<img className='IconosMenuLateral' src={IcoTerminos} /> Términos
-									</div>
-								</a>
-							</li>
+							<MenuItem to='/' icon={IcoInicio} text='Inicio' />
+							<MenuItem to='/Terms' icon={IcoTerminos} text='Términos' />
 							<li>
 								<a href='https://diccionarioexplore.com/' target='_blank' rel='noreferrer'>
 									<div className='ContenedorItemMenuLateral'>
