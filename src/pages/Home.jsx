@@ -12,7 +12,12 @@ const Home = () => {
 	const [inputText, setInputText] = useState('');
 	const [randomTerm, setRandomTerm] = useState(null);
 	const [loadingTerm, setLoadingTerm] = useState('init');
+	const [searches, setSearches] = useState(loadSearches());
 
+	function loadSearches () {
+		const user = JSON.parse(window.localStorage.user);
+		return user.lastSearches ? JSON.parse(user.lastSearches).reverse() : [];
+	};
 	const navigate = useNavigate();
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -58,7 +63,16 @@ const Home = () => {
 						<h2>Búsquedas Recientes</h2>
 						<div className='SeparadorSecciones' />
 						<Skeletons on={loadingTerm} msg='Cargando'>
-							<span>No hay búsquedas recientes.</span>
+							<div className='SeccionBusquedasRecientes'>
+								{searches.length > 0
+									? searches.map((search, i) => (
+										<a key={i} className='ElementoBusquedaReciente' href={`./terms/search?q=${search}&content=term%252Cmeanings.descriptor%252Cmeanings.definition%252Cmeanings.source`}>
+											<div className='TextoBusquedaReciente'>{search}</div>
+											<div className='IconobusquedaReciente'><img className='IconoAbrir' src={IconoAbrir} /></div>
+										</a>
+									))
+									: <span>No hay búsquedas recientes.</span>}
+							</div>
 						</Skeletons>
 						<div className='SeccionTodosLosTerminos'>
 							<div className='SeparadorSeccionPrincipal' />

@@ -2,7 +2,27 @@
 
 const searchTerm = ({ loadingTerm, setLoadingTerm, body, handleDonePost }) => {
 	if (loadingTerm === 'ok') return;
-	postData({ setLoading: setLoadingTerm, path: '/terms/search', body, method: 'POST' }).then((d) => handleDonePost(d))
+	postData({ setLoading: setLoadingTerm, path: '/terms/search', body, method: 'POST' }).then((d) => {
+		handleDonePost(d);
+		PostRecents(body);
+	}).catch((err) => {
+		window.alert(err);
+	});
+};
+
+const UpdateLocalStorage = (searches) => {
+	const user = JSON.parse(window.localStorage.user);
+	user.lastSearches = JSON.stringify(searches);
+	window.localStorage.setItem('user', JSON.stringify(user));
+};
+
+const PostRecents = (body) => {
+	const id = JSON.parse(window.localStorage.user)._id;
+	const searches = JSON.parse(window.localStorage.user).lastSearches ? JSON.parse(JSON.parse(window.localStorage.user).lastSearches) : [];
+	searches.push(body.q);
+	if (searches.length > 5) searches.shift();
+	const newBody = { lastSearches: JSON.stringify(searches) };
+	postData({ setLoading: () => {}, path: `/users/${id}`, body: newBody, method: 'PATCH' }).then((d) => UpdateLocalStorage(searches))
 		.catch((err) => {
 			window.alert(err);
 		});
