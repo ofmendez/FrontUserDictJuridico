@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 import { fileURLToPath, URL } from 'url';
-import react from '@vitejs/plugin-react-swc'
+import react from '@vitejs/plugin-react-swc';
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react()],
@@ -18,4 +18,4 @@ export default defineConfig({
 			{ find: '@img', replacement: fileURLToPath(new URL('./src/assets/img', import.meta.url)) }
 		]
 	}
-})
+});
