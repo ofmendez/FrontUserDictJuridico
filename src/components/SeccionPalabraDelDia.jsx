@@ -4,7 +4,7 @@ import { SectionsSeparator } from '@components/MainSeparator.jsx';
 const SeccionPalabraDelDia = ({ randomTerm }) => {
 	return (
 		<div className='SeccionPalabraDelDiaWidget'>
-			<h3>Palabra al azar</h3>
+			<h3>Actualizaciones recientes</h3>
 			<SectionsSeparator />
 			<div className='ContenidoPalabraDelDia ScrollVerde'>
 				<h2>

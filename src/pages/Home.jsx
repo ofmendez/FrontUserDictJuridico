@@ -1,14 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Iframe from 'react-iframe';
-import { LogoPositivo } from '@components/img.js';
 import MainsSeparator from '@components/MainSeparator.jsx';
 import ContentFrame from '@src/components/ContentFrame';
-
 // eslint-disable-next-line no-unused-vars
 import { IcoCronologia, IcoInicio, IcoUsuarios, IconoAbrir, IconoAgregarFavorito, IconoAtras, IconoCerrar, IconoConfiguracion, IconoFavoritos, IconoLupa, IconoMenu, IconoModoClaro, IconoModoOscuro, IconoSitioWeb, IconoTerminosReal } from '@components/icons.js';
 import SeccionPalabraDelDia from '@src/components/SeccionPalabraDelDia.jsx';
-// import Menu from '@src/components/Menu.jsx';
 import { loadRandomTerm } from '@src/hooks/LoaderData.jsx';
 import { Skeletons } from '@src/components/Skeletons';
 
@@ -16,7 +12,12 @@ const Home = () => {
 	const [inputText, setInputText] = useState('');
 	const [randomTerm, setRandomTerm] = useState(null);
 	const [loadingTerm, setLoadingTerm] = useState('init');
+	const [searches, setSearches] = useState(loadSearches());
 
+	function loadSearches () {
+		const user = JSON.parse(window.localStorage.user);
+		return user.lastSearches ? JSON.parse(user.lastSearches).reverse() : [];
+	};
 	const navigate = useNavigate();
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -26,26 +27,22 @@ const Home = () => {
 
 	return (
 		<>
-			<Iframe
-				url='https://diccionarioexplore.com'
-				width='0'
-				height='0'
-				style={
-					{
-						position: 'absolute',
-						top: 0,
-						left: 0,
-						width: 0,
-						height: 0,
-						border: 'none',
-						visibility: 'hidden'
-					}
-				}
-			/>
-			{/* <Menu /> */}
 			<ContentFrame>
+				<div className='SeccionBuscador SeccionBuscadorConBotones'>
+					<form className='FormaBuscador FormaBuscadorConBotones' onSubmit={handleSubmit}>
+						<div className='SeccionInputBuscador'>
+							<img className='IconoLupa' src={IconoLupa} />
+							<input value={inputText} onChange={e => setInputText(e.target.value)} className='InputBuscador' type='text' placeholder='Ingresa un término' name='buscar' />
+						</div>
+						<Link
+							onClick={handleSubmit}
+							className={'SubmitBusqueda' + (inputText ? '' : ' noPointerEvents opacity07')}
+						>
+							BUSCAR
+						</Link>
+					</form>
+				</div>
 				{/* <div className='SeccionHeaderFija ContainerHomePosition' id='SeccionHeaderFija'> */}
-
 				<div id='MedidaAlturaBarraFija' />
 				<div className='ContenidoPagina' id='ContenidoPagina'>
 					<div className='ColumnaIzquierda'>
@@ -66,32 +63,17 @@ const Home = () => {
 						<h2>Búsquedas Recientes</h2>
 						<div className='SeparadorSecciones' />
 						<Skeletons on={loadingTerm} msg='Cargando'>
-							<span>No hay búsquedas recientes.</span>
+							<div className='SeccionBusquedasRecientes'>
+								{searches.length > 0
+									? searches.map((search, i) => (
+										<a key={i} className='ElementoBusquedaReciente' href={`./terms/search?q=${search}&content=term%252Cmeanings.descriptor%252Cmeanings.definition%252Cmeanings.source`}>
+											<div className='TextoBusquedaReciente'>{search}</div>
+											<div className='IconobusquedaReciente'><img className='IconoAbrir' src={IconoAbrir} /></div>
+										</a>
+									))
+									: <span>No hay búsquedas recientes.</span>}
+							</div>
 						</Skeletons>
-						{/* <div className="SeccionBusquedasRecientes">
-							<a href="Results.html">
-								<div className="ElementoBusquedaReciente">
-									<div className="TextoBusquedaReciente">Regalías</div>
-									<div className="IconobusquedaReciente">
-										<img className="IconoAbrir" src={IconoAbrir} />
-									</div>
-								</div>
-							</a>
-							<hr />
-							<div className="ElementoBusquedaReciente">
-								<div className="TextoBusquedaReciente">Regalías</div>
-								<div className="IconobusquedaReciente">
-									<img className="IconoAbrir" src={IconoAbrir} />
-								</div>
-							</div>
-							<hr />
-							<div className="ElementoBusquedaReciente">
-								<div className="TextoBusquedaReciente">Regalías</div>
-								<div className="IconobusquedaReciente">
-									<img className="IconoAbrir" src={IconoAbrir} />
-								</div>
-							</div>
-						</div> */}
 						<div className='SeccionTodosLosTerminos'>
 							<div className='SeparadorSeccionPrincipal' />
 							<h2>De la A a la Z</h2>
@@ -108,10 +90,6 @@ const Home = () => {
 							<MainsSeparator />
 							<MainsSeparator />
 							<MainsSeparator />
-							{/* <div className="DiccionarioCompleto">
-								<img className="IconoDiccionarioCompleto" src={IconoTerminosReal} />
-								<span>CONSULTA TODOS LOS TÉRMINOS</span>
-							</div> */}
 						</div>
 					</div>
 					<div className='ColumnaDerechaDesaparece'>
@@ -144,7 +122,6 @@ const Home = () => {
 						</div>
 					</a>
 				</div>
-				{/* </div> */}
 			</ContentFrame>
 		</>
 	);

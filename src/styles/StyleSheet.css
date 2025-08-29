@@ -29,6 +29,7 @@
      --MenuPadding:8%;
      --MenuColorOverlay: #00000033;
      --MenuLateralEsconderAnimacion: translateX(-115%);
+	  --MenuPaddingElementoActivo:3%;
      --MenuOcultarHamburguesa: block;
     /*Configuración*/
      --ConfiguracionAnchoContenedor: var(--SeccionesDerechaAncho);
@@ -354,6 +355,22 @@ mark{
      display:flex;
      align-items: center;
      cursor: pointer;
+	  border: none;
+	  color: var(--ColorTextoAcento);
+      background-color: var(--ColorAcento);
+}
+.ContenedorItemMenuLateral.active{
+	background-color: white;
+	color:var(--ColorAcento) !important;
+	border-radius: var(--RadioEsquinas);
+	padding: var(--MenuPaddingElementoActivo);
+	padding-left: 0;
+}
+.ContenedorItemMenuLateral.active:hover{
+	text-decoration: underline;
+}
+.ContenedorItemMenuLateral.active img{
+	filter: none;
 }
 .LogoMenuLateral{
     height:var(--AlturaLogoPrincipal);

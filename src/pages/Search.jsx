@@ -6,7 +6,6 @@ import SearchResults from '@src/components/SearchResults';
 import { Skeletons } from '@src/components/Skeletons';
 import TermsSearchForm from '@src/components/TermsSearchForm';
 import useSearchTerm from '@src/hooks/useSearchTerm';
-import Menu from '@src/components/Menu';
 
 const Search = () => {
 	const [searchParams] = useSearchParams();
