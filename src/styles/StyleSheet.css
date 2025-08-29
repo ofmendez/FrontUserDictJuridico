@@ -940,9 +940,10 @@ a.descriptor_row {
         background-color: var(--ColorSecundario);
         padding: var(--PaddingFiltrosTerminos);
         border-radius: var(--RadioEsquinas);
-        display: var(--DisplaySeccionFiltros);
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         height: auto;
+        column-gap:15px;
     }
 
     .FiltrosDisponibles {
