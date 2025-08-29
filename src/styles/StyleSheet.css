@@ -394,6 +394,12 @@ mark{
      padding-left:10px;
      filter: brightness(100);
 }
+.InstruccionesAplicativo{
+    font-size: calc(var(--TamanoFuenteParrafos) - 3px);
+     margin-top:20%;
+     line-height: 1.1em;
+     text-align: justify;
+}
  .InformacionPropiedadAplicativo{
      font-size: calc(var(--TamanoFuenteParrafos) - 2px);
      margin-top:20%;
